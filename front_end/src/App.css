@@ -1,8 +1,125 @@
-.nav-bar {
-  background-color: #085AA6;
-  padding: 20px;
+.app {
+  font-family: "Carrois Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.nav-bar-elements {
+.nav-bar {
+  background-color: #085AA6;
+  overflow: visible;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all_text_nav {
+  text-align: right;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: auto;
+}
+
+/* controlling apperance of the each item in nav-bar */
+.nav-bar ul, .dropbtn {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+}
+
+/* controlling text nav-bar apperance */
+.nav-bar-elements{
+  padding: 14px 40px;
+  text-align: center;
+}
+
+/* when an element on nav-bar clicked - these features appear */
+.nav-bar-elements a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block; 
+}
+
+/* handles the teams word on dropdown menu */
+.dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  margin: 0;
+  background-color: #085AA6;
+}
+
+/* dropdown content - auto: hidden */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10; 
+  border: 1px solid #ccc;
+  background-color: black;
+
+  /* alignment of items within dropdown */
+  min-width: 110px;
+  margin-top: 5px;
+  text-align: left; 
+}
+
+/* items within dropdown */
+.dropdown-content .nav-bar-elements {
+  padding: 5px;
+}
+
+/* when an item is hovered over in the dropdown menu */
+.dropdown-content .nav-bar-elements a:hover {
+  text-decoration: underline;
+}
+
+/* dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* footer */
+
+.footer {
+  border-top: 1px solid black;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.social-icon {
+  width: 30px;
+  height: auto;
+  padding: 5px;
+  margin: 0 2px; 
+}
+
+.love {
+  font-size: 13px;
+  margin-top: 5px; 
 }
