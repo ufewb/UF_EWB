@@ -10,7 +10,7 @@ function Footer() {
             <img src="https://static-00.iconduck.com/assets.00/email-icon-2048x1628-mzownmgf.png" className="social-icon" alt="Social Icon"></img>
           </div>
           <div className="love">
-            <p>Made with ♥ by the UF EWB Website Team</p>
+            <p>Made with ♥ by the 2024 UF EWB Website Team</p>
           </div>
         </div>
       </div>
