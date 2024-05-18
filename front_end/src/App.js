@@ -5,11 +5,14 @@ import Paths from './Routes.js';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          UF EWB
-        </p>
-      </header>
+        <nav class = "nav-bar">
+          <ul>
+            <button class = "nav-bar-elements">Home</button>
+            <button class = "nav-bar-elements">Teams</button>
+            <button class = "nav-bar-elements">Contact Us</button>
+            <button class = "nav-bar-elements">Get Involved</button>
+          </ul>
+        </nav>
       <Paths /> 
     </div>
   );
