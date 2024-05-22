@@ -2,6 +2,9 @@ import './App.css';
 import Paths from './Routes.js'; 
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Footer from './components/pages/Footer.js'; 
+import PeruHome from './components/pages/peru/PeruHome.js';
+import PeruRoutes from './components/pages/peru/PeruRoutes.js';
+import NepalRoutes from './components/pages/nepal/NepalRoutes.js'
 
 function App() {
   return (
@@ -28,8 +31,12 @@ function App() {
           </ul>
         </nav>
 
+      {/* have to place all routes here!!! */}
         <Paths />
+        <PeruRoutes /> 
+        <NepalRoutes /> 
         <Footer />
+      
       </div>
     </Router>
   );

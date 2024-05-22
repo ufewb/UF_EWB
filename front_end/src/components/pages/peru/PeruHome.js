@@ -5,8 +5,12 @@ function PeruHome() {
     return (
         <div>
             <h1>Peru</h1>
-            <Link to="/virgen-del-carmen-elementary-school">Virgen del Carmen Elementary School</Link>
-            <Link to="/irrigation-reservoir">Irrigation Reservoir</Link>
+            <div>
+                <Link to="/peru/virgen-del-carmen-elementary-school">Virgen del Carmen Elementary School</Link>
+            </div>
+            <div>
+                <Link to="/peru/irrigation-reservoir">Irrigation Reservoir</Link>
+            </div>
         </div>
     );
 }

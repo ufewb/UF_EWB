@@ -2,14 +2,15 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import PeruHome from './PeruHome';
 import VirgenDelCarmenElementarySchool from './VirgenDelCarmenElementarySchool';
-import IrrigationReservoir from './IrrigationResevoir';
+import IrrigationReservoir from './IrrigationReservoir';
 
-const PeruRoutes = () => {
+function PeruRoutes() {
     return (
         <Routes>
+            {/* route path = specifying url pattern */}
             <Route path="/" element={<PeruHome />} />
-            <Route path="/virgen-del-carmen-elementary-school" element={<VirgenDelCarmenElementarySchool />} />
-            <Route path="/irrigation-reservoir" element={<IrrigationReservoir />} />
+            <Route path="/peru/virgen-del-carmen-elementary-school" element={<VirgenDelCarmenElementarySchool />} />
+            <Route path="/peru/irrigation-reservoir" element={<IrrigationReservoir />} />
         </Routes>
     );
 };
