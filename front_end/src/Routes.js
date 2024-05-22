@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home'; 
 import ContactUs from './components/pages/ContactUs';
 import GetInvolved from './components/pages/GetInvolved';
-import Nepal from './components/pages/Nepal';
-import Peru from './components/pages/Peru';
+import Nepal from './components/pages/nepal/NepalHome';
+import Peru from './components/pages/peru/PeruHome';
 
 function Paths() {
   return (
@@ -14,7 +14,7 @@ function Paths() {
       <Route path="/get-involved" element={<GetInvolved />} />
       <Route path="/nepal" element={<Nepal />} />
       <Route path="/peru" element={<Peru />} />
-    </Routes>
+     </Routes>
   );
 }
 

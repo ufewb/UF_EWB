@@ -1,7 +1,7 @@
 import './App.css';
 import Paths from './Routes.js'; 
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Footer from './components/pages/Footer.js'; // Import the Footer component
+import Footer from './components/pages/Footer.js'; 
 
 function App() {
   return (
