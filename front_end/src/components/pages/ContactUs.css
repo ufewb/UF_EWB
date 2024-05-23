@@ -1,0 +1,55 @@
+.entireBox {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; 
+    text-align: center;
+}
+
+.LowerHalf{
+    margin: 0vh 20vh;
+    padding: 10vh;
+    display:flex;
+    flex: 1;
+}
+
+.NameBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 10vh;
+}
+
+
+.PictureBox{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 80%;
+    flex-basis: 50%;
+    border: 1px solid black;
+}
+
+
+.ContactInfo{   
+    height: 80%;
+    flex-basis: 70%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.Info{
+    padding: 10vh;
+    text-align: left;
+}
+
+.logo1 {
+    max-width: 100%;
+    max-height: 100%;
+}
