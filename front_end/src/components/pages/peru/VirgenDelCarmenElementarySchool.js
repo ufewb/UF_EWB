@@ -9,7 +9,7 @@ function VirgenDelCarmenElementarySchool() {
                     <h1>Virgen del Carmen Elementary School</h1>
                 </div>
                 <div>
-                    <h2>2016-2018</h2>
+                    <h2>2015-2018</h2>
                 </div>
             </div>
             <div className= 'buttons'>
