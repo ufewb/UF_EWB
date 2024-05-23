@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Peru.css";
+import "./PeruProjects.css";
 import closeupImage from "../peru/perupics/IRcloseup.jpg"
 
 

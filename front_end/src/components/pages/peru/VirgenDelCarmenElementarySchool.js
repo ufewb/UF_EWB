@@ -1,5 +1,5 @@
 import React from 'react';
-import './Peru.css';
+import './PeruProjects.css';
 import signImage from "../peru/perupics/VDCschoolsign.jpg"
 
 function VirgenDelCarmenElementarySchool() {
