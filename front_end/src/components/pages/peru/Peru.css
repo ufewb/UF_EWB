@@ -1,10 +1,24 @@
-.center-container {
+.VDC-header {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     height: 35vh; /* Full viewport height to center vertically */
-    background-image: url('../peru/elementarySchool/VDCfullpicture.jpg'); /* Replace with your image path */
+    background-image: url('../peru/perupics/VDCfullpicture.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: center; /* Center the image */
+    color: white; /* Text color for better visibility */
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.IR-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh; /* Full viewport height to center vertically */
+    background-image: url('../peru/perupics/IRpic.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire area of the div */
     background-position: center; /* Center the image */
     color: white; /* Text color for better visibility */
@@ -21,7 +35,6 @@
     font-size: 20px; /* Font size */
     color: #085AA6; /* Text color */
     background-color: white; /* Background color */
-    border: none; /* No border */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth transition on hover */
     border: 4px solid #085AA6
@@ -33,6 +46,30 @@
   align-items: center;
    justify-content: center;
    display: flex;
-   padding: 30px 150px;
+   padding: 30px 30px;
 
+}
+
+.body_text{
+    align-items: center;
+   justify-content: center;
+   display: flex;
+   padding: 0px 150px;
+}
+
+.sign-image img{
+    max-width: 400px;
+    height: auto;
+    flex: 1;
+    padding: 30px 20px 30px 150px;
+}
+
+.text-w-img-div{
+    display: flex;
+    align-items: center;
+    }
+
+.text-next-to-img{
+    flex: 1;
+    padding: 30px 150px 30px 20px
 }
