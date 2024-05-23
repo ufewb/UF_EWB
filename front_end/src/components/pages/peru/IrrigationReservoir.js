@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Peru.css";
-import signImage from "../peru/elementarySchool/VDCschoolsign.jpg"
+import closeupImage from "../peru/perupics/IRcloseup.jpg"
 
 
 function IrrigationReservoir() {
@@ -26,7 +26,7 @@ function IrrigationReservoir() {
 
             <div className = "text-w-img-div">
                 <div className = "sign-image">
-                    <img src= {signImage} alt="VDC school sign"/>
+                    <img src= {closeupImage} alt="VDC school sign"/>
                 </div>
                 <div className = "text-next-to-img">
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus, eros ac aliquet rutrum, nibh mi ullamcorper felis, vel ultricies arcu nunc convallis lectus. Nunc at molestie turpis, vitae porttitor justo. Nam maximus, libero a porta mollis, eros orci ullamcorper sapien, vitae commodo diam massa non magna. Donec rhoncus diam sit amet odio pulvinar, a rhoncus neque gravida. Quisque euismod ultricies maximus. Fusce ultricies porta magna, vel congue quam eleifend vitae. Nulla facilisi. Sed aliquet elementum ligula, et mattis tortor sodales in.
