@@ -5,6 +5,7 @@ import ContactUs from './components/pages/ContactUs';
 import GetInvolved from './components/pages/GetInvolved';
 import Nepal from './components/pages/nepal/NepalHome';
 import Peru from './components/pages/peru/PeruHome';
+import FAQ from './components/pages/FAQ';
 
 function Paths() {
   return (
@@ -14,6 +15,7 @@ function Paths() {
       <Route path="/get-involved" element={<GetInvolved />} />
       <Route path="/nepal" element={<Nepal />} />
       <Route path="/peru" element={<Peru />} />
+      <Route path="/faq" element={<FAQ />} />
      </Routes>
   );
 }

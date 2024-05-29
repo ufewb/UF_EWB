@@ -28,6 +28,7 @@ function App() {
             
             <li className="nav-bar-elements"><Link to="/contact-us">Contact Us</Link></li>
             <li className="nav-bar-elements"><Link to="/get-involved">Get Involved</Link></li>
+            <li className="nav-bar-elements"><Link to="/faq">FAQ</Link></li>
           </ul>
         </nav>
 
