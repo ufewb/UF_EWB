@@ -1,6 +1,7 @@
 import React from 'react';
 import './PeruProjects.css';
 import signImage from "../peru/perupics/VDCschoolsign.jpg"
+import docImage from "../peru/perupics/ewbdocumentation.jpg"
 
 function VirgenDelCarmenElementarySchool() {
     return (
@@ -19,9 +20,7 @@ function VirgenDelCarmenElementarySchool() {
                     <button className = "peruHomeButton"> Other Project </button>
                 </div>
                 <div className = "body_text">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus, eros ac aliquet rutrum, nibh mi ullamcorper felis, vel ultricies arcu nunc convallis lectus. Nunc at molestie turpis, vitae porttitor justo. Nam maximus, libero a porta mollis, eros orci ullamcorper sapien, vitae commodo diam massa non magna. Donec rhoncus diam sit amet odio pulvinar, a rhoncus neque gravida. Quisque euismod ultricies maximus. Fusce ultricies porta magna, vel congue quam eleifend vitae. Nulla facilisi. Sed aliquet elementum ligula, et mattis tortor sodales in.
-
-                        Vivamus posuere nec enim a iaculis. Donec non porta libero. Integer porta odio est, quis hendrerit mauris tincidunt sed. Morbi non dui nec erat pulvinar finibus. Maecenas viverra tincidunt sapien, vel condimentum libero tempor sed. Etiam tristique risus eget mi elementum, quis pharetra ex suscipit. Aliquam condimentum nunc a libero porttitor, congue gravida nulla iaculis. Nullam tempor ornare turpis, auctor scelerisque tellus accumsan vel. Fusce ac rutrum metus. In posuere metus sit amet ipsum sagittis tristique. Phasellus condimentum urna vel tincidunt pharetra. Morbi ultricies vulputate ante, et consequat orci porttitor id.</h3>
+                    <p>Our first project in our five-year partnership with the community of Maras, Peru involved bringing clean water to the community's elementary school, Virgen del Carmen. </p>
                 </div>
 
                 <div className = "text-w-img-div">
@@ -29,9 +28,15 @@ function VirgenDelCarmenElementarySchool() {
                         <img src= {signImage} alt="VDC school sign"/>
                     </div>
                     <div className = "text-next-to-img">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus, eros ac aliquet rutrum, nibh mi ullamcorper felis, vel ultricies arcu nunc convallis lectus. Nunc at molestie turpis, vitae porttitor justo. Nam maximus, libero a porta mollis, eros orci ullamcorper sapien, vitae commodo diam massa non magna. Donec rhoncus diam sit amet odio pulvinar, a rhoncus neque gravida. Quisque euismod ultricies maximus. Fusce ultricies porta magna, vel congue quam eleifend vitae. Nulla facilisi. Sed aliquet elementum ligula, et mattis tortor sodales in.
-
-                            Vivamus posuere nec enim a iaculis. Donec non porta libero. Integer porta odio est, quis hendrerit mauris tincidunt sed. Morbi non dui nec erat pulvinar finibus. Maecenas viverra tincidunt sapien, vel condimentum libero tempor sed. Etiam tristique risus eget mi elementum, quis pharetra ex suscipit. Aliquam condimentum nunc a libero porttitor, congue gravida nulla iaculis. Nullam tempor ornare turpis, auctor scelerisque tellus accumsan vel. Fusce ac rutrum metus. In posuere metus sit amet ipsum sagittis tristique. Phasellus condimentum urna vel tincidunt pharetra. Morbi ultricies vulputate ante, et consequat orci porttitor id</h3>
+                        <p>In the summer of 2018, we installed an antibacterial/antimicrobial basin for the community's elementary school, Virgen del Carmen, to store drinking water in. The new basin provides up to 1100 liters of clean drinking water for the school's children and faculty through the day when running water is not available. We also restored the water supply to one of the school's classroom buildings which previously had no running water. We did this by connecting an existing public water line to an existing underground storage tank located in the school's courtyard, and then using that underground tank to supply water to the classroom building. Our team trained the school staff how to properly maintain these projects, and these projects continue to function beautifully at this very moment — we call that a success!</p>
+                    </div>
+                </div>
+                <div className = "documentation-div">
+                    <div className = "documentation-title">
+                        <h4>Documentation</h4>
+                    </div>
+                    <div className = "documentation-img">
+                        <img src= {docImage} alt="VDC school sign"/>
                     </div>
                 </div>
             </div>
