@@ -2,9 +2,9 @@ import './App.css';
 import Paths from './Routes.js'; 
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Footer from './components/pages/Footer.js'; 
-import PeruHome from './components/pages/peru/PeruHome.js';
 import PeruRoutes from './components/pages/peru/PeruRoutes.js';
-import NepalRoutes from './components/pages/nepal/NepalRoutes.js'
+import NepalRoutes from './components/pages/nepal/NepalRoutes.js';
+import loginButton from './components/pictures/home/login-button.png';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function App() {
             <li className="nav-bar-elements"><Link to="/contact-us">Contact Us</Link></li>
             <li className="nav-bar-elements"><Link to="/get-involved">Get Involved</Link></li>
             <li className="nav-bar-elements"><Link to="/faq">FAQ</Link></li>
+            <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
           </ul>
         </nav>
 

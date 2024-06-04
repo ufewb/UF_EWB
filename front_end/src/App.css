@@ -35,7 +35,7 @@
 
 /* controlling text nav-bar apperance */
 .nav-bar-elements{
-  padding: 14px 40px;
+  padding: 14px 35px;
   text-align: center;
 }
 
@@ -92,6 +92,11 @@
   display: block;
 }
 
+.login-button {
+  max-width: 30px; /* Adjust this value to your desired maximum width */
+  max-height: 30px; /* Adjust this value to your desired maximum height */
+  margin-top: 10px;
+}
 
 /* footer */
 
