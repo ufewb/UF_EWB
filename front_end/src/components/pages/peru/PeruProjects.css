@@ -1,5 +1,5 @@
 .container{
-    padding: 0 110px;
+    padding: 0 150px;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
     background-position: center; /* Center the image */
     color: white; /* Text color for better visibility */
     font-size: 25px;
+    font-family: 'Times New Roman';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
@@ -41,7 +42,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px; /* Adds space between the button and other elements */
-    margin: 20px 40px;
+    margin: 20px 70px; /* 70px adds space between buttons themselves */
     padding: 10px 20px; /* Button padding */
     font-size: 20px; /* Font size */
     color: #085AA6; /* Text color */
@@ -50,6 +51,29 @@
     transition: background-color 0.3s; /* Smooth transition on hover */
     border-radius: 5px;
     border: 4px solid #085AA6
+}
+
+.documentationButton {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adds space between the button and other elements */
+    margin: 20px 70px; /* 70px adds space between buttons themselves */
+    padding: 10px 20px; /* Button padding */
+    font-size: 20px; /* Font size */
+    color: #085AA6; /* Text color */
+    background-color: white; /* Background color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    border-radius: 5px;
+    border: 4px solid #085AA6
+}
+
+.peruHomeButton:hover {
+    background-color: gray;
+}
+
+.documentationButton:hover{
+    background-color: gray;
 }
 
 .buttons{ /* buttons box */
@@ -75,17 +99,25 @@
 
 .text-w-img-div{
     display: flex;
-    /* align-items: center; */
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     margin: 20px 0; 
     }
 
-.sign-image {
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.IR-image {
     flex: 1;
-    margin-right: 20px;
+    /*margin-right: 20px; */
+    padding: 20px; /*makes the image smaller in the box*/
+    /*padding-bottom: 20px;*/
+    
 }
 
-.sign-image img{
+.IR-image img{
     max-width: 100%;
     /*max-height: 300px; */
     height: auto; 
@@ -95,12 +127,27 @@
     margin-right: 20px; /* was padding: 30px 20px 30px 150px; */
 }
 
+.VDC-image{
+    flex: 1;
+    padding: 20px;
+
+}
+
+.VDC-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+    max-height: 500px;
+}
+
 .text-next-to-img{
     flex: 2;
-    padding: 0 20px;/*30px 150px 30px 20px*/
+    padding: 0 20px;/*30px 150px 30px 20px */
     font-size: 2.3vh;
     font-family: sans-serif;
     line-height: 3.5vh;
+    width: 100%;
 }
 
 .documentation-div{
@@ -110,7 +157,14 @@
     align-items: center;
 }
 
-.documentation-title{
+.sub-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-title{
     text-align: justify;
    font-size: 35px;
    font-family: 'Times New Roman';
