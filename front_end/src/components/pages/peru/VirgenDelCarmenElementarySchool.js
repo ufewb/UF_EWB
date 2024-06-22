@@ -12,10 +12,8 @@ function VirgenDelCarmenElementarySchool() {
     return (
         <div>
             <div className='VDC-header'>
-                <div>
+                <div className = "VDC-title">
                     <h1>Virgen del Carmen Elementary School</h1>
-                </div>
-                <div>
                     <h2>2015-2018</h2>
                 </div>
             </div>
@@ -29,9 +27,10 @@ function VirgenDelCarmenElementarySchool() {
                     <p>Our first project in our five-year partnership with the community of Maras, Peru involved bringing clean water to the community's elementary school, Virgen del Carmen. </p>
                 </div>
                 <div className = "text-w-img-div">
-                    <div className = "img-div">
-                        <div className = "VDC-image">
-                            <img src= {signImage} alt="VDC school sign"/>
+                    <div className = "img-div-VDC">
+                        <img src= {signImage} alt="VDC school sign"/>
+                        <div className = "photo-caption">
+                            <p>this is a caption. write something idk</p>
                         </div>
                     </div>
                     <div className = "text-next-to-img">

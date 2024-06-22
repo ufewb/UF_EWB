@@ -1,16 +1,14 @@
 import React from 'react';
 import "./PeruProjects.css";
 import closeupImage from "../peru/perupics/IRcloseup.jpg"
-
+import timelineImage from "../peru/perupics/IRtimeline.jpg" 
 
 function IrrigationReservoir() {
     return (
         <div>
             <div className='IR-header'>
-                <div>
+                <div className = "IR-title">
                     <h1>Irrigation Reservoir</h1>
-                </div>
-                <div>
                     <h2>2018-2022</h2>
                 </div>
             </div>
@@ -25,8 +23,9 @@ function IrrigationReservoir() {
 
                 <div className = "text-w-img-div">
                     <div className = "img-div">
-                        <div className = "IR-image">
-                            <img src= {closeupImage} alt="Irrigation Resivoir"/>
+                        <img src= {closeupImage} alt="Irrigation Resivoir"/>
+                        <div className = "photo-caption">
+                            <p>this is a caption. write anything idk</p>
                         </div>
                     </div>
                     <div className = "text-next-to-img">
@@ -38,16 +37,35 @@ function IrrigationReservoir() {
                     <div className = "body_text">
                         <p>You can imagine our frustration when we heard this news and made this decision after completing one of our most successful fundraising years on record. Yet, mindful of all the support we have received for this project, we put our minds to it and developed a new plan. A better plan.</p>
                     </div>
-                    <div className = "sub-div">
-                        <div className = "sub-title">
-                            <h4>2019 Assessment Trip</h4>
-                        </div>
-                        <div className = "body_text">
+                </div>
+                    <div className = "text-w-img-div2"> 
+                        <div className = "text-next-to-img2">
+                            <div className = "sub-title">
+                                <h4>2019 Assessment Trip</h4>
+                            </div>
                             <p>We did travel to Maras Ayllu in August 2019 as an assessment trip. We examined potential sites and decided on a new location in the same region for an irrigation reservoir that will truly sustain the land and 65 families. We collected soil data, determined a cost estimate for this reservoir project, spoke with the farmers involved and met with municipality engineers and community leaders to finalize our plans.</p>
                             <p>We also visited Virgen del Carmen (our first implementation project in Peru) for a post-monitoring assessment. We are pleased to report the previous year's water tank project is functioning as intended and the school is very happy with the project.</p>
+                            <div className = "sub-title">
+                                <h4>New Reservoir Location</h4>
+                            </div>
+                            <p>Based on municipality records, 69 families own land that will be directly impacted by the proposed irrigation reservoir. With an average family size of three, there will be 207 direct beneficiaries. There already exists a rural reservoir at this location that connected to a spring water source. Currently, this reservoir is too small to contain all the water that the spring is providing, causing it to overflow and waste water in a community where water is already scarce. We chose this site in order to expand the reservoir to hold the flowing water. We plan to line it with a geomembrane so water isn't lost through seepage, making the preexisting reservoir more useful and functional for the farmers who depend on it.</p>
+                            <p>Throughout the 2019-2020 school year, we worked to design our new reservoir, and we planned our implementation for May 2020. In March 2020, EWB-USA suspended all travel due to the spread of COVID-19</p>
+                            <div className = "sub-title">
+                                <h4>Now</h4>
+                            </div>
+                            <p>We are hosting team meetings over Zoom to ensure our team stays connected and dedicated to our mission. We will continue to fundraise and raise awareness about the water crisis in Maras Ayllu, Peru. We are speaking with community officials to renew our partnership and continue working with them for the coming years and fulfill our mission to bring them solutions.</p>
+                        </div>
+                        <div className = "img-div2">
+                            <img src= {timelineImage} alt="timeline image"/>
+                            <div className = "photo-caption">
+                                <p>this is a caption. write anything idk</p>
+                            </div>
+                        </div>
+                        <div className = "body_text2">
+                            <p>Designing and implementing an irrigation reservoir expansion in Maras will be our most ambitious project to date.  We need to invest approximately $31,500 into this project in order to bring it to life and help bolster the economy, sustainability and livelihood of the community. </p>
+                            <p>We’re excited to make more progress and for what the future holds. To stay updated with our progress throughout this school year, sign up for our mailing list and follow us on social media!</p>
                         </div>
                     </div>
-                </div>
             </div>
             
         </div>
