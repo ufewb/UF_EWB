@@ -1,11 +1,11 @@
 .app {
-  font-family: "Carrois Gothic", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
+  background-color: #5A7F9E;
 }
 
 .nav-bar {
-  background-color: #085AA6;
+  background-color: #5A7F9E;
   overflow: visible;
   padding: 20px;
   display: flex;

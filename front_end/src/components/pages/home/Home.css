@@ -32,8 +32,14 @@
   height: auto;
 }
 
+.home-img-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .textBeg, .textSubtitle {
   position: absolute;
+  font-weight: 700;
   width: 100%;
   color: white;
   text-align: center;
@@ -41,7 +47,7 @@
 
 .textBeg {
   top: 11%;
-  font-size: 4em;
+  font-size: 5.5em;
 }
 
 .textSubtitle {
@@ -51,7 +57,7 @@
 
 /* teams */
 .teams {
-  background-color: #085AA6;
+  /* background-color: #f8f8f8; */
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -61,8 +67,9 @@
 .teamsHeading {
   text-align: center;
   color: white; /* Assuming you want white text for the heading */
-  margin-bottom: 5px; /* Space between heading and team items */
   width: 100%; /* Ensure heading spans full width */
+  font-size: 3.5em;
+  margin-bottom: 40px;
 }
 
 .team_indv {
@@ -70,30 +77,48 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
+  padding: 30px;
+  background-color: #364d5f;
+  border-radius: 6px;
 }
 
 .team_img {
-  width: 80%; /*relative width */
-  max-width: 400px;
-  height: auto;
+  width: 500px;  /* Set desired width */
+  height: 400px; /* Set desired height */
   object-fit: cover;
-  padding: 20px;
+  border-radius: 6px;
 }
 
-.team_button {
-  margin-top: 10px;
-  padding: 10px 100px;
-  background-color: white;
-  color: black;
-  border: none;
+.team_click {
+  font-weight: 500;
+  font-size: 2em;
+  color: #f8f8f8;
+  margin: 0px;
+  margin-top: 20px;
+} 
+
+.underline-hover {
+  display: inline-block;
+  position: relative;
   cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
+  text-decoration: none;
+  color: #f8f8f8;
 }
 
-.team_button:hover {
-  background-color: red;
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the height of the underline */
+  bottom: 0;
+  left: 0;
+  background-color: #f8f8f8; /* Adjust the color of the underline */
+  transition: width 0.3s ease-in-out; /* Adjust the duration of the animation */
+}
+
+.underline-hover:hover::after {
+  width: 100%;
 }
 
 /* sponsors css */
