@@ -35,8 +35,8 @@ function App() {
 
       {/* have to place all routes here!!! */}
         <Paths />
-        <PeruRoutes /> 
-        <NepalRoutes /> 
+        {/* <PeruRoutes /> 
+        <NepalRoutes />  */}
         <Footer />
       
       </div>

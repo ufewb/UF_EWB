@@ -1,27 +1,25 @@
 import React from 'react';
-import '../login/login.css';
-import loginBackground from '../../pictures/login/login-background.png';
+import './login.css';
 
-function Login () {
+function Login() {
     return (
-        <div>
-            <img src = {loginBackground} className = "loginBackground"></img>
-            <div className = "login">
+        <div className="container">
+            <div className="login">
                 <h1>Login</h1>
                 <form>
-                    <div class = "login-item">
-                        <label for="username">Username</label>
-                        <input type = "text" id = "username" name="username" required></input>
+                    <div className="login-item">
+                        <label htmlFor="username">Username</label>
+                        <input type="text" id="username" name="username" required />
                     </div>
-                    <div class = "login-item">
-                        <label for="password">Password</label>
-                        <input type = "text" id = "password" name="username" required></input>
+                    <div className="login-item">
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password" name="password" required />
                     </div>
-                    <div class = "login-item">
-                        <button type = "submit">Login</button>
+                    <div className="login-item">
+                        <button type="submit">Login</button>
                     </div>
-                    <div class = "login-item">
-                        <button type = "sign-up">Sign Up</button>
+                    <div className="login-item">
+                        <button type="button" className="sign-up">Sign Up</button>
                     </div>
                 </form>
             </div>
@@ -30,4 +28,3 @@ function Login () {
 }
 
 export default Login;
-

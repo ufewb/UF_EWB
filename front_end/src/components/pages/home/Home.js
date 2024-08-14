@@ -7,6 +7,7 @@ import peruTeams from '../../pictures/home/peru_teams.jpg';
 import ImagesComponent from './SponsorsHomePage';
 import videoEWB from "../../pictures/home/ewb_homepage.mp4";
 
+
 function Home() {
   return (
     <div className="home-container">
@@ -28,19 +29,17 @@ function Home() {
         <div className="team_indv">
           <img src={nepalTeams} alt="Nepal Team" className="team_img" />
           <p className = "team_click underline-hover"> nepal </p>
-          {/* <button className="team_button">Nepal</button> */}
         </div>
 
         <div className="team_indv">
           <img src={peruTeams} alt="Peru Team" className="team_img" />
           <p className = "team_click underline-hover"> peru </p>
-          {/* <button className="team_button">Peru</button> */}
         </div>
       </div>
 
       <div className = "sponsors-container"> 
         <h1 className = "teamsHeading">SPONSORS</h1>
-        <button>Become a Sponsor</button>
+        {/* <button className = "sponsor-button"> Become a Sponsor</button>  */}
         <ImagesComponent />
       </div>
 

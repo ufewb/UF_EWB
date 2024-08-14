@@ -1,17 +1,16 @@
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .team_img {
-    width: 100%; /* Full width on smaller screens */
-    max-width: none; /* Remove max-width constraint */
+    width: 100%; 
+    max-width: none; 
   }
 
   .team_button {
-    padding: 10px 15px; /* Adjust padding */
-    font-size: 14px; /* Adjust font size */
+    padding: 10px 15px; 
+    font-size: 14px; 
   }
 
   .teams {
-    flex-direction: column; /* Stack vertically on smaller screens */
+    flex-direction: column; 
     align-items: center;
   }
 }
@@ -19,7 +18,7 @@
 /* home image */
 .home-container {
   text-align: center;
-  position: relative; /* Ensure the container is relatively positioned */
+  position: relative; 
 }
 
 .home-title {
@@ -51,8 +50,8 @@
 }
 
 .textSubtitle {
-  top: 17%; /* Adjust as needed */
-  font-size: 2em; /* Adjust font size as needed */
+  top: 17%; 
+  font-size: 2em; 
 }
 
 /* teams */
@@ -61,15 +60,15 @@
   display: flex;
   justify-content: center;
   padding: 30px;
-  flex-wrap: wrap; /* wrapping on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .teamsHeading {
   text-align: center;
-  color: white; /* Assuming you want white text for the heading */
-  width: 100%; /* Ensure heading spans full width */
+  color: white; 
+  width: 100%; 
   font-size: 3.5em;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .team_indv {
@@ -84,8 +83,8 @@
 }
 
 .team_img {
-  width: 500px;  /* Set desired width */
-  height: 400px; /* Set desired height */
+  width: 500px;  
+  height: 400px; 
   object-fit: cover;
   border-radius: 6px;
 }
@@ -110,11 +109,11 @@
   content: '';
   position: absolute;
   width: 0;
-  height: 2px; /* Adjust the height of the underline */
+  height: 2px; 
   bottom: 0;
   left: 0;
-  background-color: #f8f8f8; /* Adjust the color of the underline */
-  transition: width 0.3s ease-in-out; /* Adjust the duration of the animation */
+  background-color: #f8f8f8; 
+  transition: width 0.3s ease-in-out; 
 }
 
 .underline-hover:hover::after {
@@ -122,17 +121,51 @@
 }
 
 /* sponsors css */
-.images-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-  gap: 20px; /* Increase the space between grid items */
-  padding: 20px; /* Add padding around the grid */
-  margin: 0 100px; /* Add margin to the sides of the grid */
+.sponsor-button {
+  margin-bottom: 30px;
+  margin-top: 0px;
+  border-radius: 6px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #ffffff; 
+  color: #085AA6; 
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
 }
 
-.images-container img {
-  width: 100%; /* Ensure images fill their grid cells */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure the images cover the area */
-  border: 5px solid white; /* Optional: Add a border for better visual separation */
+.sponsor-button:hover {
+  transform: scale(1.05); 
 }
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  margin: 0 50px;
+  margin-bottom: 5em;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+
+.images-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 0 auto; 
+}
+
+.images-container img:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
+}
+

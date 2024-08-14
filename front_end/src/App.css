@@ -5,7 +5,7 @@
 }
 
 .nav-bar {
-  background-color: #5A7F9E;
+  /* background-color: red; */
   overflow: visible;
   padding: 20px;
   display: flex;
@@ -59,7 +59,7 @@
   color: white;
   font-family: inherit;
   margin: 0;
-  background-color: #085AA6;
+  background-color: #5A7F9E;
 }
 
 /* dropdown content - auto: hidden */
