@@ -64,7 +64,7 @@ function PeruHome() {
                     <div className='buttons'>
                         <div>
                             <Link to="/peru/virgen-del-carmen-elementary-school" className='button'>
-                                Virgen Del Carmen
+                                Virgen del Carmen Elementary School
                             </Link>
                         </div>
                         <div>
@@ -121,7 +121,9 @@ function PeruHome() {
                     </div>
                 </div>
             </div>
+
         </div>
+        
     );
 }
 

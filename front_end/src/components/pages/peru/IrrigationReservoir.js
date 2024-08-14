@@ -2,6 +2,7 @@ import React from 'react';
 import "./PeruProjects.css";
 import closeupImage from "../peru/perupics/IRcloseup.jpg"
 import timelineImage from "../peru/perupics/IRtimeline.jpg" 
+import { Link } from 'react-router-dom';
 
 function IrrigationReservoir() {
     return (
@@ -14,7 +15,7 @@ function IrrigationReservoir() {
             </div>
             <div className = "container">
                 <div className= 'buttons'>
-                    <button className = "peruHomeButton">  Peru Home  </button>
+                    <Link to = "/peru" className = "peruHomeButton">Peru Home</Link>
                     <button className = "peruHomeButton"> Other Project </button>
                 </div>
                 <div className = "body_text">

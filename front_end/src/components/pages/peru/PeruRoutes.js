@@ -7,12 +7,12 @@ import IrrigationReservoir from './IrrigationReservoir';
 function PeruRoutes() {
     return (
         <Routes>
-            {/* route path = specifying url pattern */}
+            {/* Correct path definitions for nested routes */}
             <Route path="/" element={<PeruHome />} />
-            <Route path="/peru/virgen-del-carmen-elementary-school" element={<VirgenDelCarmenElementarySchool />} />
-            <Route path="/peru/irrigation-reservoir" element={<IrrigationReservoir />} />
+            <Route path="virgen-del-carmen-elementary-school" element={<VirgenDelCarmenElementarySchool />} />
+            <Route path="irrigation-reservoir" element={<IrrigationReservoir />} />
         </Routes>
     );
-};
+}
 
 export default PeruRoutes;

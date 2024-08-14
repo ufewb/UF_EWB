@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 import homeImage from '../../pictures/home/ewb_home.jpg';
 import nepalTeams from '../../pictures/home/nepal_teams.jpg';
@@ -33,7 +34,7 @@ function Home() {
 
         <div className="team_indv">
           <img src={peruTeams} alt="Peru Team" className="team_img" />
-          <p className = "team_click underline-hover"> peru </p>
+          <Link to="/peru" className="team_click underline-hover">peru</Link>
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import './App.css';
 import Paths from './Routes.js'; 
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/pages/Footer.js'; 
 import PeruRoutes from './components/pages/peru/PeruRoutes.js';
 import NepalRoutes from './components/pages/nepal/NepalRoutes.js';
@@ -28,16 +28,16 @@ function App() {
             
             <li className="nav-bar-elements"><Link to="/contact-us">contact us</Link></li>
             <li className="nav-bar-elements"><Link to="/get-involved">get involved</Link></li>
-            <li className="nav-bar-elements"><Link to="/faq">FAQ</Link></li>
             <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
           </ul>
         </nav>
 
-      {/* have to place all routes here!!! */}
-        <Paths />
-        {/* <PeruRoutes /> 
-        <NepalRoutes />  */}
-        <Footer />
+      <Routes>
+        {/* Main Routes */}
+        <Route path="/*" element={<Paths />} /> 
+      </Routes>
+
+      <Footer />
       
       </div>
     </Router>

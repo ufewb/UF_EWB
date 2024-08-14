@@ -2,6 +2,7 @@ import React from 'react';
 import './PeruProjects.css';
 import signImage from "../peru/perupics/VDCschoolsign.jpg"
 import docImage from "../peru/perupics/ewbdocumentation.jpg"
+import { Link } from 'react-router-dom';
 
 function VirgenDelCarmenElementarySchool() {
 
@@ -19,7 +20,7 @@ function VirgenDelCarmenElementarySchool() {
             </div>
             <div className = "container">
                 <div className= 'buttons'>
-                    <button className = "peruHomeButton">  Peru Home  </button>
+                    <Link to = "/peru" className = "peruHomeButton">Peru Home</Link>
                     <button className = "peruHomeButton"> Other Project </button>
                     <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button>
                 </div>
