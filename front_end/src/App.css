@@ -1,11 +1,11 @@
 .app {
-  font-family: "Carrois Gothic", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
+  background-color: #5A7F9E;
 }
 
 .nav-bar {
-  background-color: #085AA6;
+  /* background-color: red; */
   overflow: visible;
   padding: 20px;
   display: flex;
@@ -35,7 +35,7 @@
 
 /* controlling text nav-bar apperance */
 .nav-bar-elements{
-  padding: 14px 40px;
+  padding: 14px 35px;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@
   color: white;
   font-family: inherit;
   margin: 0;
-  background-color: #085AA6;
+  background-color: #5A7F9E;
 }
 
 /* dropdown content - auto: hidden */
@@ -92,6 +92,11 @@
   display: block;
 }
 
+.login-button {
+  max-width: 30px; /* Adjust this value to your desired maximum width */
+  max-height: 30px; /* Adjust this value to your desired maximum height */
+  margin-top: 10px;
+}
 
 /* footer */
 
