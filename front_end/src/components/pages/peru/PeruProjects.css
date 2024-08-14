@@ -1,0 +1,303 @@
+.container{
+    padding: 0 150px;
+    margin: 0 auto;
+}
+
+.VDC-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 35vh; /* Full viewport height to center vertically */
+    background-image: url('../peru/perupics/VDCfullpicture.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: center; /* Center the image */
+    color: white; /* Text color for better visibility */
+    font-size: 4vh;
+    font-family:'Times New Roman';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    line-height: 0.5;
+}
+
+.IR-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 35vh; /* Full viewport height to center vertically */
+    background-image: url('../peru/perupics/IRpic.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: center; /* Center the image */
+    color: white; /* Text color for better visibility */
+    font-size: 4vh;
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /*padding: 20px;*/
+    line-height: 0.5;
+}
+
+.IR-title{
+    align-items: center;
+    justify-content: center;
+    padding: 70px
+}
+
+.VDC-title{
+    align-items: center;
+    justify-content: center;
+    padding: 40px
+}
+
+.peruHomeButton { /*actual button */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adds space between the button and other elements */
+    margin: 20px 70px; /* 70px adds space between buttons themselves */
+    padding: 10px 20px; /* Button padding */
+    font-size: 2.5vh; /* Font size */
+    color: #085AA6; /* Text color */
+    background-color: white; /* Background color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    border-radius: 5px;
+    border: 4px solid #085AA6
+}
+
+.documentationButton {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adds space between the button and other elements */
+    margin: 20px 70px; /* 70px adds space between buttons themselves */
+    padding: 10px 20px; /* Button padding */
+    font-size: 2.5vh; /* Font size */
+    color: #085AA6; /* Text color */
+    background-color: white; /* Background color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    border-radius: 5px;
+    border: 4px solid #085AA6
+}
+
+.peruHomeButton:hover {
+    background-color: gray;
+}
+
+.documentationButton:hover{
+    background-color: gray;
+}
+
+.buttons{ /* buttons box */
+    align-items: center;
+   justify-content: center;
+   display: flex;
+   /* padding: 30px 30px;*/
+   margin: 20px 0;
+
+}
+
+.body_text{
+    /*align-items: center;*/
+   /*justify-content: center;
+   display: flex;
+   padding: 0px 150px;*/
+   /*padding: 0px 100px; /*changes white space on the sides */
+   text-align: left;
+   font-size: 2.3vh;
+   font-family: sans-serif;
+   line-height: 3.5vh;
+   padding: 0 20px;
+}
+
+.body_text2{ /* fixed the padding issue cus it was too far to the right*/
+    text-align: left;
+    font-size: 2.3vh;
+    font-family: sans-serif;
+    line-height: 3.5vh;
+
+}
+
+.text-w-img-div{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px; 
+    }
+
+.text-w-img-div2{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.text-next-to-img2{
+    flex: 2;
+    padding: 20px 20px 20px 0;/*30px 150px 30px 20px */
+    font-size: 2.3vh;
+    font-family: sans-serif;
+    line-height: 3.5vh;
+    width: 100%;
+}
+
+.img-div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.img-div2 img{
+    flex: 1;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.img-div img{
+    flex: 1;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-div-VDC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-div-VDC img{
+    flex: 1;
+    /* padding: 20px; */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+    max-height: 500px;
+}
+.photo-caption{
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 2vh;
+    font-family: sans-serif;
+}
+
+.photo-caption p{
+    margin: 0;
+}
+
+.text-next-to-img{
+    flex: 2;
+    padding: 0 20px;/*30px 150px 30px 20px */
+    font-size: 2.3vh;
+    font-family: sans-serif;
+    line-height: 3.5vh;
+    width: 100%;
+}
+
+.documentation-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sub-title{
+    text-align: justify;
+   font-size: 4.5vh;
+   line-height: 3vh;
+   font-family: 'Times New Roman';
+}
+
+.documentation-img{
+    margin-bottom: 50px; /*fixme*/
+}
+
+.documentation-img img{
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .VDC-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .IR-header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .peruHomeButton {
+        margin: 10px 0;
+    }
+
+    .text-w-img-div {
+        flex-direction: column;
+    }
+
+    .sign-image {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .VDC-header h1 {
+        font-size: 1.5em;
+    }
+
+    .VDC-header h2 {
+        font-size: 1em;
+    }
+
+    .IR-header h1{
+        font-size: 1.5em;
+    }
+
+    .IR-header h2{
+        font-size: 1em;
+    }
+
+    .body_text, .text-next-to-img {
+        padding: 10px;
+    }
+
+    .peruHomeButton {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
