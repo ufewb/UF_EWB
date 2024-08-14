@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./Peru.css";
 
 function PeruHome() {
     return (
         <div>
-            <h1>Peru</h1>
+            <div className='mainText'>
+                <h1>Peru</h1>
+                <div className='backgroundImg'>
+                    
+                </div>
+            </div>
             <div>
                 <Link to="/peru/virgen-del-carmen-elementary-school">Virgen del Carmen Elementary School</Link>
             </div>
