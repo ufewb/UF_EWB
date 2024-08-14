@@ -1,9 +1,9 @@
-.mainText {
+.header {
     align-items: center;
     display: flex;
     height: 35vh;
     width: 100%; 
-    /* background-image: url("peruIR.png"); */
+    background-image: url("pictures/peruIR.png");
     justify-content: center;
     font-size: 25px;
     color: white;
@@ -11,39 +11,250 @@
     flex-direction: column;
 }
 
-.backgroundImg{
-    background-image: url("peruIR.png");
+.container {
+    padding: 0 75px;
+    margin: 0 auto;
 }
 
-.buttonPeruHome{
-    margin-top: 10px;
-    padding: 10px 100px; 
-    background-color: #085AA6;
-    height: 5vh;
-    color: black;
+.buttonDonate {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    /* font-weight: bold; */
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.button {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #085AA6;
+    background-color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s;
+    border: 4px solid #085AA6;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px; 
-    margin: 20px 40px;
 }
 
-.buttonVDG{
-    margin-top: 10px;
-    padding: 10px 100px; 
-    background-color: #085AA6;
-    height: 5vh;
-    color: black;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px; 
-    margin: 20px 40px;
-}
-
-.buttons{
+.buttons {
     align-items: center;
     justify-content: center;
     display: flex;
-    padding: 30px 150px;
+    margin: 20px 0;
+}
+
+.currentTextandPic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+}
+
+.currentText {
+    flex: 1;
+    flex-basis: 80%;
+    font-size: 2.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.descriptiveText {
+    font-family: sans-serif;
+    font-size: 2.3vh;
+    line-height: 3.5vh;
+}
+
+.projectPic {
+    width: 100%;
+    height: 300px;
+    flex: 1;
+    flex-basis: 20%;
+    padding: 20px 40px 30px 40px;
+    border-radius: 45px;
+}
+
+.pastProjects {
+    padding: 30px 40px 30px 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vh;
+}
+
+.EWBPeruTeam {
+    flex-basis: 50%;
+    padding: 30px 40px 30px 40px;
+    font-size: 2.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.picContainer {
+    display: flex;
+    padding: 30px 40px 30px 40px;
+}
+
+.groupPic, .slider img {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 473px;
+    border-radius: 5px;
+    max-width: 500px;
+    display: block;
+    margin: 0 40px 0 40px;
+}
+
+.caption2 {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+.caption1 {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.captionSlider{
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -40px;
+}
+
+.slider {
+    flex: 1;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.slider .list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slider .item.active {
+    display: block;
+}
+
+.buttonsOfSlider {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    margin: -15px 40px 0 40px;
+}
+
+#prev, #next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: -80px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: -20px;
+}
+
+.dots li {
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots li.active {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttonDonate {
+        margin: 10px 0;
+    }
+
+    .button {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .currentTextandPic {
+        flex-direction: column;
+    }
+
+    .projectPic {
+        margin: 0 0 0 20px;
+    }
+
+    .picContainer {
+        flex-direction: column;
+    }
+
+    .groupPic, .slider img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .descriptiveText {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
 }
