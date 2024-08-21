@@ -1,4 +1,4 @@
-.header {
+.intro-box {
     align-items: center;
     display: flex;
     height: 35vh;
@@ -11,9 +11,8 @@
     flex-direction: column;
 }
 
-.container {
-    padding: 0 75px;
-    margin: 0 auto;
+.info-box {
+    padding: 0 75px 0 75px;
 }
 
 .buttonDonate {
@@ -26,55 +25,58 @@
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 25px;
-    /* font-weight: bold; */
     cursor: pointer;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
 }
 
-.button {
+.buttonLink {
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     margin: 20px 40px;
     padding: 10px 20px;
     font-size: 20px;
-    color: #085AA6;
-    background-color: white;
-    border: none;
+    color: white;
+    background-color: 085AA6;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 4px solid #085AA6;
+    border: 5px solid white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.buttons {
+.active, .buttonLink:hover {
+    background-color: #6daeeb;
+}
+
+.buttonsLink {
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 20px 0;
 }
 
-.currentTextandPic {
-    display: flex;
+.TextandPic {
+    display: flex; 
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     padding: 0px 50px 0px 50px;
 }
 
-.currentText {
+.whoWeAreText {
     flex: 1;
     flex-basis: 80%;
     font-size: 2.5vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
 }
 
 .descriptiveText {
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.3vh;
     line-height: 3.5vh;
+    color:white;
 }
 
 .projectPic {
@@ -86,10 +88,23 @@
     border-radius: 45px;
 }
 
+.caption1 {
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .pastProjects {
     padding: 30px 40px 30px 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5vh;
+    color: white;
 }
 
 .EWBPeruTeam {
@@ -97,22 +112,30 @@
     padding: 30px 40px 30px 40px;
     font-size: 2.5vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
-.picContainer {
+.twoPicContainer {
     display: flex;
     padding: 30px 40px 30px 40px;
 }
 
-.groupPic, .slider img {
-    align-items: center;
-    justify-content: center;
+.groupPic {
     width: 100%;
     height: 473px;
     border-radius: 5px;
     max-width: 500px;
     display: block;
     margin: 0 40px 0 40px;
+}
+
+.slider img {
+    width: 100%;
+    height: 473px;
+    display: block;
+    border-radius: 5px;
+    border-width: 20px;
 }
 
 .caption2 {
@@ -122,23 +145,11 @@
     text-align: center;
 }
 
-.caption1 {
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    text-align: center;
-    margin-left: 40px;
-    margin-right: -40px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
 .captionSlider{
     align-items: center;
     justify-content: center;
     font-size: 15px;
     text-align: center;
-    margin-left: 40px;
-    margin-right: -40px;
 }
 
 .slider {
@@ -171,18 +182,18 @@
     align-content: space-between;
     justify-content: space-between;
     transform: translateY(-50%);
-    margin: -15px 40px 0 40px;
+    margin: -15px 40px 0 0px;
 }
 
 #prev, #next {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    background-color: #fff5;
+    background-color: transparent;
     color: #fff;
     border: none;
     font-family: monospace;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: bolder;
     margin-top: -80px;
 }
 
@@ -190,8 +201,7 @@
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    margin-left: 30px;
-    margin-right: -20px;
+    margin: 0 40px 0 0;
 }
 
 .dots li {
@@ -200,13 +210,13 @@
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    background-color: grey;
+    background-color: #6daeeb;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .dots li.active {
-    background-color: black;
+    background-color: rgb(33, 67, 236);
 }
 
 @media (max-width: 768px) {

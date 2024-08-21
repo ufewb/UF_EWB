@@ -34,25 +34,27 @@ function PeruHome() {
 
     return (
         <div>
-            <div className='header'>
+            <div className='intro-box'>
                 <h1>Peru</h1>
-                <button className='buttonDonate'>   Donate  </button>
+                <button className='buttonDonate'>Donate</button>
             </div>
-            <div className='container'>
-                <div className='currentTextandPic'>
-                    <div className='currentText'>
+            <div className='info-box'>
+
+                <div className='TextandPic'>
+                    <div className='whoWeAreText'>
                         <h1>WHO WE ARE</h1>
                         <div className='descriptiveText'>
                             <p>Engineers Without Borders - USA allows engineers and aspiring engineering students around the country to use their education and skills in engineering design to provide humanitarian aid to communities around the world as well as gain professional educational opportunities for its members. The University of Florida's chapter of Engineers Without Borders currently has three teams: domestic team, Nepal team and Peru team.  We are the University of Florida's chapter of Engineers Without Borders Peru Team. We are currently in a five-year partnership with the community of Maras Ayllu, Peru. Maras Ayllu is a small town in rural Peru located near the base of Machu Picchu. The community is currently facing both water storage and water quality issues which we will be assessing throughout our partnership.</p>   
                         </div>            
                     </div>
                     <div>
-                        <img src={currentProjPic} alt='Current Project Picture' className='projectPic' />
+                        <img src={currentProjPic} alt='Random Project Picture' className='projectPic' />
                         <div className='caption1'>
                             Picture from Virgen del Carmen
                         </div> 
                     </div>        
                 </div>
+
                 <div className='pastProjects'>
                     <h1>WHAT WE DO</h1>
                     <div className='descriptiveText'>
@@ -61,24 +63,25 @@ function PeruHome() {
                         <p>Our partnership with Maras Ayllu guides every aspect of our project. The community members identify the issues in the area they would like to solve, and we work with them to help bring the solution to fruition. We travel to the community once a year to implement our projects and assess the community for future projects. During each assessment trip, our team collects quantitative data and conducts informal community surveys to better understand the community's needs. By designing projects that have strong community support and input and by teaching the appropriate community members how to maintain the implemented projects, we help to ensure that Maras Ayllu becomes increasingly self-sufficient and that the progress achieved is long-term.</p>
                         <p>Our past projects:</p>
                     </div>
-                    <div className='buttons'>
+                    <div className='buttonsLink'>
                         <div>
-                            <Link to="/peru/virgen-del-carmen-elementary-school" className='button'>
+                            <Link to="/peru/virgen-del-carmen-elementary-school" className='buttonLink'>
                                 Virgen del Carmen Elementary School
                             </Link>
                         </div>
                         <div>
-                            <Link to="/peru/irrigation-reservoir" className='button'>
+                            <Link to="/peru/irrigation-reservoir" className='buttonLink'>
                                 Irrigation Reservoir
                             </Link>
                         </div>
                     </div>
                 </div>
+
                 <div className='EWBPeruTeam'>
                     <div className='textEWBPERUTEAM'>
                         <h1>EWB PERU TEAM</h1>
                     </div>
-                    <div className='picContainer'>
+                    <div className='twoPicContainer'>
                         <div>
                             <div>
                                 <img src={peruTeamPic} alt='EWB Peru Team' className='groupPic' />
