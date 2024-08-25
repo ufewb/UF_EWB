@@ -1,4 +1,4 @@
-.intro-box{
+.intro-box1{
     background-image: url(peru/pictures/getInvolved.png);
     display: flex;
     height: 35vh;
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     /* padding: 0px 50px 0px 50px; */
-    color: white;
+    color: rgb(8, 20, 52);
 }
 
 .applicationPicImg{
@@ -47,64 +47,79 @@
 }
 
 .FAQ-box{
-    margin: 0px 50px 0px 75px;
-    color: white;
+    padding: 10px 20px 10px 55px; 
+    color: rgb(8, 20, 52);
 }
 
-.Q-Box{
-    width: 100%;
-    cursor: pointer;
+.faqtext {
+    padding: 50px 0 50px 0;
+    background-color: #e8e7dc;
+}
+
+.caption2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align:left; 
-    align-items: center;  
-    color: white;
+    font-size: 23px;
     font-weight: bold;
-    font-size: 20px;
-    text-shadow: 3px 3px 5px rgb(1, 53, 149);
-    line-height: 50px;
-    padding: 0px 50px 0px 50px;
-    border-color: #04366462;
-    border-radius: 10px;
-    border-style: solid;
-    width: 900px;
-    margin: 0 -50px;
-    background-color: #0d467cb1;
-    transition: background-color 0.3s;
-    box-sizing: border-box;
+    margin: 0 -70px 0 -110px;
+    border-radius: 50px;
+}
+
+
+.Q-Box{
+    text-align:left;
+    font-size: 16px;
+    color: rgb(8, 20, 52);
+    font-weight: bold;
+    width: 150%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: #e8e7dc;
+    padding: 30px 30px 30px 30px;
+    margin-left: -10vw;
+    margin-bottom: -35px;
+    border:none;
+
 }
 
 .active, .Q-Box:hover{
-    background-color: #0d467c;
+    background-color: rgb(8, 20, 52);
+    color: #e8e7dc;
 }
 
 .answer{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0 20px 10px 55px;
-    background-color:#5A7F9E;
+    padding: 0 20px;
+    margin: 0;
+    background-color: #fffef2;
+    color: rgb(8, 20, 52);
     max-height: 0;
     overflow: hidden;
-    /* transition: max-height 1.4s ease; */
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    opacity: 0;
+
 }
 
 .answer.active {
-    /* max-height: 1000px;
-    animation: fade 1s ease-in-out; */
-    padding: 10px 20px 10px 55px;
     max-height: 500px;
-    background-color: #5A7F9E;
+    padding: 50px 40px; 
+    margin: 50px 0 20px 0;
+    background-color: #fffef2;
+    color: rgb(8, 20, 52);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+
+
 }
 
-@keyframes fade{
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+.Q-Box:hover, .active {
+    background-color: rgb(8, 20, 52);
+    color: #e8e7dc;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.margin {
+    margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {

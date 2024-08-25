@@ -12,7 +12,7 @@ function GetInvolved() {
 
     return (
         <div>
-            <div className='intro-box'>
+            <div className='intro-box1'>
                 <div className='intro-writing'>
                     <h1>Get Involved</h1>
                 </div>
@@ -33,9 +33,10 @@ function GetInvolved() {
                 </div>
 
                 <div className='FAQ-box'>
-                    <div className='caption'>
-                        <h1>FAQ</h1>
+                    <div className='caption2'>
+                        <h1 className = "faqtext"> FAQs</h1>
                     </div>
+                
 
                     {[...Array(5)].map((_, index) => (
                         <div className='faq' key={index}>
@@ -48,6 +49,7 @@ function GetInvolved() {
                         </div>
                     ))}
                 </div>
+                <div className='margin'></div>
 
             </div>
 
