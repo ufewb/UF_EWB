@@ -1,7 +1,7 @@
 .app {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  background-color: #5A7F9E;
+  background-color: #fffef2;
 }
 
 .nav-bar {
@@ -30,7 +30,7 @@
   padding: 0;
   display: flex;
   justify-content: right;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* controlling text nav-bar apperance */
@@ -41,7 +41,8 @@
 
 /* when an element on nav-bar clicked - these features appear */
 .nav-bar-elements a {
-  color: white;
+  color: #075ba7;
+  font-weight: 900;
   text-decoration: none;
   display: block;
 }

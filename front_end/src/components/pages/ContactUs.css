@@ -9,18 +9,14 @@
     margin-left: 5%;
 }
 .contactUsContainer {
-    /* color: #5A7F9E; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #78addb;
     font-family: Georgia, serif;
-    border: 5px solid #368de5; 
-    background-color: #91B6D5;
-    /* background-color: #e9e9e9; */
+    border: 5px solid #6692b7; 
+    background-color: #70A1C9;
     font-family: 'Futura';
-    border: 5px solid #658baa; 
-    border: 5px solid #668fb1;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
     margin: 20px;
     padding: 2vh;
@@ -32,8 +28,6 @@
 
 .contactInfo {
     max-width: 60%;
-
-    /* color: #ffffff; */
 }
 
 .contactInfo h2 {

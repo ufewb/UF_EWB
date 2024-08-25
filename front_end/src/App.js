@@ -14,11 +14,11 @@ function App() {
           <img src="https://mae.ufl.edu/wp-content/uploads/2022/02/Screenshot-2022-02-23-151343.png" className = "logo"></img>
 
           <ul className = "all_text_nav">
-            <li className="nav-bar-elements"><Link to="/">home</Link></li>
+            <li className="nav-bar-elements"><Link to="/">HOME</Link></li>
             
             {/* dropdown*/}
             <div className="dropdown nav-bar-elements">
-              <button className="dropbtn">teams <i className=" fa fa-caret-down"></i></button>
+              <button className="dropbtn">TEAMS <i className=" fa fa-caret-down"></i></button>
               {/* dropdown content */}
               <div className="dropdown-content">
                 <li className="nav-bar-elements"><Link to="/nepal">nepal</Link></li>
@@ -26,8 +26,8 @@ function App() {
               </div>
             </div>
             
-            <li className="nav-bar-elements"><Link to="/contact-us">contact us</Link></li>
-            <li className="nav-bar-elements"><Link to="/get-involved">get involved</Link></li>
+            <li className="nav-bar-elements"><Link to="/contact-us">CONTACT US</Link></li>
+            <li className="nav-bar-elements"><Link to="/get-involved">GET INVOLVED</Link></li>
             <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
           </ul>
         </nav>
