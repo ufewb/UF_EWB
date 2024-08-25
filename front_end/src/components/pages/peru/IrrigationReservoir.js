@@ -67,6 +67,25 @@ function IrrigationReservoir() {
                             <p>We’re excited to make more progress and for what the future holds. To stay updated with our progress throughout this school year, sign up for our mailing list and follow us on social media!</p>
                         </div>
                     </div>
+                    <div className = "documentation-div">
+                        <div className = "sub-title">
+                            <h4>Documentation</h4>
+                        </div>
+                        <div className = "documentation-grid">
+                            <div className = "IR-documentation-grid-boxes">
+
+                            </div>
+                            <div className = "IR-documentation-grid-boxes">
+                                
+                            </div>
+                            <div className = "IR-documentation-grid-boxes">
+                                
+                            </div>
+                            <div className = "IR-documentation-grid-boxes">
+                                
+                            </div>
+                        </div>
+                    </div>
             </div>
             
         </div>

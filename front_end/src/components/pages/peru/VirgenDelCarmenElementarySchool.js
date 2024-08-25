@@ -2,6 +2,7 @@ import React from 'react';
 import './PeruProjects.css';
 import signImage from "../peru/perupics/VDCschoolsign.jpg"
 import docImage from "../peru/perupics/ewbdocumentation.jpg"
+import ImpDocImage from "../peru/perupics/VDCimplementationDoc.jpg"
 import { Link } from 'react-router-dom';
 
 function VirgenDelCarmenElementarySchool() {
@@ -42,9 +43,30 @@ function VirgenDelCarmenElementarySchool() {
                     <div className = "sub-title">
                         <h4>Documentation</h4>
                     </div>
-                    <div className = "documentation-img">
+                    <div className = "documentation-grid"> 
+                        <div className = "VDC-documentation-grid-boxes">
+                            <div className = "documentation-img">
+                                <img src= {docImage} alt="VDC documentation"/>
+                            </div>
+                            <div className = "documentation-caption">
+                                <p>Project Budget and Expenses</p>
+                            </div>
+                        </div>
+                        <div className = "documentation-grid-boxes">
+                            <div className = "implementation-img">
+                                <img src= {ImpDocImage} alt="VDC implementation"/>
+                            </div>
+                            <div className = "documentation-caption">
+                                <p>Post Implementation/Post Assesment Report</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className = "documentation-img">
                         <img src= {docImage} alt="VDC documentation"/>
                     </div>
+                    <div className = "implementation-img">
+                        <img src= {ImpDocImage} alt="VDC implementation"/>
+                    </div> */}
                 </div>
             </div>
             
