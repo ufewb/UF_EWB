@@ -16,13 +16,12 @@
     background-size: 100%; /* Cover the entire area of the div */
     background-position: center bottom; /* Center the image */
     color: white; /* Text color for better visibility */
-    font-size: 4vh;
-    font-family:'Times New Roman';
+    font-size: 25px;
+    font-family:'Roboto';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 20px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /*line-height: 0.5;*/
 }
 
 .IR-header{
@@ -33,17 +32,16 @@
     text-align: center;
     height: 35vh; /* Full viewport height to center vertically */
     width: auto; 
-    background-image: url('../peru/perupics/IRpic.jpg'); /* Replace with your image path */
+    background-image: url('../peru/perupics/NewIRHeader.jpg'); /* Replace with your image path */
     background-size: 100%; /* Cover the entire area of the div */
-    background-position: center top; /* Center the image */
+    background-position: center bottom; /* Center the image */
     color: white; /* Text color for better visibility */
-    font-size: 4vh;
-    font-family: 'Times New Roman';
+    font-size: 25px;
+    font-family: 'Roboto';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    /*padding: 20px;*/
-    /*line-height: 0.5;*/
+    padding: 20px;
 }
 
 .IR-title{
