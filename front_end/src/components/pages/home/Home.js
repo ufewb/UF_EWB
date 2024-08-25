@@ -20,12 +20,14 @@ function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <h1 className = "textBeg"> ENGINEERING WITHOUT BORDERS </h1>
+        <h1 className = "textBeg"> ENGINEERING <br></br> WITHOUT BORDERS </h1>
         <h1 className = "textBeg textSubtitle"> The University of Florida Chapter </h1>
       </div>
       
       <div className="teams">
         <h1 className = "teamsHeading">OUR TEAMS</h1>
+        <p>🇵🇪 🇳🇵</p>
+
 
         <div className="team_indv">
           <img src={nepalTeams} alt="Nepal Team" className="team_img" />

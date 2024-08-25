@@ -50,7 +50,7 @@
 }
 
 .textSubtitle {
-  top: 17%; 
+  top: 24%; 
   font-size: 2em; 
 }
 
@@ -65,9 +65,10 @@
 
 .teamsHeading {
   text-align: center;
-  color: white; 
+  letter-spacing: 0.02em;
+  color: #075ba7; 
   width: 100%; 
-  font-size: 3.5em;
+  font-size: 4.5em;
   margin-bottom: 30px;
 }
 
@@ -78,13 +79,13 @@
   text-align: center;
   margin: 20px;
   padding: 30px;
-  background-color: #364d5f;
+  background-color: #075ba7;
   border-radius: 6px;
 }
 
 .team_img {
-  width: 500px;  
-  height: 400px; 
+  width: 450px;  
+  height: 350px; 
   object-fit: cover;
   border-radius: 6px;
 }
