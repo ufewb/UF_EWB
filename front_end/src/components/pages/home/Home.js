@@ -26,8 +26,6 @@ function Home() {
       
       <div className="teams">
         <h1 className = "teamsHeading">OUR TEAMS</h1>
-        <p>🇵🇪 🇳🇵</p>
-
 
         <div className="team_indv">
           <img src={nepalTeams} alt="Nepal Team" className="team_img" />
@@ -42,7 +40,6 @@ function Home() {
 
       <div className = "sponsors-container"> 
         <h1 className = "teamsHeading">SPONSORS</h1>
-        {/* <button className = "sponsor-button"> Become a Sponsor</button>  */}
         <ImagesComponent />
       </div>
 

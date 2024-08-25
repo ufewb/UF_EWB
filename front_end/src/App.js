@@ -21,12 +21,12 @@ function App() {
               <button className="dropbtn">TEAMS <i className=" fa fa-caret-down"></i></button>
               {/* dropdown content */}
               <div className="dropdown-content">
-                <li className="nav-bar-elements"><Link to="/nepal">nepal</Link></li>
-                <li className="nav-bar-elements"><Link to="/peru">peru</Link></li>
+                <li className="nav-bar-elements"><Link to="/nepal">NEPAL</Link></li>
+                <li className="nav-bar-elements"><Link to="/peru">PERU</Link></li>
               </div>
             </div>
             
-            <li className="nav-bar-elements"><Link to="/contact-us">CONTACT US</Link></li>
+            <li className="nav-bar-elements"><Link to="/contact-us">E-BOARD</Link></li>
             <li className="nav-bar-elements"><Link to="/get-involved">GET INVOLVED</Link></li>
             <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
           </ul>

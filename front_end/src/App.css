@@ -57,10 +57,11 @@
 .dropbtn {
   border: none;
   outline: none;
-  color: white;
+  color: #075ba7;
   font-family: inherit;
   margin: 0;
-  background-color: #5A7F9E;
+  font-weight: 900;
+  background-color: #fffef2;
 }
 
 /* dropdown content - auto: hidden */
@@ -70,7 +71,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10; 
   border: 1px solid #ccc;
-  background-color: black;
+  background-color: #fffef2;
 
   /* alignment of items within dropdown */
   min-width: 110px;
