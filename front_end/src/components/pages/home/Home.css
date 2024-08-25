@@ -80,12 +80,14 @@
   margin: 20px;
   padding: 30px;
   background-color: #075ba7;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   border-radius: 6px;
 }
 
 .team_img {
   width: 450px;  
   height: 350px; 
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
   object-fit: cover;
   border-radius: 6px;
 }
@@ -122,51 +124,69 @@
 }
 
 /* sponsors css */
-.sponsor-button {
-  margin-bottom: 30px;
-  margin-top: 0px;
-  border-radius: 6px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #ffffff; 
-  color: #085AA6; 
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease; 
+.sponsors-title {
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #075ba7; 
+  width: 100%; 
+  font-size: 4.5em;
+  margin-top: 50px;
 }
 
-.sponsor-button:hover {
-  transform: scale(1.05); 
+/* Sponsors container */
+.sponsors-container {
+  text-align: center;
+  margin: 50px auto;
+  width: 72%; /* Adjust to fit the design */
+  padding: 20px;
+  background-color: #075ba7; /* Center box is now white */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Sponsors images container */
 .images-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  margin: 0 50px;
-  margin-bottom: 5em;
-  background-color: #ffffff;
-  border-radius: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: white; 
+  border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
+  justify-items: center; 
+  align-items: center;   
 }
 
-
+/* Sponsors images */
 .images-container img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .images-container img:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .images-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .images-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 6px;
+  }
+}
