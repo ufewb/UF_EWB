@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 
@@ -9,40 +9,57 @@ import ImagesComponent from './SponsorsHomePage';
 import videoEWB from "../../pictures/home/ewb_homepage.mp4";
 
 function Home() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const fadeInElements = document.querySelectorAll('.fade-in');
+
+      fadeInElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top <= windowHeight - 50) { // Adjust this value to fine-tune when the effect triggers
+          element.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="home-container">
       <div className="home-img-container">
-        {/* <img src={homeImage} alt="UF EWB Logo" className="homeMainImage" /> */}
         <div className="video-container">
           <video width="100%" height="auto" autoPlay loop muted>
             <source src={videoEWB} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <h1 className="textBeg"> ENGINEERING <br /> WITHOUT BORDERS </h1>
-        <h1 className="textBeg textSubtitle"> The University of Florida Chapter </h1>
+        <h1 className="textBeg fade-in">ENGINEERING <br /> WITHOUT BORDERS</h1>
+        <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
       </div>
       
       <div className="teams">
-        <h1 className="teamsHeading">OUR TEAMS</h1>
+        <h1 className="teamsHeading fade-in">OUR TEAMS</h1>
 
         <div className="team_indv">
-          <img src={nepalTeams} alt="Nepal Team" className="team_img" />
-          <p className="team_click underline-hover">nepal</p>
+          <img src={nepalTeams} alt="Nepal Team" className="team_img fade-in" />
+          <p className="team_click underline-hover fade-in">nepal</p>
         </div>
 
         <div className="team_indv">
-          <img src={peruTeams} alt="Peru Team" className="team_img" />
-          <Link to="/peru" className="team_click underline-hover">peru</Link>
+          <img src={peruTeams} alt="Peru Team" className="team_img fade-in" />
+          <Link to="/peru" className="team_click underline-hover fade-in">peru</Link>
         </div>
       </div>
 
-      <h1 className="teamsHeading sponsors-title">SPONSORS</h1>  {/* Sponsors text moved outside of the box */}
+      <h1 className="teamsHeading sponsors-title fade-in">SPONSORS</h1>
 
-      <div className="sponsors-container"> 
+      <div className="sponsors-container fade-in"> 
         <ImagesComponent />
       </div>
-
     </div>
   );
 }
