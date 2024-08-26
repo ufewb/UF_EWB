@@ -4,8 +4,8 @@ import "./Peru.css";
 
 import currentProjPic from "./pictures/PeruIR3.png";
 import peruTeamPic from "./pictures/peruTeamPic.png";
-import MP1 from "./pictures/MP1.png";
-import MP2 from "./pictures/MP2.png";
+import IMG1 from "./pictures/IMG1.png";
+import IMG2 from "./pictures/IMG2.png";
 import MP3 from "./pictures/MP3.png";
 import MP4 from "./pictures/MP4.png";
 import MP5 from "./pictures/MP5.png";
@@ -13,14 +13,14 @@ import MP6 from "./pictures/MP6.png";
 
 function PeruHome() {
     const [active, setActive] = useState(0);
-    const items = [MP1, MP2, MP3, MP4, MP5, MP6];
+    const items = [IMG1, IMG2, MP3, MP4, MP5, MP6];
     const captions = [
-        { name: "John Doe", year: "Senior", email: "john.doe@ewb.uf.edu" },
-        { name: "Jane Smith", year: "Junior", email: "jane.smith@ewb.uf.edu" },
-        { name: "Alice Johnson", year: "Sophomore", email: "alice.johnson@ewb.uf.edu" },
-        { name: "Bob Brown", year: "Freshman", email: "bob.brown@ewb.uf.edu" },
-        { name: "Charlie White", year: "Senior", email: "charlie.white@ewb.uf.edu" },
-        { name: "Dana Lee", year: "Junior", email: "dana.lee@ewb.uf.edu" },
+        { info: "random info1 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "random info2 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "random info3 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "random info4 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "random info5 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "random info6 ahsfhjks hajdfhakj hajfhak afjhka" },
     ];
     const lengthItems = items.length;
 
@@ -81,16 +81,16 @@ function PeruHome() {
                     <div className='textEWBPERUTEAM'>
                         <h1>EWB PERU TEAM</h1>
                     </div>
-                    <div className='twoPicContainer'>
-                        <div>
-                            <div>
+                    <div className='SliderContainer'>
+                        {/* <div> */}
+                            {/* <div>
                                 <img src={peruTeamPic} alt='EWB Peru Team' className='groupPic' />
-                            </div>
-                            <div className='caption2'>
+                            </div> */}
+                            {/* <div className='caption2'>
                                 <p>Picture of the team</p>
                                 <p>Any extra text...</p>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
                         <div className='slider'>
                             <div className='list'>
                                 {items.map((item, index) => (
@@ -103,9 +103,9 @@ function PeruHome() {
                                 ))}
                             </div>
                             <div className='captionSlider'>
-                                <p>{captions[active].name}</p>
-                                <p>{captions[active].year}</p>
-                                <p>{captions[active].email}</p>
+                                <p>{captions[active].info}</p>
+                                {/* <p>{captions[active].year}</p>
+                                <p>{captions[active].email}</p> */}
                             </div>
                             <div className='buttonsOfSlider'>
                                 <button id='prev' onClick={prevSlide}> {'<'} </button>

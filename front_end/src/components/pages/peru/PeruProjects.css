@@ -252,15 +252,54 @@
    color: rgb(8, 20, 52);
 }
 
-.documentation-img{
-    margin-bottom: 50px; /*fixme*/
+.documentation-img, .implementation-img {
+    padding: 20px;
 }
-
 .documentation-img img{
     max-width: 100%;
     height: auto; 
     display: block;
     border-radius: 5px;
+}
+
+.implementation-img img{
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 5px;
+}
+
+.documentation-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+.VDC-documentation-grid-boxes {
+    background-color:#075ba7;
+    margin: 20px;
+    height: 50vh;
+    width: 60vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.IR-documentation-grid-boxes {
+    background-color:#075ba7;
+    margin: 20px;
+    height: 50vh;
+    width: 30vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.documentation-caption {
+    justify-content: center;
+    text-align: center;
+    font-size: 2vh;
+    font-family: sans-serif;
+    color: white;
 }
 
 
