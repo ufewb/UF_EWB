@@ -127,16 +127,20 @@
 .SliderContainer {
     display: flex;
     padding: 30px 40px 30px 40px;
+    justify-content: center;
+}
+
+.emptyContainer{
+    padding: 20px;
+    background-color: #075ba7;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .slider img {
     width: 1000px;
     height: 473px;
     display: flex;
-    display: flexbox;
-    /* display: block;
-    border-radius: 5px;
-    border-width: 20px;*/
 } 
 
 .captionSlider{
@@ -144,6 +148,7 @@
     justify-content: center;
     font-size: 15px;
     text-align: center;
+    color: #f8f8f8;
 }
 
 .slider {
@@ -188,7 +193,6 @@
     font-family: monospace;
     font-size: 25px;
     font-weight: bolder;
-    margin-top: -80px;
 }
 
 .dots {
