@@ -14,31 +14,37 @@ const sponsorsHomePage = [
     id: 1,
     src: allWeatherContractorLogo,
     alt: "All Weather Contractor Logo",
+    link: "https://allweathercontractors.com/"
   },
   {
     id: 2,
     src: floridaSepticIncLogo,
     alt: "Florida Septic Inc Logo",
+    link: "https://flsepticinc.com/"
   },
   {
     id: 3,
     src: prattAndWhitneyLogo,
     alt: "Pratt & Whitney Logo",
+    link: "https://www.prattwhitney.com/"
   },
   {
     id: 4,
     src: rafetelisLogo,
     alt: "Rafetelis Logo",
+    link: "https://www.raftelis.com/"
   },
   {
     id: 5,
     src: schwabCharitableLogo,
     alt: "Schwab Charitable Logo",
+    link: "https://www.schwabcharitable.org/"
   },
   {
     id: 6,
     src: studyEdgeLogo,
     alt: "Study Edge Logo",
+    link: "https://studyedge.com/landing/"
   },
 ];
 
@@ -46,7 +52,9 @@ function ImagesComponent() {
   return (
     <div className="images-container">
       {sponsorsHomePage.map((image) => (
+        <a href = {image.link} target = "_blank">
         <img key={image.id} src={image.src} alt={image.alt} />
+        </a>
       ))}
     </div>
   );
