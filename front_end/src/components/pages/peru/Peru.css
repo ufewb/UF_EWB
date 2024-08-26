@@ -124,35 +124,20 @@
     font-weight: bold;
 }
 
-.twoPicContainer {
+.SliderContainer {
     display: flex;
     padding: 30px 40px 30px 40px;
 }
 
-.groupPic {
-    width: 100%;
-    height: 473px;
-    border-radius: 5px;
-    max-width: 500px;
-    display: block;
-    margin: 10px 40px 0 40px;
-}
-
 .slider img {
-    width: 100%;
+    width: 1000px;
     height: 473px;
-    display: block;
+    display: flex;
+    display: flexbox;
+    /* display: block;
     border-radius: 5px;
-    border-width: 20px;
-}
-
-.caption2 {
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    text-align: center;
-    background-color: #fffef2;
-}
+    border-width: 20px;*/
+} 
 
 .captionSlider{
     align-items: center;
@@ -163,7 +148,7 @@
 
 .slider {
     flex: 1;
-    max-width: 500px;
+    max-width: 1000px;
     margin: auto;
     position: relative;
 }
