@@ -26,7 +26,7 @@ function App() {
               </div>
             </div>
             
-            <li className="nav-bar-elements"><Link to="/contact-us">E-BOARD</Link></li>
+            <li className="nav-bar-elements"><Link to="/eboard">E-BOARD</Link></li>
             <li className="nav-bar-elements"><Link to="/get-involved">GET INVOLVED</Link></li>
             <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
           </ul>

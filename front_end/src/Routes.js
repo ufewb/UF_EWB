@@ -8,6 +8,7 @@ import FAQ from './components/pages/faq/FAQ';
 import Login from './components/pages/login/Login';
 import PeruRoutes from './components/pages/peru/PeruRoutes';
 import NepalRoutes from './components/pages/nepal/NepalRoutes';
+import EBoard from './components/pages/EBoard';
 
 function Paths() {
   return (
@@ -18,6 +19,7 @@ function Paths() {
       <Route path="/peru/*" element={<PeruRoutes />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/eboard" element={<EBoard />} />
     </Routes>
   );
 }
