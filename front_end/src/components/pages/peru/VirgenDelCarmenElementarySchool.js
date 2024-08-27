@@ -52,7 +52,7 @@ function VirgenDelCarmenElementarySchool() {
                                 <p>Project Budget and Expenses</p>
                             </div>
                         </div>
-                        <div className = "documentation-grid-boxes">
+                        <div className = "VDC-documentation-grid-boxes">
                             <div className = "implementation-img">
                                 <img src= {ImpDocImage} alt="VDC implementation"/>
                             </div>
@@ -61,12 +61,9 @@ function VirgenDelCarmenElementarySchool() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className = "documentation-img">
-                        <img src= {docImage} alt="VDC documentation"/>
-                    </div>
-                    <div className = "implementation-img">
-                        <img src= {ImpDocImage} alt="VDC implementation"/>
-                    </div> */}
+                </div>
+                <div className = "bottom-margin">
+                    
                 </div>
             </div>
             
