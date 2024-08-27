@@ -1,7 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/pages/home/Home'; 
-import ContactUs from './components/pages/ContactUs';
 import GetInvolved from './components/pages/GetInvolved';
 import NepalHome from './components/pages/nepal/NepalHome';
 import PeruHome from './components/pages/peru/PeruHome';
@@ -14,7 +13,6 @@ function Paths() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/contact-us" element={<ContactUs />} />
       <Route path="/get-involved" element={<GetInvolved />} />
       <Route path="/nepal/*" element={<NepalRoutes />} />
       <Route path="/peru/*" element={<PeruRoutes />} />
