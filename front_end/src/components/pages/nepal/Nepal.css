@@ -1,0 +1,271 @@
+.intro-box {
+    background-image: url("//.peru/pictures/peruIR.png");
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 35vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-box {
+    padding: 0 75px 0 75px;
+}
+
+.buttonDonate {
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    font-size: 25px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.active, .buttonDonate:hover{
+    background-color: rgb(8, 20, 52);
+}
+
+.buttonLink {
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(8, 20, 52);
+    background-color: 085AA6;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 5px solid rgb(8, 20, 52);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.active, .buttonLink:hover {
+    background-color: rgb(8, 20, 52);
+    color: white;
+}
+
+.buttonsLink {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 20px 0;
+}
+
+.TextandPic {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 0px 50px 0px 50px;
+}
+
+.whoWeAreText {
+    flex: 1;
+    flex-basis: 80%;
+    font-size: 2.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(8, 20, 52);
+}
+
+.descriptiveText {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.3vh;
+    line-height: 3.5vh;
+    color:rgb(8, 20, 52);
+}
+
+.projectPic {
+    width: 100%;
+    height: 300px;
+    flex: 1;
+    flex-basis: 20%;
+    padding: 20px 40px 30px 40px;
+    border-radius: 45px;
+}
+
+.caption1 {
+    color: rgb(8, 20, 52);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: -40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pastProjects {
+    padding: 30px 40px 50px 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vh;
+    color: rgb(8, 20, 52);
+}
+
+.Gallery {
+    flex-basis: 50%;
+    padding: 30px 40px 30px 40px;
+    font-size: 2.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(8, 20, 52);
+    text-align: center;
+    font-weight: bold;
+    background-color: #e6e4d2;
+    border-radius: 8px;
+}
+
+.SliderContainer {
+    display: flex;
+    padding: 30px 40px 30px 40px;
+    justify-content: center;
+}
+
+.emptyContainer{
+    padding: 20px;
+    background-color: #075ba7;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider img {
+    width: 1000px;
+    height: 473px;
+    display: flex;
+} 
+
+.captionSlider{
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.slider {
+    flex: 1;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.slider .list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slider .item.active {
+    display: block;
+}
+
+.buttonsOfSlider {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    margin: -15px 40px 0 0px;
+}
+
+#prev, #next {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin: 0 40px 0 0;
+}
+
+.dots li {
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #6daeeb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dots li.active {
+    background-color: rgb(33, 67, 236);
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttonDonate {
+        margin: 10px 0;
+    }
+
+    .button {
+        margin: 10px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .currentTextandPic {
+        flex-direction: column;
+    }
+
+    .projectPic {
+        margin: 0 0 0 20px;
+    }
+
+    .picContainer {
+        flex-direction: column;
+    }
+
+    .groupPic, .slider img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .descriptiveText {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
