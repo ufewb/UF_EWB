@@ -2,9 +2,14 @@ import React from 'react';
 import "./PeruProjects.css";
 import closeupImage from "../peru/perupics/IRcloseup.jpg"
 import timelineImage from "../peru/perupics/IRtimeline.jpg" 
+import StockImage from "../peru/perupics/DocStockImg.jpg"
 import { Link } from 'react-router-dom';
 
 function IrrigationReservoir() {
+    
+    const handleScrollToSection = () => {
+        document.getElementById('doc-section2').scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div>
             <div className='IR-header'>
@@ -17,6 +22,7 @@ function IrrigationReservoir() {
                 <div className= 'buttons'>
                     <Link to = "/peru" className = "peruHomeButton">Peru Home</Link>
                     <button className = "peruHomeButton"> Other Project </button>
+                    <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button>
                 </div>
                 <div className = "body_text">
                     <p>At the town hall that we hosted in Maras Ayllu in the summer of 2018, a majority of the 80-100 community members in attendance echoed the need for an irrigation reservoir east of the community's center. The farming community in that region needs access to water for agricultural purposes during the three-month dry season to sustain crops.  With approximately 70% of the community owning and/or being employed on agricultural land, having an irrigation reservoir is directly connected to the economic livelihood of the community.  Our chapter believes strongly in our mission of working in partnership with Maras Ayllu to implement a sustainable solution to the community's water quantity and quality issues.  When the community tells us what problems it faces, our team finds solutions.</p>
@@ -67,24 +73,47 @@ function IrrigationReservoir() {
                             <p>We’re excited to make more progress and for what the future holds. To stay updated with our progress throughout this school year, sign up for our mailing list and follow us on social media!</p>
                         </div>
                     </div>
-                    <div className = "documentation-div">
+                    <div className = "documentation-div" id = "doc-section2">
                         <div className = "sub-title">
                             <h4>Documentation</h4>
                         </div>
                         <div className = "documentation-grid">
                             <div className = "IR-documentation-grid-boxes">
-
+                                <div className = "stock-img">
+                                    <img src= {StockImage} alt="StockImg"/>
+                                </div>
+                                <div className = "documentation-caption">
+                                    <p>2019 Assessment Trip Expense Report</p>
+                                </div>
                             </div>
                             <div className = "IR-documentation-grid-boxes">
-                                
+                                <div className = "stock-img">
+                                    <img src= {StockImage} alt="StockImg"/>
+                                </div>
+                                <div className = "documentation-caption">
+                                    <p>Assesment Report</p>
+                                </div>
                             </div>
                             <div className = "IR-documentation-grid-boxes">
-                                
+                                <div className = "stock-img">
+                                    <img src= {StockImage} alt="StockImg"/>
+                                </div>
+                                <div className = "documentation-caption">
+                                    <p>Irrigation Reservoir Alternative Analysis Report</p>
+                                </div>
                             </div>
                             <div className = "IR-documentation-grid-boxes">
-                                
+                                <div className = "stock-img">
+                                    <img src= {StockImage} alt="StockImg"/>
+                                </div>
+                                <div className = "documentation-caption">
+                                    <p>Irrigation Reservoir Pre-Implementation Report</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className = "bottom-margin">
+
                     </div>
             </div>
             
