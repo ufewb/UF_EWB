@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "./Peru.css";
 
+// Image imports
 import currentProjPic from "./pictures/PeruIR3.png";
 import IMG1 from "./pictures/IMG1.png";
 import IMG2 from "./pictures/IMG2.png";
@@ -31,6 +32,29 @@ function PeruHome() {
         setActive((prev) => (prev - 1 + lengthItems) % lengthItems);
     };
 
+    const fadeInSectionRef = useRef([]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            fadeInSectionRef.current.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    section.classList.add('is-visible');
+                } else {
+                    section.classList.remove('is-visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger the event once on mount
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div>
             <div className='intro-box'>
@@ -38,8 +62,7 @@ function PeruHome() {
                 <button className='buttonDonate'>Donate</button>
             </div>
             <div className='info-box'>
-
-                <div className='TextandPic'>
+                <div className='TextandPic fade-in-section' ref={(el) => fadeInSectionRef.current.push(el)}>
                     <div className='whoWeAreText'>
                         <h1>WHO WE ARE</h1>
                         <div className='descriptiveText'>
@@ -54,7 +77,7 @@ function PeruHome() {
                     </div>        
                 </div>
 
-                <div className='pastProjects'>
+                <div className='pastProjects fade-in-section' ref={(el) => fadeInSectionRef.current.push(el)}>
                     <h1>WHAT WE DO</h1>
                     <div className='descriptiveText'>
                         <p>Engineers Without Borders - USA has chapters across the United States. Their mission statement is:</p> 
@@ -76,48 +99,46 @@ function PeruHome() {
                     </div>
                 </div>
 
-                <div className='Gallery'>
+                <div className='Gallery fade-in-section' ref={(el) => fadeInSectionRef.current.push(el)}>
                     <div className='textGallery'>
                         <h1>Gallery</h1>
                     </div>
                     <div className='SliderContainer'>
                         <div className='emptyContainer'>
-                        <div className='slider'>
-                            <div className='list'>
-                                {items.map((item, index) => (
-                                    <div
-                                        className={`item ${index === active ? 'active' : ''}`}
-                                        key={index}
-                                    >
-                                        <img src={item} alt={`MP${index + 1}`} />
-                                    </div>
-                                ))}
+                            <div className='slider'>
+                                <div className='list'>
+                                    {items.map((item, index) => (
+                                        <div
+                                            className={`item ${index === active ? 'active' : ''}`}
+                                            key={index}
+                                        >
+                                            <img src={item} alt={`MP${index + 1}`} />
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className='captionSlider'>
+                                    <p>{captions[active].info}</p>
+                                </div>
+                                <div className='buttonsOfSlider'>
+                                    <button id='prev' onClick={prevSlide}> {'<'} </button>
+                                    <button id='next' onClick={nextSlide}> {'>'} </button>
+                                </div>
+                                <ul className='dots'>
+                                    {items.map((_, index) => (
+                                        <li
+                                            key={index}
+                                            className={index === active ? 'active' : ''}
+                                            onClick={() => setActive(index)}
+                                        ></li>
+                                    ))}
+                                </ul>
                             </div>
-                            <div className='captionSlider'>
-                                <p>{captions[active].info}</p>
-                            </div>
-                            <div className='buttonsOfSlider'>
-                                <button id='prev' onClick={prevSlide}> {'<'} </button>
-                                <button id='next' onClick={nextSlide}> {'>'} </button>
-                            </div>
-                            <ul className='dots'>
-                                {items.map((_, index) => (
-                                    <li
-                                        key={index}
-                                        className={index === active ? 'active' : ''}
-                                        onClick={() => setActive(index)}
-                                    ></li>
-                                ))}
-                            </ul>
-                        </div>
                         </div>
                     </div>
                 </div>
                 <div className='margin'></div>
             </div>
-
         </div>
-        
     );
 }
 
