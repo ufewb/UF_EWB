@@ -10,9 +10,9 @@ function NepalRoutes() {
         <Routes>
             {/* route path = specifying url pattern */}
             <Route path="/" element={<NepalHome />} />
-            <Route path="/nepal/khanalthok_2014_18" element={<Khanalthok_2014_18 />} />
-            <Route path="/nepal/phoolbari_2017_21" element={<Phoolbari_2017_21 />} />
-            <Route path="/nepal/phoolbari_2021_24" element={<Phoolbari_2021_24 />} />
+            <Route path="khanalthok_2014_18" element={<Khanalthok_2014_18 />} />
+            <Route path="phoolbari_2017_21" element={<Phoolbari_2017_21 />} />
+            <Route path="phoolbari_2021_24" element={<Phoolbari_2021_24 />} />
         </Routes>
     );
 };
