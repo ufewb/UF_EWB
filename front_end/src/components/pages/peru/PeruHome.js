@@ -76,9 +76,9 @@ function PeruHome() {
                     </div>
                 </div>
 
-                <div className='EWBPeruTeam'>
-                    <div className='textEWBPERUTEAM'>
-                        <h1>EWB PERU TEAM</h1>
+                <div className='Gallery'>
+                    <div className='textGallery'>
+                        <h1>Gallery</h1>
                     </div>
                     <div className='SliderContainer'>
                         <div className='emptyContainer'>
@@ -113,6 +113,7 @@ function PeruHome() {
                         </div>
                     </div>
                 </div>
+                <div className='margin'></div>
             </div>
 
         </div>
