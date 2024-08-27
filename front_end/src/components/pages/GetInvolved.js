@@ -1,15 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+
 import './GetInvolved.css';
 
 import randomImg from './peru/pictures/randomPic.png';
 
 function GetInvolved() {
     const [openIndex, setOpenIndex] = useState(null);
+    const answerRefs = useRef([]);
 
     const toggleFAQ = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
+        if (openIndex === index) {
+            setOpenIndex(null);
+        } else {
+            setOpenIndex(index);
+        }
     };
 
+    useEffect(() => {
+        answerRefs.current.forEach((el, index) => {
+            if (index === openIndex) {
+                el.style.maxHeight = el.scrollHeight + "px";
+                el.style.opacity = "1";
+            } else {
+                el.style.maxHeight = "0";
+                el.style.opacity = "0";
+            }
+        });
+    }, [openIndex]);
+    
     return (
         <div>
             <div className='intro-box1'>
@@ -43,7 +61,7 @@ function GetInvolved() {
                             <button className='Q-Box' onClick={() => toggleFAQ(index)}>
                                 Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
                             </button>
-                            <div className={`answer ${openIndex === index ? 'active' : ''}`}>
+                            <div className='answer' ref={(el) => (answerRefs.current[index] = el)}>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                             </div>
                         </div>

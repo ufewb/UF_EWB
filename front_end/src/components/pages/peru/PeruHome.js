@@ -3,17 +3,16 @@ import { Link } from 'react-router-dom';
 import "./Peru.css";
 
 import currentProjPic from "./pictures/PeruIR3.png";
-import peruTeamPic from "./pictures/peruTeamPic.png";
 import IMG1 from "./pictures/IMG1.png";
 import IMG2 from "./pictures/IMG2.png";
-import MP3 from "./pictures/MP3.png";
-import MP4 from "./pictures/MP4.png";
-import MP5 from "./pictures/MP5.png";
-import MP6 from "./pictures/MP6.png";
+import IMG3 from "./pictures/IMG3.png";
+import IMG4 from "./pictures/IMG4.png";
+import IMG5 from "./pictures/IMG5.png";
+import IMG6 from "./pictures/IMG6.png";
 
 function PeruHome() {
     const [active, setActive] = useState(0);
-    const items = [IMG1, IMG2, MP3, MP4, MP5, MP6];
+    const items = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6];
     const captions = [
         { info: "random info1 ahsfhjks hajdfhakj hajfhak afjhka" },
         { info: "random info2 ahsfhjks hajdfhakj hajfhak afjhka" },
@@ -77,20 +76,12 @@ function PeruHome() {
                     </div>
                 </div>
 
-                <div className='EWBPeruTeam'>
-                    <div className='textEWBPERUTEAM'>
-                        <h1>EWB PERU TEAM</h1>
+                <div className='Gallery'>
+                    <div className='textGallery'>
+                        <h1>Gallery</h1>
                     </div>
                     <div className='SliderContainer'>
-                        {/* <div> */}
-                            {/* <div>
-                                <img src={peruTeamPic} alt='EWB Peru Team' className='groupPic' />
-                            </div> */}
-                            {/* <div className='caption2'>
-                                <p>Picture of the team</p>
-                                <p>Any extra text...</p>
-                            </div> */}
-                        {/* </div> */}
+                        <div className='emptyContainer'>
                         <div className='slider'>
                             <div className='list'>
                                 {items.map((item, index) => (
@@ -104,8 +95,6 @@ function PeruHome() {
                             </div>
                             <div className='captionSlider'>
                                 <p>{captions[active].info}</p>
-                                {/* <p>{captions[active].year}</p>
-                                <p>{captions[active].email}</p> */}
                             </div>
                             <div className='buttonsOfSlider'>
                                 <button id='prev' onClick={prevSlide}> {'<'} </button>
@@ -121,8 +110,10 @@ function PeruHome() {
                                 ))}
                             </ul>
                         </div>
+                        </div>
                     </div>
                 </div>
+                <div className='margin'></div>
             </div>
 
         </div>
