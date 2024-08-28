@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "./Nepal.css";
 
@@ -31,15 +31,46 @@ function PeruHome() {
         setActive((prev) => (prev - 1 + lengthItems) % lengthItems);
     };
 
+    const fadeInSectionRef = useRef([]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            fadeInSectionRef.current.forEach((section) => {
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                    if (isVisible) {
+                        section.classList.add('is-visible');
+                    } else {
+                        section.classList.remove('is-visible');
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger the event once on mount
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const addToRefs = (el) => {
+        if (el && !fadeInSectionRef.current.includes(el)) {
+            fadeInSectionRef.current.push(el);
+        }
+    };
+
     return (
         <div>
-            <div className='intro-box'>
+            <div className='intro-box fade-in-section' ref={addToRefs}>
                 <h1>Nepal</h1>
                 <button className='buttonDonate'>Donate</button>
             </div>
             <div className='info-box'>
 
-                <div className='TextandPic'>
+                <div className='TextandPic fade-in-section' ref={addToRefs}>
                     <div className='whoWeAreText'>
                         <h1>WHO WE ARE</h1>
                         <div className='descriptiveText'>
@@ -54,7 +85,7 @@ function PeruHome() {
                     </div>        
                 </div>
 
-                <div className='pastProjects'>
+                <div className='pastProjects fade-in-section' ref={addToRefs}>
                     <h1>WHAT WE DO</h1>
                     <div className='descriptiveText'>
                    <p>Our design team focuses on the design plans and materials needed to implement these projects.  Fundraising team writes grants, coordinates local fundraising events, and reaches out for corporate partnerships.  Comprised of a group of Nepali speakers, the Communications team is our link to Phoolbari and Khanalthok while we are in the states, closing the language barrier between our two communities.  The PMEL (Planning, Monitoring, Evaluation, & Learning) team concentrates on the longevity and sustainability of our work, ensuring the village knows how to use and maintain the rainwater catchment and sanitation systems.  The Enrichment team coordinates programs where we can educate the local school students on sanitation, gender equality, and some core STEM topics.
@@ -79,7 +110,7 @@ function PeruHome() {
                     </div>
                 </div>
 
-                <div className='Gallery'>
+                <div className='Gallery fade-in-section' ref={addToRefs}>
                     <div className='textGallery'>
                         <h1>Gallery</h1>
                     </div>
@@ -120,7 +151,6 @@ function PeruHome() {
             </div>
 
         </div>
-        
     );
 }
 

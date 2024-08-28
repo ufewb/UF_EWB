@@ -211,5 +211,5 @@
 .fade-in.visible {
   opacity: 1; 
   transform: translateY(0); /* Reset transform to show element in original position */
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.8s ease-out;
 }
