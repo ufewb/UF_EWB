@@ -65,7 +65,7 @@ function IrrigationReservoir() {
                         <div className = "img-div2">
                             <img src= {timelineImage} alt="timeline image"/>
                             <div className = "photo-caption">
-                                <p>this is a caption. write anything idk</p>
+                                <p>Irrigation Reservoir Timeline</p>
                             </div>
                         </div>
                         <div className = "body_text2">
