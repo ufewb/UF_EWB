@@ -1,10 +1,34 @@
-import React from 'react';
+import React, {useRef,useEffect} from 'react';
 import "../peru/PeruProjects.css";
 import { Link } from 'react-router-dom';
 import NepalPic from "../nepal/nepalpics/nepalpicture.jpg"
 import largeSS from "../nepal/nepalpics/nepalSS.jpg"
 
-function Khanalthok_2014_18 () {
+function Khanalthok_2014_18() {
+    const fadeInSectionRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const section = fadeInSectionRef.current;
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    section.classList.add('is-visible');
+                } else {
+                    section.classList.remove('is-visible');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger the event once on mount
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div>
             <div>
