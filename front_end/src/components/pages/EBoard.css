@@ -12,9 +12,10 @@
 
 .category {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background-color: #075ba7;
     color: white;
+    margin-bottom: 40px;
 }
 
 .name {

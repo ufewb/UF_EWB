@@ -42,7 +42,7 @@
 .buttonLink {
     justify-content: center;
     align-items: center;
-    margin: 20px 40px;
+    /* margin: 20px 40px; */
     padding: 10px 20px;
     font-size: 20px;
     color: rgb(8, 20, 52);
@@ -51,7 +51,7 @@
     transition: background-color 0.3s;
     border: 3px solid rgb(8, 20, 52);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .active, .buttonLink:hover {
@@ -64,6 +64,8 @@
     justify-content: center;
     display: flex;
     margin: 20px 0;
+    /* background-color: red; */
+    padding-top: 30px;
 }
 
 .TextandPic {
