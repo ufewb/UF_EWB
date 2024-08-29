@@ -1,9 +1,34 @@
-import React from 'react';
+import React, {useRef,useEffect} from 'react';
 import "../peru/PeruProjects.css";
+import { Link } from 'react-router-dom';
 import NepalPic from "../nepal/nepalpics/nepalpicture.jpg"
 import largeSS from "../nepal/nepalpics/nepalSS.jpg"
 
-function Khanalthok_2014_18 () {
+function Khanalthok_2014_18() {
+    const fadeInSectionRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const section = fadeInSectionRef.current;
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                if (isVisible) {
+                    section.classList.add('is-visible');
+                } else {
+                    section.classList.remove('is-visible');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger the event once on mount
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div>
             <div>
@@ -16,11 +41,9 @@ function Khanalthok_2014_18 () {
             </div>
             <div className = "container">
                 <div className= 'buttons'>
-                    {/* <Link to = "/peru" className = "peruHomeButton">Peru Home</Link> */}
-                    <button className = "peruHomeButton"> Other Project </button>
-                    <button className = "peruHomeButton"> Nepal Home </button>
-
-                    {/* <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button> */}
+                    <Link to="/nepal" className='peruHomeButton'>Nepal Home</Link>
+                    <Link to="/nepal/phoolbari_2021_24" className='peruHomeButton'>Phoolbari_2021_24</Link>
+                    <Link to="/nepal/phoolbari_2017_21" className='peruHomeButton'>Phoolbari_2017_21</Link>
                 </div>
                 <div className = "body-text-nepal">
                     <p>Our first project in Khanalthok, Nepal consisted of establishing a reliable and clean water source at the community’s secondary school, the Shree Janahit Secondary School, over a course of five years. In this project, we aided the community in constructing a permanent water storage tank and sanitation systems. We have closed out our project in Khanalthok and have performed an evaluation of all implemented systems. Although our team has stopped working in Khanalthok, we still plan to return and maintain relationships with the community. The five years of work were split as follows: </p>

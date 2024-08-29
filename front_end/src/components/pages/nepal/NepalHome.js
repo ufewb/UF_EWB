@@ -2,17 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "./Nepal.css";
 
-import currentProjPic from "../peru/pictures/PeruIR3.png";
-import IMG1 from "../peru/pictures/IMG1.png";
-import IMG2 from "../peru/pictures/IMG2.png";
-import IMG3 from "../peru/pictures/IMG3.png";
-import IMG4 from "../peru/pictures/IMG4.png";
-import IMG5 from "../peru/pictures/IMG5.png";
-import IMG6 from "../peru/pictures/IMG6.png";
+import nepalProjectPic from "../nepal/nepalpics/nepalProjectPic.png";
+import IMG12 from "../nepal/nepalpics/IMG1.png";
+import IMG22 from "../nepal/nepalpics/IMG2.png";
+import IMG32 from "../nepal/nepalpics/IMG3.png";
+import IMG42 from "../nepal/nepalpics/IMG4.png";
+import IMG52 from "../nepal/nepalpics/IMG5.png";
+import IMG62 from "../nepal/nepalpics/IMG6.png";
 
 function PeruHome() {
     const [active, setActive] = useState(0);
-    const items = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6];
+    const items = [IMG12, IMG22, IMG32, IMG42, IMG52, IMG62];
     const captions = [
         { info: "random info1 ahsfhjks hajdfhakj hajfhak afjhka" },
         { info: "random info2 ahsfhjks hajdfhakj hajfhak afjhka" },
@@ -33,6 +33,12 @@ function PeruHome() {
 
     const fadeInSectionRef = useRef([]);
 
+    const addToRefs = (el) => {
+        if (el && !fadeInSectionRef.current.includes(el)) {
+            fadeInSectionRef.current.push(el);
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             fadeInSectionRef.current.forEach((section) => {
@@ -49,22 +55,16 @@ function PeruHome() {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Trigger the event once on mount
+        handleScroll(); 
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    const addToRefs = (el) => {
-        if (el && !fadeInSectionRef.current.includes(el)) {
-            fadeInSectionRef.current.push(el);
-        }
-    };
-
     return (
         <div>
-            <div className='intro-box fade-in-section' ref={addToRefs}>
+            <div className='intro-boxNepal fade-in-section' ref={addToRefs}>
                 <h1>Nepal</h1>
                 <button className='buttonDonate'>Donate</button>
             </div>
@@ -77,10 +77,10 @@ function PeruHome() {
                             <p>The Nepal Team is one of the two teams under the University of Florida chapter of Engineers Without borders.  We are a 501(c)(3) non-profit, humanitarian organization founded in 2013. Since then, we have fully implemented in Khanalthok, Nepal and are working on implementation in Phoolbari, Nepal.  The outreach of our work focuses on providing clean, locally-sourced water in these regions whose only water source is infected with E-Coli and other bacteria. <br></br><br></br>Together, our team consists of approximately 40 undergraduate students who are dedicated to working on meaningful engineering projects in international communities. Our team works year-round on designs, fundraising, lesson plans, and research & development to address water quality and sanitation.  Our team is comprised of five sub-teams: Design, Fundraising, Communications, PMEL, and Enrichment.</p>
                         </div>            
                     </div>
-                    <div>
-                        <img src={currentProjPic} alt='Random Project Picture' className='projectPic' />
-                        <div className='caption1'>
-                            Picture from Virgen del Carmen
+                    <div className='imgAndcaption'>
+                        <img src={nepalProjectPic} alt='Random Project Picture'/>
+                        <div className='caption1nepal'>
+                            Picture from Shree Mathurapati School
                         </div> 
                     </div>        
                 </div>
@@ -116,7 +116,7 @@ function PeruHome() {
                     </div>
                     <div className='SliderContainer'>
                         <div className='emptyContainer'>
-                        <div className='slider'>
+                        <div className='sliderNepal'>
                             <div className='list'>
                                 {items.map((item, index) => (
                                     <div
