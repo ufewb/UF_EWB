@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import "./Peru.css";
 
-// Image imports
+
 import currentProjPic from "./pictures/PeruIR3.png";
 import IMG1 from "./pictures/IMG1.png";
 import IMG2 from "./pictures/IMG2.png";
@@ -34,9 +34,16 @@ function PeruHome() {
 
     const fadeInSectionRef = useRef([]);
 
+    const addToRefs = (el) => {
+        if (el && !fadeInSectionRef.current.includes(el)) {
+            fadeInSectionRef.current.push(el);
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             fadeInSectionRef.current.forEach((section) => {
+                if (section) {
                 const rect = section.getBoundingClientRect();
                 const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
                 if (isVisible) {
@@ -44,11 +51,12 @@ function PeruHome() {
                 } else {
                     section.classList.remove('is-visible');
                 }
+            }
             });
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Trigger the event once on mount
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -57,7 +65,7 @@ function PeruHome() {
 
     return (
         <div>
-            <div className='intro-box'>
+            <div className='intro-boxPeru'>
                 <h1>Peru</h1>
                 <button className='buttonDonate'>Donate</button>
             </div>
