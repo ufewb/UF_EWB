@@ -64,7 +64,7 @@ function IrrigationReservoir() {
                     <div className="img-div">
                         <img src={closeupImage} alt="Irrigation Reservoir"/>
                         <div className="photo-caption">
-                            <p>this is a caption. write anything idk</p>
+                            <p>Photo of Irrigation Reservoir</p>
                         </div>
                     </div>
                     <div className="text-next-to-img">

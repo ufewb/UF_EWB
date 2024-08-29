@@ -59,10 +59,10 @@ function VirgenDelCarmenElementarySchool() {
                 <div className="body_text fade-in-section" ref={addToRefs}>
                     <p>Our first project in our five-year partnership with the community of Maras, Peru involved bringing clean water to the community's elementary school, Virgen del Carmen.</p>
                 </div>
-                <div className="text-w-img-div fade-in-section" ref={addToRefs}>
-                    <div className="img-div-VDC">
-                        <img src={signImage} alt="VDC school sign"/>
-                        <div className="photo-caption">
+                <div className = "text-w-img-div">
+                    <div className = "img-div-VDC">
+                        <img src= {signImage} alt="VDC school sign"/>
+                        <div className = "photo-caption">
                             <p>this is a caption. write something idk</p>
                         </div>
                     </div>

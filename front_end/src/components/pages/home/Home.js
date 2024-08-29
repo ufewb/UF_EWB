@@ -46,12 +46,12 @@ function Home() {
 
         <div className="team_indv">
           <img src={nepalTeams} alt="Nepal Team" className="team_img fade-in" />
-          <p className="team_click underline-hover fade-in">nepal</p>
+          <p className="team_click underline-hover fade-in">Nepal</p>
         </div>
 
         <div className="team_indv">
           <img src={peruTeams} alt="Peru Team" className="team_img fade-in" />
-          <Link to="/peru" className="team_click underline-hover fade-in">peru</Link>
+          <Link to="/peru" className="team_click underline-hover fade-in">Peru</Link>
         </div>
       </div>
 

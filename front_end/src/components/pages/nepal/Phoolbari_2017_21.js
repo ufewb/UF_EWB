@@ -40,12 +40,13 @@ function Phoolbari_2017_21() {
                 <div className="IR-title">
                     <h1>Shree Janajagriti Primary School</h1>
                     <h2>2017-2021</h2>
+                    <h2>Phoolbari, Nepal</h2>
                 </div>
             </div>
             <div className="container">
                 <div className='buttons fade-in-section' ref={addToRefs}>
                     {/* <Link to = "/peru" className = "peruHomeButton">Peru Home</Link> */}
-                    <button className="peruHomeButton">Other Project</button>
+                    <button className = "peruHomeButton"> Other Project </button>
                     {/* <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button> */}
                 </div>
                 <div className="body_text fade-in-section" ref={addToRefs}>

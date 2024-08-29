@@ -48,7 +48,7 @@
     background-color: 085AA6;
     cursor: pointer;
     transition: background-color 0.3s;
-    border: 5px solid rgb(8, 20, 52);
+    border: 3px solid rgb(8, 20, 52);
     text-decoration: none;
     border-radius: 5px;
 }
