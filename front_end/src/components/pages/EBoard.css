@@ -1,0 +1,55 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 12px;
+    text-align: center;
+}
+
+.headshot {
+    border-radius: 100%;
+    width: 15em;
+}
+
+.category {
+    text-align: center;
+    padding: 30px;
+    background-color: #075ba7;
+    color: white;
+}
+
+.name {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.position {
+    margin-top: -5px;
+    font-style: italic;
+}
+
+.linkedin {
+    width: 8%;
+}
+
+.name-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional: Adjusts horizontal alignment */
+    gap: 8px; /* Adjusts space between the name and the logo */
+}
+
+.name a {
+    color: black;
+}
+
+.name a:visited,
+.name a:active {
+    color: black;
+    text-decoration: none; /* Ensures no underline appears during the click */
+}
+
+.nepal-team {
+    margin-bottom: 25px;
+}
