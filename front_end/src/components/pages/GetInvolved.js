@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-
 import './GetInvolved.css';
-
 import randomImg from './peru/pictures/randomPic.png';
 
 function GetInvolved() {
     const [openIndex, setOpenIndex] = useState(null);
     const answerRefs = useRef([]);
+    const fadeInSectionRef = useRef([]);
 
     const toggleFAQ = (index) => {
         if (openIndex === index) {
@@ -27,10 +26,39 @@ function GetInvolved() {
             }
         });
     }, [openIndex]);
-    
+
+    useEffect(() => {
+        const handleScroll = () => {
+            fadeInSectionRef.current.forEach((section) => {
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                    if (isVisible) {
+                        section.classList.add('is-visible');
+                    } else {
+                        section.classList.remove('is-visible');
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Trigger the event once on mount
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const addToRefs = (el) => {
+        if (el && !fadeInSectionRef.current.includes(el)) {
+            fadeInSectionRef.current.push(el);
+        }
+    };
+
     return (
         <div>
-            <div className='intro-box1'>
+            <div className='intro-box1 fade-in-section' ref={addToRefs}>
                 <div className='intro-writing'>
                     <h1>Get Involved</h1>
                 </div>
@@ -38,7 +66,7 @@ function GetInvolved() {
 
             <div className='wholeContainer'>
 
-                <div className='info-box'>
+                <div className='info-box fade-in-section' ref={addToRefs}>
                     <div className='application-and-pic'>
                         <div className='caption'>
                             <h1>APPLICATION</h1>
@@ -50,11 +78,10 @@ function GetInvolved() {
                     </div>
                 </div>
 
-                <div className='FAQ-box'>
+                <div className='FAQ-box fade-in-section' ref={addToRefs}>
                     <div className='caption2'>
-                        <h1 className = "faqtext"> FAQs</h1>
+                        <h1 className="faqtext"> FAQs</h1>
                     </div>
-                
 
                     {[...Array(5)].map((_, index) => (
                         <div className='faq' key={index}>
@@ -68,9 +95,7 @@ function GetInvolved() {
                     ))}
                 </div>
                 <div className='margin'></div>
-
             </div>
-
         </div>
     );
 }
