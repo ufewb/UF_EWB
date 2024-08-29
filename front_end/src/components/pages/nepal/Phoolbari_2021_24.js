@@ -1,5 +1,6 @@
 import React from 'react';
 import "../peru/PeruProjects.css";
+import { Link } from 'react-router-dom';
 import NepalPic from "../nepal/nepalpics/nepalpicture.jpg"
 import largeSS from "../nepal/nepalpics/nepalSS.jpg"
 
@@ -16,10 +17,9 @@ function Phoolbari_2021_24 () {
             </div>
             <div className = "container">
                 <div className= 'buttons'>
-                    {/* <Link to = "/peru" className = "peruHomeButton">Peru Home</Link> */}
-                    <button className = "peruHomeButton"> Other Project </button>
-                    <button className = "peruHomeButton"> Nepal Home </button>
-                    {/* <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button> */}
+                    <Link to="/nepal" className='peruHomeButton'>Nepal Home</Link>
+                    <Link to="/nepal/phoolbari_2017_21" className='peruHomeButton'>Phoolbari_2017_21</Link>
+                    <Link to="/nepal/khanalthok_2014_18" className='peruHomeButton'>Khanalthok_2014_18</Link>
                 </div>
                 <div className = "body-text-nepal">
                     <p>The University of Florida Engineers Without Borders Nepal Team is excited to announce upcoming progress in Phoolbari, Nepal as we develop a plan for new and improved sanitation and hydration systems at Shree Mathurapati Secondary School. Phoolbari is a village located in rural Nepal, nearly a three-hour drive from Kathmandu, the closest major city. In Phoolbari, many water sources are turbid, containing harmful bacteria such as fecal coliform. These water sources are also very few and far away, with the closest water source to the secondary school being nearly a 30-minute walk through mountainous terrain. This lack of clean and accessible water sources at the secondary school has led to several cases of preventable waterborne illnesses among the student population, placing a severe strain on the students, teachers, and community members of Phoolbari. Additionally, since the spread of the coronavirus in early 2020, Nepali communities have been taking many hygienic precautions to avoid illness, placing a major emphasis on handwashing, despite the lack of infrastructure to facilitate these habits. By seeking a long-term solution to this problem, the community hopes to eradicate all cases of waterborne illness at the school by supplying the students with potable drinking water and improving their sanitary systems for a fighting chance against bacteria and disease.  </p>

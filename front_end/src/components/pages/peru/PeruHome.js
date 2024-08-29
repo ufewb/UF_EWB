@@ -77,7 +77,7 @@ function PeruHome() {
                             <p>Engineers Without Borders - USA allows engineers and aspiring engineering students around the country to use their education and skills in engineering design to provide humanitarian aid to communities around the world as well as gain professional educational opportunities for its members. The University of Florida's chapter of Engineers Without Borders currently has three teams: domestic team, Nepal team and Peru team.  We are the University of Florida's chapter of Engineers Without Borders Peru Team. We are currently in a five-year partnership with the community of Maras Ayllu, Peru. Maras Ayllu is a small town in rural Peru located near the base of Machu Picchu. The community is currently facing both water storage and water quality issues which we will be assessing throughout our partnership.</p>   
                         </div>            
                     </div>
-                    <div>
+                    <div className='imgAndCaption'>
                         <img src={currentProjPic} alt='Random Project Picture' className='projectPic' />
                         <div className='caption1'>
                             Picture from Virgen del Carmen

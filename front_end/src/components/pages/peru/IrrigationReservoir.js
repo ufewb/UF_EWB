@@ -21,7 +21,7 @@ function IrrigationReservoir() {
             <div className = "container">
                 <div className= 'buttons'>
                     <Link to = "/peru" className = "peruHomeButton">Peru Home</Link>
-                    <button className = "peruHomeButton"> Other Project </button>
+                    <Link to="/peru/virgen-del-carmen-elementary-school" className='peruHomeButton'>Other Project</Link>
                     <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button>
                 </div>
                 <div className = "body_text">
