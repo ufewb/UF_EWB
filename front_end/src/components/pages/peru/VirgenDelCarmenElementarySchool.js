@@ -52,9 +52,9 @@ function VirgenDelCarmenElementarySchool() {
             </div>
             <div className = "container">
                 <div className= 'buttons fade-in-section' ref={addToRefs}>
-                    <Link to = "/peru" className = "peruHomeButton">Peru Home</Link>
+                    <Link to = "/peru" className = "peruHomeButton">  Peru Home  </Link>
                     <Link to="/peru/irrigation-reservoir" className='peruHomeButton'>Other Project</Link>
-                    <button className = "documentationButton" onClick={handleScrollToSection}> Documentation </button>
+                    <button className = "documentationButton" onClick={handleScrollToSection}>Documentation</button>
                 </div>
                 <div className="body_text fade-in-section" ref={addToRefs}>
                     <p>Our first project in our five-year partnership with the community of Maras, Peru involved bringing clean water to the community's elementary school, Virgen del Carmen.</p>
