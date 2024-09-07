@@ -360,7 +360,7 @@
 
 @media (max-width: 480px) {
     .VDC-header{
-        margin-top: 0px;
+        height: 20vh;
     }
     .VDC-header h1 {
         font-size: 1em;
@@ -382,10 +382,15 @@
         padding: 0 20px;
     }
 
+    .photo-caption {
+        font-size: 1em;
+    }
+
     .body_text, .text-next-to-img {
         padding: 10px;
         text-align: center;
         align-items:center;
+        font-size: 1em;
     }
 
     .peruHomeButton, .documentationButton {
