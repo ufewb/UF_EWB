@@ -1,50 +1,35 @@
 import React from "react";
 import './Home.css';
 
-// Import each file into component file using import statements
-import allWeatherContractorLogo from "../../pictures/home/sponsors/all-weather-contractors-logo.png";
-import floridaSepticIncLogo from "../../pictures/home/sponsors/florida-septic-inc-logo.png";
-import prattAndWhitneyLogo from "../../pictures/home/sponsors/pratt-and-whitney-logo.png";
+import cdmSmith from "../../pictures/home/sponsors/cdm-smith-logo.png";
+import hazenAndSawyer from "../../pictures/home/sponsors/hazen-and-sawyer-logo.jpg";
+import wrightPierce from "../../pictures/home/sponsors/wright-pierce-logo.png";
 import rafetelisLogo from "../../pictures/home/sponsors/rafetelis-logo.png";
-import schwabCharitableLogo from "../../pictures/home/sponsors/schwab-charitable-logo.png";
-import studyEdgeLogo from "../../pictures/home/sponsors/study-edge-logo.png";
 
 const sponsorsHomePage = [
   {
     id: 1,
-    src: allWeatherContractorLogo,
-    alt: "All Weather Contractor Logo",
-    link: "https://allweathercontractors.com/"
+    src: cdmSmith,
+    alt: "CDM Smith Logo",
+    link: "https://www.cdmsmith.com/en/"
   },
   {
     id: 2,
-    src: floridaSepticIncLogo,
-    alt: "Florida Septic Inc Logo",
-    link: "https://flsepticinc.com/"
+    src: hazenAndSawyer,
+    alt: "Hazen & Sawyer Logo",
+    link: "https://www.hazenandsawyer.com/"
   },
   {
     id: 3,
-    src: prattAndWhitneyLogo,
-    alt: "Pratt & Whitney Logo",
-    link: "https://www.prattwhitney.com/"
+    src: wrightPierce,
+    alt: "Wright Pierce Logo",
+    link: "https://www.wright-pierce.com/"
   },
   {
     id: 4,
     src: rafetelisLogo,
     alt: "Rafetelis Logo",
     link: "https://www.raftelis.com/"
-  },
-  {
-    id: 5,
-    src: schwabCharitableLogo,
-    alt: "Schwab Charitable Logo",
-    link: "https://www.schwabcharitable.org/"
-  },
-  {
-    id: 6,
-    src: studyEdgeLogo,
-    alt: "Study Edge Logo",
-    link: "https://studyedge.com/landing/"
   },
 ];
 

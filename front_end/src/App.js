@@ -1,35 +1,47 @@
 import './App.css';
 import Paths from './Routes.js'; 
+
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/pages/Footer.js'; 
 import PeruRoutes from './components/pages/peru/PeruRoutes.js';
 import NepalRoutes from './components/pages/nepal/NepalRoutes.js';
-import loginButton from './components/pictures/home/login-button.png';
+
+import logo from './components/pictures/home/nav-bar/ewb_logo_without_text.png';
+
+function showSidebar () {
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+
+function closeSidebar() {
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+
 
 function App() {
   return (
     <Router>
       <div className="app">
         <nav className="nav-bar">
-          <img src="https://mae.ufl.edu/wp-content/uploads/2022/02/Screenshot-2022-02-23-151343.png" className = "logo"></img>
 
-          <ul className = "all_text_nav">
-            <li className="nav-bar-elements"><Link to="/">HOME</Link></li>
-            
-            {/* dropdown*/}
-            <div className="dropdown nav-bar-elements">
-              <button className="dropbtn">TEAMS <i className=" fa fa-caret-down"></i></button>
-              {/* dropdown content */}
-              <div className="dropdown-content">
-                <li className="nav-bar-elements"><Link to="/nepal">NEPAL</Link></li>
-                <li className="nav-bar-elements"><Link to="/peru">PERU</Link></li>
-              </div>
-            </div>
-            
-            <li className="nav-bar-elements"><Link to="/eboard">E-BOARD</Link></li>
-            <li className="nav-bar-elements"><Link to="/get-involved">GET INVOLVED</Link></li>
-            <Link to="/login"><img src = {loginButton} className = 'login-button'></img></Link>
+          <ul className = "sidebar">
+            <li onClick = {closeSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/#teams">TEAMS</Link></li>
+            <li><Link to="/eboard">E-BOARD</Link></li>
+            <li><Link to="/get-involved">GET INVOLVED</Link></li>
           </ul>
+
+          <ul>
+            <img src={logo} className = "logo"></img>
+            <li className = "hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
+            <li className = "hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
+            <li className = "hideOnMobile underline-hover-nav"><Link to="/eboard">E-BOARD</Link></li>
+            <li className = "hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
+            <li className = "menuButton" onClick={showSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="100" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+          </ul>
+
         </nav>
 
       <Routes>
@@ -45,3 +57,6 @@ function App() {
 }
 
 export default App;
+
+
+{/* <img src="https://mae.ufl.edu/wp-content/uploads/2022/02/Screenshot-2022-02-23-151343.png" className = "logo"></img> */}

@@ -4,100 +4,108 @@
   background-color: #fffef2;
 }
 
-.nav-bar {
-  /* background-color: red; */
-  overflow: visible;
-  padding: 20px;
+/* default settings */
+
+* {
+  /* removing default formatting */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* navigation bar */
+
+nav {
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.all_text_nav {
-  text-align: right;
+nav li {
+  height: 50px;
 }
 
-.logo {
-  width: 100px;
-  height: auto;
-  margin-right: auto;
-}
-
-/* controlling apperance of the each item in nav-bar */
-.nav-bar ul, .dropbtn {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
   display: flex;
-  justify-content: right;
+  align-items: center;
+  color: #075BA7;
+  font-weight: 900;
   font-size: 25px;
 }
 
-/* controlling text nav-bar apperance */
-.nav-bar-elements{
-  padding: 14px 35px;
-  text-align: center;
-}
-
-/* when an element on nav-bar clicked - these features appear */
-.nav-bar-elements a {
-  color: #075ba7;
-  font-weight: 900;
-  text-decoration: none;
-  display: block;
-}
-
-/* dropdown container */
-.dropdown {
+.underline-hover-nav {
+  display: inline-block;
   position: relative;
-  display: inline-block; 
+  cursor: pointer;
+  text-decoration: none;
+  color: #075BA7;
 }
 
-/* handles the teams word on dropdown menu */
-.dropbtn {
-  border: none;
-  outline: none;
-  color: #075ba7;
-  font-family: inherit;
-  margin: 0;
-  font-weight: 900;
-  background-color: #fffef2;
-}
-
-/* dropdown content - auto: hidden */
-.dropdown-content {
-  display: none;
+.underline-hover-nav::after {
+  content: '';
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 10; 
-  border: 1px solid #ccc;
-  background-color: #fffef2;
-
-  /* alignment of items within dropdown */
-  min-width: 110px;
-  margin-top: 5px;
-  text-align: left; 
+  width: 0;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: #075BA7; 
+  transition: width 0.3s ease-in-out; 
 }
 
-/* items within dropdown */
-.dropdown-content .nav-bar-elements {
-  padding: 5px;
+.underline-hover-nav:hover::after {
+  width: 100%;
 }
 
-/* when an item is hovered over in the dropdown menu */
-.dropdown-content .nav-bar-elements a:hover {
-  text-decoration: underline;
+nav img:first-child {
+  margin-right: auto;
 }
 
-/* dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.sidebar {
+  /* want sidebar to always be on top of everything else so z-index 999 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh; 
+  width: 250px;
+  z-index: 999;
+  background-color: white;
+  /* background-color: rgb(255, 255, 255, 0.2); */
+  /* backdrop-filter: blur(20px); */
+  box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
+
+  /* display links from top to bottom */
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-.login-button {
-  max-width: 30px; /* Adjust this value to your desired maximum width */
-  max-height: 30px; /* Adjust this value to your desired maximum height */
-  margin-top: 10px;
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.logo {
+  width: 5%;
+  padding-top: 10px;
+}
+
+.menuButton {
+  display: none;
 }
 
 /* footer */
@@ -131,27 +139,24 @@
   margin-top: 5px; 
 }
 
-@media (max-width: 480px) {
-  .nav-bar-elements{
-    padding: 10px;
+/* features limited when reaching 800px */
+@media(max-width: 800px) {
+  /* hiding the links on the nav bar */
+  .hideOnMobile {
+    display: none;
   }
 
-  .nav-bar ul, .dropbtn {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: right;
-    font-size: 0.7em;
+  .menuButton {
+    display: block;
   }
 
   .logo {
-    width: 60px;
-    height: auto;
+    width: 10%; /* Increase the width for smaller screens */
   }
+}
 
-  .nav-bar {
-    padding: 20px;
-    align-items: right;
+@media(max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
