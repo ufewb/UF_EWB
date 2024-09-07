@@ -39,7 +39,7 @@ function App() {
             <li className = "hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
             <li className = "hideOnMobile underline-hover-nav"><Link to="/eboard">E-BOARD</Link></li>
             <li className = "hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
-            <li className = "menuButton" onClick={showSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="100" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <li className = "menuButton" onClick={showSidebar}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
           </ul>
 
         </nav>

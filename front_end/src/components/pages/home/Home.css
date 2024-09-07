@@ -181,6 +181,7 @@
     gap: 15px;
     padding: 8px;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -213,3 +214,185 @@
   transform: translateY(0); /* Reset transform to show element in original position */
   animation: fadeIn 0.8s ease-out;
 }
+
+/* below 400 */
+@media(max-device-width: 400px) {
+  .textBeg {
+    top: 2%;
+    font-size: 2em;
+  }
+
+  .textSubtitle {
+    font-size: 1em;
+    top: 7%;
+  }
+
+  .teams {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;
+  }
+
+  .team_indv {
+    margin: 10px;
+    padding: 20px;
+    width: 85%; /* Adjust width for better mobile display */
+  }
+
+  .team_img {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .teamsHeading {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #075ba7; 
+    width: 100%; 
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  .team_click {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #f8f8f8;
+    margin: 0px;
+    margin-top: 20px;
+  } 
+  
+}
+
+@media(min-device-width: 400px) and (max-device-width: 600px) {
+  .textBeg {
+    top: 4%;
+    font-size: 2.5em;
+  }
+
+  .textSubtitle {
+    font-size: 1em;
+    top: 10%;
+  }
+
+  .teams {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;
+  }
+
+  .team_indv {
+    margin: 10px;
+    padding: 20px;
+    width: 90%; /* Adjust width for better mobile display */
+  }
+
+  .team_img {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .teamsHeading {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #075ba7; 
+    width: 100%; 
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .team_click {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #f8f8f8;
+    margin: 0px;
+    margin-top: 20px;
+  } 
+  
+}
+
+@media(min-device-width: 600px) and (max-device-width: 800px) {
+  .textBeg {
+    top: 4%;
+    font-size: 3em;
+  }
+
+  .textSubtitle {
+    font-size: 1.2em;
+    top: 12%;
+  }
+
+  .teams {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;
+  }
+
+  .team_indv {
+    margin: 10px;
+    padding: 20px;
+    width: 80%; /* Adjust width for better mobile display */
+  }
+
+  .team_img {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .teamsHeading {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #075ba7; 
+    width: 100%; 
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .team_click {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #f8f8f8;
+    margin: 0px;
+    margin-top: 20px;
+  } 
+  
+}
+
+@media(min-device-width: 800px) and (max-device-width: 1000px) {
+  .textBeg {
+    top: 5%;
+    font-size: 4em;
+  }
+
+  .textSubtitle {
+    font-size: 1.5em;
+    top: 14%;
+  }
+
+  .teams {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;
+  }
+
+  .team_indv {
+    margin: 10px;
+    padding: 20px;
+    width: 80%; /* Adjust width for better mobile display */
+  }
+
+  .team_img {
+    max-width: 100%; /* Adjust image size for smaller screens */
+  }
+
+  .teamsHeading {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #075ba7; 
+    width: 100%; 
+    font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .team_click {
+    font-weight: 500;
+    font-size: 2em;
+    color: #f8f8f8;
+    margin: 0px;
+    margin-top: 20px;
+  } 
+  
+}
+

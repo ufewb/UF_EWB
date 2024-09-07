@@ -18,9 +18,6 @@ body {
 
 /* navigation bar */
 
-nav {
-}
-
 nav ul {
   width: 100%;
   list-style: none;
@@ -102,10 +99,18 @@ nav img:first-child {
 .logo {
   width: 5%;
   padding-top: 10px;
+  margin-left: 20px;
 }
 
 .menuButton {
   display: none;
+}
+
+.menuButton svg {
+  padding-top: 12px;
+  height: 40px; /* Adjust as needed */
+  width: auto; /* Maintain aspect ratio */
+  vertical-align: middle; /* Align vertically with text */
 }
 
 /* footer */
