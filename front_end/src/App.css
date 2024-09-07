@@ -130,3 +130,28 @@
   font-size: 13px;
   margin-top: 5px; 
 }
+
+@media (max-width: 480px) {
+  .nav-bar-elements{
+    padding: 10px;
+  }
+
+  .nav-bar ul, .dropbtn {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    font-size: 0.7em;
+  }
+
+  .logo {
+    width: 60px;
+    height: auto;
+  }
+
+  .nav-bar {
+    padding: 20px;
+    align-items: right;
+  }
+}

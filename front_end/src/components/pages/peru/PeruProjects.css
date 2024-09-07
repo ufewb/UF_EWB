@@ -2,7 +2,7 @@
     padding: 0 150px;
     margin: 0 auto;
     flex-direction : column;
-    background-color: #fffef2;
+    background-color:#fffef2;
 }
 
 .VDC-header {
@@ -359,8 +359,11 @@
 }
 
 @media (max-width: 480px) {
+    .VDC-header{
+        margin-top: 0px;
+    }
     .VDC-header h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .VDC-header h2 {
@@ -368,21 +371,55 @@
     }
 
     .IR-header h1{
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .IR-header h2{
         font-size: 1em;
     }
 
-    .body_text, .text-next-to-img {
-        padding: 10px;
+    .container {
+        padding: 0 20px;
     }
 
-    .peruHomeButton {
+    .body_text, .text-next-to-img {
+        padding: 10px;
+        text-align: center;
+        align-items:center;
+    }
+
+    .peruHomeButton, .documentationButton {
         padding: 10px;
         font-size: 0.9em;
     }
+
+    .sub-title{
+        font-size: 1.5em;
+    }
+
+    .documentation-grid {
+        flex-direction : column;
+    }
+
+    .VDC-documentation-grid-boxes {
+        height: 25vh;
+        width: 100%;
+        padding : 0px 0px 20px 0px;
+    }
+
+    .documentation-img, .implementation-img{
+        padding: 15px 15px 0px 15px; /*helps get caption in the box*/
+    }
+
+    .documentation-caption {
+        font-size: 0.8em;
+        margin: 0px;
+    
+    }
+
+    /* .buttons {
+        flex-direction: row;
+    } */
 }
 
 .fade-in-section {
