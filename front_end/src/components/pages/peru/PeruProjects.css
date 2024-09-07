@@ -141,12 +141,12 @@
    margin-bottom: 30px;
 } 
 
-.text-w-img-div{
+/* .text-w-img-div{
     display: flex;
     flex-wrap: wrap; 
     margin-top: 20px; 
     margin-bottom: 50px;
-    }
+    } */
 
 .text-w-img-div2{
     display:flex;
@@ -232,12 +232,12 @@
 }
 
 .text-next-to-img{
-    flex: 2;
-    padding: 0 20px;/*30px 150px 30px 20px */
+    /* flex: 2; */
+    padding: 0 20px;
     font-size: 2.3vh;
     font-family: sans-serif;
     line-height: 3.5vh;
-    width: 100%;
+    /* width: 100%; */
     color: rgb(8, 20, 52);
 }
 
@@ -380,6 +380,8 @@
 
     .container {
         padding: 0 20px;
+        align-items: center;
+        justify-content: center;
     }
 
     .photo-caption {
@@ -394,8 +396,16 @@
     }
 
     .peruHomeButton, .documentationButton {
-        padding: 10px;
-        font-size: 0.9em;
+        padding: 5px 10px 5px 10px;
+        font-size: 0.6em;
+        margin: 10px  0px;
+        margin: 10px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        margin: 20px 0px 0px 0px;
+        
     }
 
     .sub-title{
@@ -421,10 +431,10 @@
         margin: 0px;
     
     }
-
-    /* .buttons {
-        flex-direction: row;
-    } */
+    .text-next-to-img {
+        text-align: left;
+        margin: 0px;
+    }
 }
 
 .fade-in-section {
