@@ -37,9 +37,9 @@
 
 .name-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Optional: Adjusts horizontal alignment */
-    gap: 8px; /* Adjusts space between the name and the logo */
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px;
 }
 
 .name a {
@@ -65,4 +65,14 @@
 .fade-in-section.is-visible {
     opacity: 1;
     transform: none;
+}
+.email-button {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+}
+
+.email-button:hover {
+    transform: scale(1.1); 
 }

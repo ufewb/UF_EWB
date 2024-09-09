@@ -47,40 +47,52 @@ function EBoard() {
         <div>
             <h1 className='category fade-in-section' ref={addToRefs}>LEADERSHIP</h1>
             <div className="main fade-in-section" ref={addToRefs}>
+    <div>
+    <img src={sample} className="headshot" alt="Headshot" />
+    <div className="name-wrapper">
+    <a href="mailto:ewb.ufl@gmail.com">
+        <img src={email} className="email-button" alt="Email Icon" />
+    </a>
+    <a href="https://www.linkedin.com/in/cathrine-beshay-b32749253/" target="_blank" rel="noreferrer">
+        <p className="name">Cathrine Beshay</p>
+    </a>
+</div>
+    <p className="position">President</p>
+</div>
+
+
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <img src={email} className="linkedin" alt="LinkedIn Logo" />
-                        <a href="https://www.linkedin.com/in/cathrine-beshay-b32749253/" target="_blank" rel="noreferrer">
-                            <p className="name">Cathrine Beshay</p>
+                        <a href="mailto:universityoffloridagainesville@chapters-ewb-usa.org">
+                            <img src={email} className="email-button" alt="Email Icon" />
                         </a>
-                    </div>
-                    <p className="position">President</p>
-                </div>
-                <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
-                    <div className="name-wrapper">
-                        <img src={email} className="linkedin" alt="LinkedIn Logo" />
                         <a href="https://www.linkedin.com/in/donald-luchetti/" target="_blank" rel="noreferrer">
                             <p className="name">Donald Luchetti</p>
                         </a>
                     </div>
                     <p className="position">Vice President</p>
                 </div>
+                    
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <img src={email} className="linkedin" alt="LinkedIn Logo" />
+                        <a href="mailto:universityoffloridagainesville@chapters-ewb-usa.org">
+                            <img src={email} className="email-button" alt="Email Icon" />
+                        </a>
                         <a href="https://www.linkedin.com/in/jasmyne-angel-346184265/" target="_blank" rel="noreferrer">
                             <p className="name">Jasmyne Angel</p>
                         </a>
                     </div>
                     <p className="position">Treasurer</p>
                 </div>
+                
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <img src={email} className="linkedin" alt="LinkedIn Logo" />
+                    <a href="mailto:ewb.ufl.involvement@gmail.com">
+        <img src={email} className="email-button" alt="Email Icon" />
+    </a>
                         <a href="https://www.linkedin.com/in/colin-brumbach-4a620a231/" target="_blank" rel="noreferrer">
                             <p className="name">Colin Brumbach</p>
                         </a>
