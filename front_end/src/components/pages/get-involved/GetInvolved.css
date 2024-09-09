@@ -148,6 +148,10 @@
 
     .Q-Box{
         padding: 15px;
-        margin-left: 5px;
+        margin-left: 6px;
+    }
+
+    .answer {
+        margin-left: 15px;
     }
 }
