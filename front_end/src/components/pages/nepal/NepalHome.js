@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom';
 import "./Nepal.css";
 
 import nepalProjectPic from "../nepal/nepalpics/nepalProjectPic.png";
-import IMG12 from "../nepal/nepalpics/IMG1.png";
-import IMG22 from "../nepal/nepalpics/IMG2.png";
-import IMG32 from "../nepal/nepalpics/IMG3.png";
-import IMG42 from "../nepal/nepalpics/IMG4.png";
-import IMG52 from "../nepal/nepalpics/IMG5.png";
-import IMG62 from "../nepal/nepalpics/IMG6.png";
+import IMG7 from "../nepal/nepalpics/IMG7.png";
+import IMG8 from "../nepal/nepalpics/IMG8.png";
+import IMG9 from "../nepal/nepalpics/IMG9.png";
+import IMG10 from "../nepal/nepalpics/IMG10.png";
+import IMG11 from "../nepal/nepalpics/IMG11.png";
+import IMG12 from "../nepal/nepalpics/IMG12.png";
 
 function PeruHome() {
     const [active, setActive] = useState(0);
-    const items = [IMG12, IMG22, IMG32, IMG42, IMG52, IMG62];
+    const items = [IMG7, IMG8, IMG9, IMG10, IMG11, IMG12];
     const captions = [
-        { info: "random info1 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info2 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info3 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info4 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info5 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info6 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "Picture of a town in Phoolbari" },
+        { info: "Picture of a kid on our trip to Phoolbari" },
+        { info: "Our team leads in Phoolbari" },
+        { info: "Students at Shree Mathurapati Secondary School" },
+        { info: "Classroom in Shree Mathurapati Secondary School" },
+        { info: "Corn storage in a town in Phoolbari" },
     ];
     const lengthItems = items.length;
 
@@ -66,7 +66,7 @@ function PeruHome() {
         <div>
             <div className='intro-boxNepal fade-in-section' ref={addToRefs}>
                 <h1>Nepal</h1>
-                <button className='buttonDonate'>Donate</button>
+                {/* <button className='buttonDonate'>Donate</button> */}
             </div>
             <div className='info-box'>
 

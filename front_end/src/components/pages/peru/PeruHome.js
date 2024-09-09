@@ -15,12 +15,12 @@ function PeruHome() {
     const [active, setActive] = useState(0);
     const items = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6];
     const captions = [
-        { info: "random info1 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info2 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info3 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info4 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info5 ahsfhjks hajdfhakj hajfhak afjhka" },
-        { info: "random info6 ahsfhjks hajdfhakj hajfhak afjhka" },
+        { info: "Picture of a town in Peru" },
+        { info: "Picture of our project leads in Maras, Peru" },
+        { info: "Picture of the mountains in Peru" },
+        { info: "Picture of Virgen del Carmen Elementary School" },
+        { info: "Picture of the mountains in Peru" },
+        { info: "Picture of the old water system in our Irrigation Project" },
     ];
     const lengthItems = items.length;
 
@@ -67,7 +67,7 @@ function PeruHome() {
         <div>
             <div className='intro-boxPeru'>
                 <h1>Peru</h1>
-                <button className='buttonDonate'>Donate</button>
+                {/* <button className='buttonDonate'>Donate</button> */}
             </div>
             <div className='info-box'>
                 <div className='TextandPic fade-in-section' ref={(el) => fadeInSectionRef.current.push(el)}>
