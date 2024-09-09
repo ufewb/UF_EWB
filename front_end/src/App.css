@@ -111,6 +111,7 @@ nav img:first-child {
   height: 40px; /* Adjust as needed */
   width: auto; /* Maintain aspect ratio */
   vertical-align: middle; /* Align vertically with text */
+  margin-right: 15px;
 }
 
 /* footer */
