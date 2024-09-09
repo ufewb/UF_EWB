@@ -66,7 +66,7 @@ function PeruHome() {
     return (
         <div>
             <div className='intro-boxPeru'>
-                <h1>Peru</h1>
+                <h1>PERU</h1>
                 {/* <button className='buttonDonate'>Donate</button> */}
             </div>
             <div className='info-box'>

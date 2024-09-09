@@ -65,7 +65,7 @@ function PeruHome() {
     return (
         <div>
             <div className='intro-boxNepal fade-in-section' ref={addToRefs}>
-                <h1>Nepal</h1>
+                <h1>NEPAL</h1>
                 {/* <button className='buttonDonate'>Donate</button> */}
             </div>
             <div className='info-box'>
