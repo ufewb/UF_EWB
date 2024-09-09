@@ -60,22 +60,18 @@ function GetInvolved() {
         <div>
             <div className='intro-box1 fade-in-section' ref={addToRefs}>
                 <div className='intro-writing'>
-                    <h1>GET INVOVLED</h1>
+                    <h1>GET INVOLVED</h1>
                 </div>
             </div>
 
             <div className='wholeContainer'>
 
                 <div className='info-box fade-in-section' ref={addToRefs}>
-                    <div className='application-and-pic'>
-                        <div className='caption'>
-                            <h1>APPLICATION</h1>
-                            <div className='paragraph'>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel nunc quis orci elementum rhoncus. Curabitur sodales velit felis, in vulputate mi porttitor ac. Maecenas quis nisl quis odio efficitur imperdiet. Proin ac gravida mi. Fusce interdum quam vitae odio tempor facilisis. Aliquam erat volutpat. Phasellus tristique turpis ut euismod consectetur. Donec et neque molestie eros dictum mattis sed quis risus. Curabitur faucibus malesuada urna, et gravida lectus fringilla non. Nunc pellentesque placerat faucibus. Fusce gravida odio non sapien aliquet vehicula.</p>
-                            </div>
-                        </div>
-                        <img src={randomImg} alt="Home Image" className='applicationPicImg' />
+                    <div className = "applicationButton">
+                        <h1 className = "labelGetInvovled">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
+                        <button className = "buttonApplication"><a href ="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank">APPLY HERE</a></button>
                     </div>
+                    
                 </div>
 
                 <div className='FAQ-box fade-in-section' ref={addToRefs}>
@@ -86,10 +82,25 @@ function GetInvolved() {
                     {[...Array(5)].map((_, index) => (
                         <div className='faq' key={index}>
                             <button className='Q-Box' onClick={() => toggleFAQ(index)}>
-                                Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                            {[
+                                "Q. What is the mission of UF Engineers Without Borders (EWB)?",
+                                "Q. Who can apply to join UF EWB?",
+                                "Q. What subteams are available, and what do they focus on?",
+                                "Q. What does the application process involve?",
+                                "Q. How much time is required for involvement with UF EWB?"
+                            ][index]}
                             </button>
+                            
                             <div className='answer' ref={(el) => (answerRefs.current[index] = el)}>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                                <p>
+                                    {[
+                                        "Our mission is to improve water and sanitation systems for communities in Nepal and Peru by implementing sustainable and innovative solutions. We aim to bring education, outreach, human-centered design, and humanitarian aid to these regions through a collaborative team effort, open to students of all majors and skill levels.",
+                                        "Everyone is welcome to apply! We accept students from all majors, skill levels, and interests. Whether you're interested in technical design, communications, fundraising, public relations, or web design, there's a place for you in UF EWB. No prior experience is necessary, just a passion for making a positive impact.",
+                                        "UF EWB has several subteams, each with a specific focus:\n• Design: Focuses on technical assessment, project planning, and water system construction in Nepal and Peru.\n• Communications: Collaborates with communities and partners, and helps with marketing and budgeting.\n• Fundraising: Organizes events and raises funds through grants, merchandise, and presentations.\n• Public Relations: Manages member engagement, social media, and outreach efforts.\n• Web Design: Builds and maintains our team’s website (coding skills are a plus).",
+                                        "The application process requires submitting two PDF files: your completed application and resume. Applications must be emailed to ewb.ufl.involvement@gmail.com by 11:59 PM on Friday, September 20th. You will receive a confirmation email after submission. If selected, you will be invited for an interview on Saturday, September 28th, with a make-up interview available via Zoom on Sunday, September 29th.",
+                                        "On average, members are expected to contribute 3-5 hours per week. This includes a biweekly General Body Meeting for all members, along with additional subteam meetings. However, the time commitment can increase during critical project deadlines or grant submission periods."
+                                    ][index]}
+                                </p>                            
                             </div>
                         </div>
                     ))}

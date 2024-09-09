@@ -41,6 +41,14 @@ function Home() {
         <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
       </div>
       
+      <div className='info-box'>
+                    <div className = "applicationButton">
+                        <h1 className = "labelGetInvovled">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
+                        <button className = "buttonApplication"><a href ="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank">APPLY HERE</a></button>
+                    </div>
+                    
+                </div>
+
       <div className="teams">
         <h1 className="teamsHeading fade-in ">OUR TEAMS</h1>
 

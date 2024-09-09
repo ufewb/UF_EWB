@@ -19,6 +19,7 @@
 .home-container {
   text-align: center;
   position: relative; 
+  margin-top: 0px;
 }
 
 .home-title {
