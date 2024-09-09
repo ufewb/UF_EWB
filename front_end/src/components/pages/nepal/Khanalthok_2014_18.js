@@ -49,8 +49,8 @@ function Khanalthok_2014_18() {
             <div className="container">
                 <div className='buttons fade-in-section' ref={addToRefs}>
                     <Link to="/nepal" className="peruHomeButton">Nepal Home</Link>
-                    <Link to="/nepal/phoolbari_2021_24" className="peruHomeButton">Phoolbari 2021-2024</Link>
-                    <Link to="/nepal/phoolbari_2017_21" className="peruHomeButton">Phoolbari 2017-2021</Link>
+                    <Link to="/nepal/phoolbari_2021_24" className="peruHomeButton">Phoolbari (2021)</Link>
+                    <Link to="/nepal/phoolbari_2017_21" className="peruHomeButton">Phoolbari (2017)</Link>
                 </div>
                 <div className="body-text-nepal fade-in-section" ref={addToRefs}>
                     <p>Our first project in Khanalthok, Nepal consisted of establishing a reliable and clean water source at the community’s secondary school, the Shree Janahit Secondary School, over a course of five years. In this project, we aided the community in constructing a permanent water storage tank and sanitation systems. We have closed out our project in Khanalthok and have performed an evaluation of all implemented systems. Although our team has stopped working in Khanalthok, we still plan to return and maintain relationships with the community. The five years of work were split as follows:</p>

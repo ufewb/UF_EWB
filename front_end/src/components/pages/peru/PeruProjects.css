@@ -5,6 +5,10 @@
     background-color:#fffef2;
 }
 
+p {
+    margin-bottom: 1em;
+}
+
 .VDC-header {
     display: flex;
     justify-content: center;
@@ -104,7 +108,7 @@
    justify-content: center;
    display: flex;
    /* padding: 30px 30px;*/
-   margin: 20px 0;
+   margin: 20px 0px 40px 0px;
 
 }
 
@@ -120,6 +124,7 @@
    line-height: 3.5vh;
    padding: 0 40px;
    color: rgb(8, 20, 52);
+   /* text-indent: 40px; */
 }
 
 .body_text2{ /* fixed the padding issue cus it was too far to the right*/
@@ -129,6 +134,7 @@
     line-height: 3.5vh;
     color: rgb(8, 20, 52);
     padding: 0 20px;
+    /* text-indent: 40px; */
 
 }
 
@@ -166,6 +172,7 @@
     line-height: 3.5vh;
     width: 100%;
     color: rgb(8, 20, 52);
+    /* text-indent: 40px; */
 }
 
 .img-div2{
@@ -192,6 +199,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin-top: 20px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     }
 
@@ -242,6 +250,7 @@
     /* width: 100%; */
     color: rgb(8, 20, 52);
     margin-bottom: 20px;
+    /* text-indent: 40px; */
 }
 
 .documentation-div{
@@ -361,6 +370,10 @@
     .sign-image {
         margin: 0 0 20px 0;
     }
+
+    .img-div {
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -403,6 +416,7 @@
         align-items:center;
         font-size: 1em;
         text-align: left;
+        /* text-indent: 20px; */
     }
 
     .text-next-to-img2, .body_text2{
@@ -415,7 +429,7 @@
 
     .peruHomeButton, .documentationButton {
         padding: 5px 10px 5px 10px;
-        font-size: 0.6em;
+        font-size: 0.7em;
         /* margin: 10px  0px; */
         margin: 10px;
     }
@@ -427,7 +441,11 @@
     }
 
     .sub-title{
-        font-size: 1.5em;
+        font-size: 1.2em;
+        word-wrap: break-word;
+        word-break: break-word;
+        text-align: left;
+        line-height: 1.4;
     }
 
     .documentation-grid {
@@ -458,6 +476,7 @@
     .body-text-nepal {
         font-size: 1em;
         text-align: left;
+        margin-top: 20px
     }
 }
 

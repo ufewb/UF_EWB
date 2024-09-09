@@ -69,6 +69,7 @@ function IrrigationReservoir() {
                     </div>
                     <div className="text-next-to-img">
                         <p>Throughout the 2018-2019 school year, our team worked diligently, planning our irrigation reservoir implementation trip for August 2019. Our plan was to construct an irrigation reservoir in a designated location in Maras Ayllu that would provide water for the agricultural community’s crops throughout the long dry season. We conducted soil tests, water balances and completed all our documentation for EWB-USA with flying colors. </p>
+                        <p> </p>
                         <p>Throughout the summer of 2019, the team reached out to community leaders on multiple occasions to confirm the status of their financial support and the necessity of a permit to construct the reservoir, but these attempts were unsuccessful.</p>
                         <p>During the month of July, a month before our scheduled implementation trip, we were notified that the community could not provide our team with 5% of the estimated cost of the project (as they had agreed) and that we had not received a permit to build the reservoir because of miscommunication.</p>
                         <p>Without the funding and the permit, we offered the community a smaller reservoir that could be built within the planned timeline, but the community indicated that they would not want a reservoir in this location if it could not irrigate all of the surrounding cropland as intended. They brought several other potential site locations to our attention that would benefit from a smaller reservoir, but our team ultimately decided it was best to not implement a reservoir this year in an unfamiliar and unassessed location.</p>
@@ -97,7 +98,7 @@ function IrrigationReservoir() {
                     <div className="img-div2">
                         <img src={timelineImage} alt="timeline image"/>
                         <div className="photo-caption">
-                            <p>this is a caption. write anything idk</p>
+                            <p>Project Timeline</p>
                         </div>
                     </div>
                     <div className="body_text2 fade-in-section" ref={addToRefs}>

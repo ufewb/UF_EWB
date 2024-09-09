@@ -47,8 +47,8 @@ function Phoolbari_2017_21() {
             <div className = "container">
                 <div className= 'buttons fade-in-section' ref={addToRefs}>
                     <Link to="/nepal" className='peruHomeButton'>Nepal Home</Link>
-                    <Link to="/nepal/phoolbari_2021_24" className='peruHomeButton'>Phoolbari_2021_24</Link>
-                    <Link to="/nepal/khanalthok_2014_18" className='peruHomeButton'>Khanalthok_2014_18</Link>
+                    <Link to="/nepal/phoolbari_2021_24" className='peruHomeButton'>Phoolbari (2021)</Link>
+                    <Link to="/nepal/khanalthok_2014_18" className='peruHomeButton'>Khanalthok (2014)</Link>
                 </div>
                 <div className="body_text fade-in-section" ref={addToRefs}>
                     <p>The University of Florida Engineers Without Borders Nepal Team is proud to be serving the community of Phoolbari, Nepal in an effort to bring clean and accessible water to the Shree Janajagriti Primary School. Phoolbari is a village located in rural Nepal, nearly a three-hour drive from Kathmandu, the closest major city. In Phoolbari, many water sources are turbid, containing harmful bacteria such as fecal coliform. These water sources are also very few and far away, with the closest water source to the primary school being nearly a 30-minute walk through mountainous terrain. This lack of clean and accessible water sources at the primary school has led to several cases of preventable waterborne illnesses among the student population, placing a severe strain on the students, teachers, and community members of Phoolbari. By seeking a long-term solution to this problem, the community hopes to eradicate all cases of waterborne illness at the school by supplying the students with potable drinking water and improving their sanitary systems for a fighting chance against bacteria and disease.</p>
@@ -69,7 +69,7 @@ function Phoolbari_2017_21() {
                     <div className="img-div2">
                         <img src={NepalPic} alt="timeline image"/>
                         <div className="photo-caption">
-                            <p>this is a caption. write anything idk</p>
+                            <p>Photo of Project</p>
                         </div>
                     </div>
                     <div className="body_text2 fade-in-section" ref={addToRefs}>

@@ -63,7 +63,7 @@ function VirgenDelCarmenElementarySchool() {
                     <div className = "img-div-VDC">
                         <img src= {signImage} alt="VDC school sign"/>
                         <div className = "photo-caption">
-                            <p>this is a caption. write something idk</p>
+                            <p>Virgen Del Carmen School Sign</p>
                         </div>
                     </div>
                     <div className="text-next-to-img">
