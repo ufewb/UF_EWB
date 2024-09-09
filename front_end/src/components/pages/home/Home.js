@@ -50,7 +50,7 @@ function Home() {
                 </div>
 
       <div className="teams">
-        <h1 className="teamsHeading fade-in ">OUR TEAMS</h1>
+        <h1 className="teamsHeading fade-in">OUR TEAMS</h1>
 
         <div className="team_indv">
           <img src={nepalTeams} alt="Nepal Team" className="team_img fade-in" />
