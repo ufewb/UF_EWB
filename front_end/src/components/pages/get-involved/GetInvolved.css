@@ -81,7 +81,6 @@
     margin-left: -10vw;
     margin-bottom: -10px;
     border:none;
-
 }
 
 .active, .Q-Box:hover{
@@ -106,13 +105,14 @@
 
 .FAQ-box .answer {
     background-color: #fffef2 !important;
+    margin-top: 10px;
 }
 
 .answer.active {
     max-height: 1000px; 
     opacity: 1;
     padding: 20px 20px; 
-    margin-top: 10px; 
+    margin-top: 50px;
 }
 
 .margin {
