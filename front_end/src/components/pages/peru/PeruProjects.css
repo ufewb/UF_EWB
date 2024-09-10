@@ -161,7 +161,7 @@ p {
     flex-wrap: wrap;
     margin: 0 20px;
     color: rgb(8, 20, 52);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .text-next-to-img2{
@@ -186,7 +186,7 @@ p {
 }
 
 .img-div2 img{
-    flex: 1;
+    /* flex: 1; */
     border-radius: 8px;
     max-width: 100%;
     height: auto;
@@ -446,6 +446,8 @@ p {
         word-break: break-word;
         text-align: left;
         line-height: 1.4;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     .documentation-grid {
