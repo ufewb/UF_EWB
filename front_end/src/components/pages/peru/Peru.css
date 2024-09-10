@@ -82,6 +82,7 @@
 }
 
 .descriptiveText {
+    margin-top: 1em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.3vh;
     line-height: 3.5vh;
@@ -222,29 +223,57 @@
     background-color: rgb(33, 67, 236);
 }
 
-@media (max-width: 768px) {
-    .header {
+@media (max-width: 768px) and (max-width: 480px) {
+    .intro-boxPeru {
         flex-direction: column;
         text-align: center;
+        background-size: 250%;
+        background-attachment: local;
+        margin-top: 20px;
     }
 
-    .buttonDonate {
-        margin: 10px 0;
+    .whoWeAreText, .pastProjects{
+        font-size: 1em;
     }
 
-    .button {
-        margin: 10px 0;
+    .whoWeAreText{
+        font-size: 1em;
+        margin-right: 20vw;
     }
 
-    .buttons {
+    .descriptiveText{
+        font-size: 1em;
+        margin-left: -5vw;
+        margin-right: -10vw;
+    }
+
+    .buttonLink {
+        width: 100%; 
+        max-width: 500px; 
+        /* margin-bottom: 50px;  */
+        font-size: 0.8em;
+         padding: 5px 10px 5px 10px; 
+         /* margin: 10px 0;  */
+         /* margin:10px;  */
+    }
+
+    .buttonsLink {
         flex-direction: column;
+        width: 100%; 
+        max-width: 500px; 
+        /* margin-bottom: 10px;  */
+         /* padding: 5px 10px 5px 10px;  */
+         /* margin: 10px 0;  */
+         /* margin:10px; */
+         padding-left: 5vw;
+         padding-right: 5vw;
     }
 
     .currentTextandPic {
         flex-direction: column;
     }
 
-    .projectPic {
+    .imgAndCaption img {
         margin: 0 0 0 20px;
     }
 
@@ -255,9 +284,13 @@
     .groupPic, .slider img {
         max-width: 100%;
     }
+
+    .Gallery {
+        width: 100%;
+    }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .header h1 {
         font-size: 1.5em;
     }
@@ -270,7 +303,7 @@
         padding: 10px;
         font-size: 0.9em;
     }
-}
+} */
 
 .fade-in-section {
     opacity: 0;
@@ -284,39 +317,40 @@
     transform: none;
 }
 
-/* For mobile devices (max-width: 768px) */
+/*
 @media (max-width: 768px) {
-    /* Flex container holding text and image */
+    .info-box{
+        padding: 0;
+    }
+    
     .TextandPic {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px; /* Reduced padding */
-        width: 100%; /* Ensure full container width is used */
+        flex-direction: column; 
+        padding: 10px;
+        width: 100%; 
     }
 
-    /* Text box styling for readability and increased width */
     .whoWeAreText {
         font-size: 2vh;
         padding: 10px;
         margin: 0 auto;
-        width: 95%; /* Increase the width of the text box */
-        max-width: 700px; /* Set a max-width to avoid it stretching too much */
+        width: 95%; 
+        max-width: 700px;
     }
 
     .descriptiveText {
-        font-size: 2vh; /* Maintain readable font size */
-        line-height: 3vh; /* Adequate line spacing for readability */
-        margin-bottom: 20px; /* Add space between text and the next element */
+        font-size: 2vh; 
+        line-height: 3vh;
+        margin-bottom: 20px; 
     }
 
-    /* Image moves to the bottom */
     .imgAndcaption {
-        text-align: center; /* Center the image */
-        margin: 0; /* Remove extra margin */
+        text-align: center; 
+        margin: 0; 
     }
 
     .imgAndcaption img {
         width: 100%;
-        max-width: 300px; /* Limit image width */
+        max-width: 300px; 
         height: auto;
         margin: 20px auto;
     }
@@ -327,30 +361,28 @@
         text-align: center;
     }
 
-    /* Fix overlapping buttons */
     .buttonsLink {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
         margin-top: 20px;
-        width: 100%; /* Ensure full width is used */
+        width: 100%; 
     }
 
     .buttonLink {
-        margin-bottom: 10px; /* Add space between buttons */
+        margin-bottom: 10px; 
         font-size: 0.6em;
         padding: 12px 20px;
-        width: 95%; /* Ensure full width for buttons */
+        width: 95%; 
         max-width: 100%;
         height:auto;
-        display: block; /* Limit the button width */
+        display: block; 
         text-align: center;
     }
 
-    /* Fix gallery layout */
     .Gallery {
         padding: 20px;
-        width: 95%; /* Ensure gallery takes most of the screen width */
+        width: 95%; 
         margin: 0 auto;
         font-size: 2vh;
         text-align: center;
@@ -364,7 +396,7 @@
 
     .sliderNepal img {
         width: 100%;
-        height: auto; /* Ensure no vertical stretching */
+        height: auto; 
         max-width: 800px;
         max-width: 100%;
         height:auto;
@@ -372,7 +404,7 @@
     }
 
     .sliderNepal {
-        max-width: 90%; /* Limit gallery width */
+        max-width: 90%; 
         margin: 0 auto;
     }
 
@@ -390,8 +422,10 @@
     }
 }
 
-/* For very small screens (max-width: 480px) */
 @media (max-width: 480px) {
+    .info-box{
+        padding: 0;
+    }
     .intro-boxPeru{
         background-size: 190%;
         background-position: 5px;
@@ -399,38 +433,37 @@
     }
     .whoWeAreText, .pastProjects {
         font-size: 1.8vh;
-        padding: 10px;
+        padding: 10px; 
         width: 100%;
         margin-left: -60px;
-        margin-top: 20px;
+        margin-top: 20px; 
         width: 100%;
     }
 
     .descriptiveText {
         font-size: 1.8vh;
         line-height: 2.5vh;
-        padding: 10px;
+        padding: 10px; 
     }
 
     .imgAndcaption img {
         max-width: 250px;
-        margin: 15px auto;
+        margin: 15px auto; 
     }
     .imgAndcaption{
-        margin-left: -80px;
+        margin-left: -80px; 
     }
 
     .buttonLink {
-        width: 95%; /* Make buttons take up almost full width on smaller screens */
-        max-width: 300px; /* Set a maximum width */
-        margin-bottom: 10px; /* Add margin between buttons to avoid overlap */
+        width: 95%; 
+        max-width: 300px; 
+        margin-bottom: 10px; 
         font-size: 1em;
-        padding: 5px 10px 5px 10px;
-        margin: 10px 0;
-        margin:10px;
+         padding: 5px 10px 5px 10px; 
+         margin: 10px 0; 
+         margin:10px; 
     }
 
-    /* Adjust gallery for very small screens */
     .slider img {
         width: 100%;
         height: auto;
@@ -442,6 +475,7 @@
     }
 
     .Gallery{
-        margin-left: -30px;
+         margin-left: -30px; 
     }
 }
+*/
