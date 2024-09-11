@@ -45,6 +45,11 @@ function EBoard() {
 
     return (
         <div>
+            {/* get involved header */}
+            <div className='eboardBox fade-in-section' ref={addToRefs}>
+                <h1>MEET THE TEAMS</h1>
+            </div>
+
             <h1 className='category fade-in-section' ref={addToRefs}>LEADERSHIP</h1>
             <div className="main fade-in-section" ref={addToRefs}>
             <div>

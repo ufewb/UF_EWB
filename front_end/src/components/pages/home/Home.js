@@ -1,12 +1,10 @@
+// src/components/Home.js
 import React, { useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-
-import homeImage from '../../pictures/home/ewb_home.jpg';
-import nepalTeams from '../../pictures/home/nepal_teams.jpg';
-import peruTeams from '../../pictures/home/peru_teams.jpg';
 import ImagesComponent from './SponsorsHomePage';
 import videoEWB from "../../pictures/home/ewb_homepage.mp4";
+import Projects from './Projects'; // Import the new Projects component
 
 function Home() {
 
@@ -40,28 +38,19 @@ function Home() {
         <h1 className="textBeg fade-in">ENGINEERING <br /> WITHOUT BORDERS</h1>
         <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
       </div>
-      
+
       <div className='info-box'>
-                    <div className = "applicationButton">
-                        <h1 className = "labelGetInvovled">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
-                        <button className = "buttonApplication"><a href ="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank">APPLY HERE</a></button>
-                    </div>
-                    
-                </div>
-
-      <div className="teams">
-        <h1 className="teamsHeading fade-in">OUR TEAMS</h1>
-
-        <div className="team_indv">
-          <img src={nepalTeams} alt="Nepal Team" className="team_img fade-in" />
-          <Link to="/nepal" className="team_click underline-hover fade-in">NEPAL</Link>
-        </div>
-
-        <div className="team_indv">
-          <img src={peruTeams} alt="Peru Team" className="team_img fade-in" />
-          <Link to="/peru" className="team_click underline-hover fade-in">PERU</Link>
+        <div className="applicationButton">
+          <h1 className="labelGetInvovled appButtonHome">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
+          <button className="buttonApplication">
+            <a href="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank" rel="noopener noreferrer">
+              APPLY HERE
+            </a>
+          </button>
         </div>
       </div>
+
+      <Projects /> {/* Use the new Projects component */}
 
       <h1 className="teamsHeading sponsors-title fade-in">SPONSORS</h1>
 

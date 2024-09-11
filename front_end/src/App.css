@@ -4,6 +4,10 @@
   background-color: #fffef2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* default settings */
 
 * {
@@ -31,7 +35,6 @@ nav li {
 }
 
 nav a {
-  height: 100%;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
@@ -47,6 +50,7 @@ nav a {
   cursor: pointer;
   text-decoration: none;
   color: #075BA7;
+  height: 100%; 
 }
 
 .underline-hover-nav::after {
@@ -108,9 +112,9 @@ nav img:first-child {
 
 .menuButton svg {
   padding-top: 12px;
-  height: 40px; /* Adjust as needed */
-  width: auto; /* Maintain aspect ratio */
-  vertical-align: middle; /* Align vertically with text */
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
   margin-right: 15px;
 }
 
