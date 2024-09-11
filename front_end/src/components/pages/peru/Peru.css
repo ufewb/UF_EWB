@@ -223,6 +223,18 @@
     background-color: rgb(33, 67, 236);
 }
 
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
 @media (max-width: 768px) and (max-width: 480px) {
     .intro-boxPeru {
         flex-direction: column;
@@ -250,232 +262,67 @@
     .buttonLink {
         width: 100%; 
         max-width: 500px; 
-        /* margin-bottom: 50px;  */
         font-size: 0.8em;
-         padding: 5px 10px 5px 10px; 
-         /* margin: 10px 0;  */
-         /* margin:10px;  */
+        padding: 5px 10px; 
+        margin:10px;
     }
 
     .buttonsLink {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%; 
         max-width: 500px; 
-        /* margin-bottom: 10px;  */
-         /* padding: 5px 10px 5px 10px;  */
-         /* margin: 10px 0;  */
-         /* margin:10px; */
-         padding-left: 5vw;
-         padding-right: 5vw;
+        margin: 1em;
+        gap: 20px;
     }
 
-    .currentTextandPic {
+    .imgAndCaption {
+        display: flex;
         flex-direction: column;
-    }
-
-    .imgAndCaption img {
-        margin: 0 0 0 20px;
-    }
-
-    .picContainer {
-        flex-direction: column;
-    }
-
-    .groupPic, .slider img {
-        max-width: 100%;
-    }
-
-    .Gallery {
-        width: 100%;
-    }
-}
-
-/* @media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .descriptiveText {
-        padding: 10px;
-    }
-
-    .button {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-} */
-
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease-out, transform 0.6s ease-out;
-    will-change: opacity, transform;
-}
-
-.fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-}
-
-/*
-@media (max-width: 768px) {
-    .info-box{
-        padding: 0;
+        align-items: flex-start; 
+        margin-left: -6em; /* centers my pic */
     }
     
-    .TextandPic {
-        flex-direction: column; 
-        padding: 10px;
-        width: 100%; 
-    }
-
-    .whoWeAreText {
-        font-size: 2vh;
-        padding: 10px;
-        margin: 0 auto;
-        width: 95%; 
-        max-width: 700px;
-    }
-
-    .descriptiveText {
-        font-size: 2vh; 
-        line-height: 3vh;
-        margin-bottom: 20px; 
-    }
-
-    .imgAndcaption {
-        text-align: center; 
-        margin: 0; 
-    }
-
-    .imgAndcaption img {
-        width: 100%;
-        max-width: 300px; 
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .caption1nepal {
-        font-size: 14px;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .buttonsLink {
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        width: 100%; 
-    }
-
-    .buttonLink {
-        margin-bottom: 10px; 
-        font-size: 0.6em;
-        padding: 12px 20px;
-        width: 95%; 
+    .imgAndCaption img {
+        margin: 0;
         max-width: 100%;
-        height:auto;
-        display: block; 
+        display: block;
+        margin-left: 0;
+    }
+    
+    .imgAndCaption p {
+        margin: 0;
         text-align: center;
+        margin-top: 0.5em;
     }
 
-    .Gallery {
-        padding: 20px;
-        width: 95%; 
-        margin: 0 auto;
-        font-size: 2vh;
-        text-align: center;
-    }
-
-    .SliderContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sliderNepal img {
-        width: 100%;
-        height: auto; 
-        max-width: 800px;
-        max-width: 100%;
-        height:auto;
-        display: block; 
-    }
-
-    .sliderNepal {
-        max-width: 90%; 
-        margin: 0 auto;
-    }
-
-    .buttonsOfSlider {
-        position: absolute;
-        top: 50%;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .dots {
-        justify-content: center;
-        display: flex;
-    }
-}
-
-@media (max-width: 480px) {
-    .info-box{
-        padding: 0;
-    }
-    .intro-boxPeru{
-        background-size: 190%;
-        background-position: 5px;
-        background-attachment: local;
-    }
-    .whoWeAreText, .pastProjects {
-        font-size: 1.8vh;
-        padding: 10px; 
-        width: 100%;
-        margin-left: -60px;
-        margin-top: 20px; 
-        width: 100%;
-    }
-
-    .descriptiveText {
-        font-size: 1.8vh;
-        line-height: 2.5vh;
-        padding: 10px; 
-    }
-
-    .imgAndcaption img {
-        max-width: 250px;
-        margin: 15px auto; 
-    }
-    .imgAndcaption{
-        margin-left: -80px; 
-    }
-
-    .buttonLink {
-        width: 95%; 
-        max-width: 300px; 
-        margin-bottom: 10px; 
-        font-size: 1em;
-         padding: 5px 10px 5px 10px; 
-         margin: 10px 0; 
-         margin:10px; 
+    .caption1{
+        font-size: 0.9em;
     }
 
     .slider img {
         width: 100%;
-        height: auto;
-        max-width: 400px;
-
-    }
-    .captionSlider {
-        font-size: 0.8em;
+        max-width: 500px;
+        height: 15vh;
+        align-items: center;
+        justify-content: center;
     }
 
-    .Gallery{
-         margin-left: -30px; 
+    .Gallery {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .SliderContainer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: -1.6em;
+        margin-top: 0;
+    }
+
+    .buttonsOfSlider{
+        height: 50%;
     }
 }
-*/
