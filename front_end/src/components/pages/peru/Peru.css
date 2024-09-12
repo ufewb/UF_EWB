@@ -246,6 +246,7 @@
         background-size: 270%;
         background-attachment: local;
         margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .info-box {
@@ -257,12 +258,23 @@
         align-items: center;
     }
 
+    .TextandPic {
+        padding: 0px;
+    }
+
+    .whoWeAreText h1, .pastProjects h1 {
+        padding-left: 10px;
+    }
+
     .whoWeAreText, .pastProjects{
         font-size: 1em;
         /* background-color: aqua; */
         margin: 0px 0 0 -10px;
         /* padding: 0 20px;  */
         /* makes whoweare text look centered*/
+    }
+    .pastProjects{
+        margin: 0 0px 0 -20px;
     }
 
     .descriptiveText{
@@ -271,7 +283,6 @@
         /* margin-left: -5vw;
         margin-right: -10vw; */
         text-align: left;
-        padding:  0 10px;
     }
 
     .buttonLink {
@@ -297,7 +308,7 @@
     .imgAndCaption {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: center; 
         margin-right: 20px;
         /* background-color: red; */
 
@@ -305,17 +316,25 @@
     
     .imgAndCaption img {
         /* margin: 0; */
+        width: 100%;
         max-width: 100%;
         display: block;
-        margin-left: 0;
+        margin: 0;
         /* margin-left: 0; */
+        /* margin-left: 0; */
+        margin-left: 20px;
     }
 
     .caption1{
-        font-size: 0.9em;
+        font-size: 1em;
         text-align: center;
-        margin:  0 75px;
-    }
+        margin:  0px 77px;
+        font-weight: normal;
+        font-weight: normal;
+        font-size: 1em;
+        margin: 0px;
+        padding-bottom: 40px;
+    } 
 
     .slider img {
         width: 100%;
@@ -326,21 +345,31 @@
     }
 
     .Gallery {
-        margin-right: -10px; /*doesnt do anyhting tbh*/
-        align-items: center;
-        justify-content: center;
-        /* background-color: cadetblue; */
+        padding: 20px;
+        width: 88%; /* Ensure gallery takes most of the screen width */
+        margin: 0px;
+        margin: 50px 0 0 0;
+        font-size: 2vh;
+        text-align: center;
     }
 
-    .SliderContainer{
-        width: 100%;
-        align-items: center;
+    .SliderContainer {
+        display: flex;
         justify-content: center;
-        margin: 0 -40px;
-        /* background-color: orange; */
+        align-items: center;
+    }
+
+    .slider {
+        max-width: 90%; /* Limit gallery width */
+        margin: 0 auto;
     }
 
     .buttonsOfSlider{
         height: 50%;
+    }
+    .dots{
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
     }
 }

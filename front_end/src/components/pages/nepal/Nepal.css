@@ -91,7 +91,7 @@
     color:rgb(8, 20, 52);
 }
 
-.imgAndcaption img{
+.imgAndcaptionN img{
     max-width: 100%;
     height: 350px;
     flex: 1;
@@ -225,6 +225,18 @@
     background-color: rgb(33, 67, 236);
 }
 
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -288,20 +300,23 @@
 }
 
 /* For mobile devices (max-width: 768px) */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 480px){
     /* Flex container holding text and image */
     .TextandPic {
         flex-direction: column; /* Stack items vertically */
         padding: 10px; /* Reduced padding */
         width: 100%; /* Ensure full container width is used */
     }
+    .info-box {
+        padding: 0 20px;
+    }
 
     /* Text box styling for readability and increased width */
-    .whoWeAreText {
+    .whoWeAreText, .pastProjects {
         font-size: 2vh;
-        padding: 10px;
-        margin: 0 auto;
-        width: 95%; /* Increase the width of the text box */
+        padding: 0 20px;
+        /* margin: 0 auto; */
+        width: 100%; /* Increase the width of the text box */
         max-width: 700px; /* Set a max-width to avoid it stretching too much */
     }
 
@@ -312,22 +327,24 @@
     }
 
     /* Image moves to the bottom */
-    .imgAndcaption {
+    .imgAndcaptionN {
         text-align: center; /* Center the image */
         margin: 0; /* Remove extra margin */
     }
 
-    .imgAndcaption img {
+    .caption1nepal{
+        font-weight: normal;
+        font-size: 1em;
+        margin: 0px;
+        padding-bottom: 40px;
+    }
+
+    .imgAndcaptionN img {
         width: 100%;
         max-width: 300px; /* Limit image width */
         height: auto;
-        margin: 20px auto;
-    }
-
-    .caption1nepal {
-        font-size: 14px;
-        margin-top: 10px;
-        text-align: center;
+        /* margin: 20px auto; */
+        margin: 0px;
     }
 
     /* Fix overlapping buttons */
@@ -335,8 +352,9 @@
         flex-direction: column; /* Stack buttons vertically */
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin: 0;
         width: 100%; /* Ensure full width is used */
+        gap: 20px;
     }
 
     .buttonLink {
@@ -346,12 +364,13 @@
         width: 95%; /* Ensure full width for buttons */
         max-width: 350px; /* Limit the button width */
         text-align: center;
+       
     }
 
     /* Fix gallery layout */
     .Gallery {
-        padding: 20px;
-        width: 93%; /* Ensure gallery takes most of the screen width */
+        /* padding: 20px; */
+        width: 88%; /* Ensure gallery takes most of the screen width */
         margin: 0 auto;
         font-size: 2vh;
         text-align: center;
@@ -384,57 +403,9 @@
 
     .dots {
         justify-content: center;
+        align-items: center;
         display: flex;
     }
 }
 
-/* For very small screens (max-width: 480px) */
-@media (max-width: 480px) {
-    .whoWeAreText, .pastProjects {
-        font-size: 1.8vh;
-        padding: 10px;
-        width: 100%;
-        margin-left: -60px;
-        margin-top: 20px;
-    }
 
-    .descriptiveText {
-        font-size: 1.8vh;
-        line-height: 2.5vh;
-        padding: 10px;
-    }
-
-    .imgAndcaption img {
-        max-width: 250px;
-        margin: 15px auto;
-    }
-    .imgAndcaption{
-        margin-left: -80px;
-    }
-
-    .buttonsLink {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-        justify-content: center;
-        width: 100%; /* Full width for container */
-        padding: -40px;
-    }
-
-    .buttonLink {
-        width: 95%; /* Make buttons take up almost full width on smaller screens */
-        max-width: 300px; /* Set a maximum width */
-        margin-bottom: 10px; /* Add margin between buttons to avoid overlap */
-        padding: 20px;
-    }
-
-    /* Adjust gallery for very small screens */
-    .sliderNepal img {
-        width: 100%;
-        height: auto;
-        max-width: 400px;
-    }
-
-    .Gallery{
-        margin-left: -30px;
-    }
-}
