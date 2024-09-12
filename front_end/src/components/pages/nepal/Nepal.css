@@ -351,7 +351,7 @@
     /* Fix gallery layout */
     .Gallery {
         padding: 20px;
-        width: 95%; /* Ensure gallery takes most of the screen width */
+        width: 93%; /* Ensure gallery takes most of the screen width */
         margin: 0 auto;
         font-size: 2vh;
         text-align: center;
