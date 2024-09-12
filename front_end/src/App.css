@@ -72,6 +72,9 @@ nav img:first-child {
   margin-right: auto;
 }
 
+.tab {
+}
+
 .sidebar {
   /* want sidebar to always be on top of everything else so z-index 999 */
   position: fixed;
@@ -101,9 +104,7 @@ nav img:first-child {
 }
 
 .logo {
-  width: 5%;
   padding-top: 10px;
-  margin-left: 20px;
 }
 
 .menuButton {

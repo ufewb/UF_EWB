@@ -36,11 +36,13 @@ function App() {
           </ul>
 
           <ul>
-            <img src={logo} className="logo" alt="Logo"/>
-            <li className="hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
-            <li className="hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>
-            <li className="hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
-            <li className="hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
+            <Link to="/">
+              <img src={logo} className="logo" alt="Logo" />
+            </Link>
+            <li className="tab hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
+            <li className="tab hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>
+            <li className="tab hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
+            <li className="tab hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
             <li className="menuButton" onClick={showSidebar}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368">
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
