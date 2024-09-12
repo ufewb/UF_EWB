@@ -216,7 +216,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
@@ -303,6 +303,16 @@ p {
     height: auto;
     display: block;
     border-radius: 8px;
+}
+
+.documentation-title{
+    text-align: justify;
+   font-size: 4.5vh;
+   line-height: 3vh;
+   font-family: 'Roboto';
+   color: rgb(8, 20, 52);
+   margin-top: 40px;
+   margin-bottom: 30px;
 }
 
 .documentation-grid {
@@ -411,7 +421,7 @@ p {
     }
 
     .body_text, .text-next-to-img {
-        padding: 25px;
+        padding: 20px;
         text-align: center;
         align-items:center;
         font-size: 1em;
@@ -450,14 +460,30 @@ p {
         margin-bottom: 20px;
     }
 
+    .documentation-title{
+        font-size: 1.2em;
+        word-wrap: break-word;
+        word-break: break-word;
+        text-align: left;
+        line-height: 1.4;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
     .documentation-grid {
         flex-direction : column;
+        padding: 0px 30px 30px 30px;
     }
 
     .VDC-documentation-grid-boxes {
         height: 25vh;
         width: 100%;
         padding : 0px 0px 20px 0px;
+    }
+
+    .IR-documentation-grid-boxes {
+        height: 48vh;
+
     }
 
     .documentation-img, .implementation-img{

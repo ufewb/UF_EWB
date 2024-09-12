@@ -107,7 +107,7 @@ function IrrigationReservoir() {
                     </div>
                 </div>
                 <div className="documentation-div fade-in-section" id="doc-section2" ref={addToRefs}>
-                    <div className="sub-title">
+                    <div className="documentation-title">
                         <h4>Documentation</h4>
                     </div>
                     <div className="documentation-grid">
