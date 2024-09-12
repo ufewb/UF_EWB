@@ -14,43 +14,49 @@ function showSidebar () {
 }
 
 function closeSidebar() {
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
 }
-
 
 function App() {
   return (
     <Router>
       <div className="app">
         <nav className="nav-bar">
-
-          <ul className = "sidebar">
-            <li onClick = {closeSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/#teams">TEAMS</Link></li>
-            <li><Link to="/eboard">E-BOARD</Link></li>
-            <li><Link to="/get-involved">GET INVOLVED</Link></li>
+          <ul className="sidebar">
+            <li onClick={closeSidebar}>
+              <svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50" fill="#5f6368">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+              </svg>
+            </li>
+            <li><Link to="/" onClick={closeSidebar}>HOME</Link></li>
+            <li><a href="#projects" onClick={closeSidebar}>PROJECTS</a></li>
+            <li><Link to="/teams" onClick={closeSidebar}>TEAMS</Link></li>
+            <li><Link to="/get-involved" onClick={closeSidebar}>GET INVOLVED</Link></li>
           </ul>
 
           <ul>
-            <img src={logo} className = "logo"></img>
-            <li className = "hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
-            <li className = "hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
-            <li className = "hideOnMobile underline-hover-nav"><Link to="/eboard">E-BOARD</Link></li>
-            <li className = "hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
-            <li className = "menuButton" onClick={showSidebar}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <img src={logo} className="logo" alt="Logo"/>
+            <li className="hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
+            <li className="hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>
+            <li className="hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
+            <li className="hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
+            <li className="menuButton" onClick={showSidebar}>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#5f6368">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+              </svg>
+            </li>
           </ul>
 
         </nav>
 
-      <Routes>
-        {/* Main Routes */}
-        <Route path="/*" element={<Paths />} /> 
-      </Routes>
+        <Routes>
+          {/* Main Routes */}
+          <Route path="/*" element={<Paths />} />
+        </Routes>
 
-      <Footer />
-      
+        <Footer />
+
       </div>
     </Router>
   );

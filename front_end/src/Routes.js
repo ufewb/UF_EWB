@@ -8,7 +8,7 @@ import PeruHome from './components/pages/peru/PeruHome';
 import Login from './components/pages/login/Login';
 import PeruRoutes from './components/pages/peru/PeruRoutes';
 import NepalRoutes from './components/pages/nepal/NepalRoutes';
-import EBoard from './components/pages/eboard/EBoard';
+import Teams from './components/pages/eboard/EBoard';
 
 function Paths() {
   return (
@@ -17,9 +17,10 @@ function Paths() {
       <Route path="/get-involved" element={<GetInvolved />} />
       <Route path="/nepal/*" element={<NepalRoutes />} />
       <Route path="/peru/*" element={<PeruRoutes />} />
+      <Route path="/teams" element={<Teams />} />
+
       {/* <Route path="/faq" element={<FAQ />} /> */}
-      <Route path="/login" element={<Login />} />
-      <Route path="/eboard" element={<EBoard />} />
+      {/* <Route path="/login" element={<Login />} /> */}
     </Routes>
   );
 }

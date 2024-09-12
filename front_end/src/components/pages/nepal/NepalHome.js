@@ -112,7 +112,7 @@ function PeruHome() {
 
                 <div className='Gallery fade-in-section' ref={addToRefs}>
                     <div className='textGallery'>
-                        <h1>Gallery</h1>
+                        <h1>GALLERY</h1>
                     </div>
                     <div className='SliderContainer'>
                         <div className='emptyContainer'>
