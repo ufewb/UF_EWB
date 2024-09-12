@@ -71,8 +71,7 @@ function VirgenDelCarmenElementarySchool() {
                     </div>
                 </div>
                 <div className="documentation-div fade-in-section" id="doc-section" ref={addToRefs}>
-                    <div className="documentation
-                    -title">
+                    <div className="documentation-title">
                         <h4>Documentation</h4>
                     </div>
                     <div className="documentation-grid"> 

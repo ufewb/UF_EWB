@@ -77,7 +77,7 @@ function PeruHome() {
                             <p>The Nepal Team is one of the two teams under the University of Florida chapter of Engineers Without borders.  We are a 501(c)(3) non-profit, humanitarian organization founded in 2013. Since then, we have fully implemented in Khanalthok, Nepal and are working on implementation in Phoolbari, Nepal.  The outreach of our work focuses on providing clean, locally-sourced water in these regions whose only water source is infected with E-Coli and other bacteria. <br></br><br></br>Together, our team consists of approximately 40 undergraduate students who are dedicated to working on meaningful engineering projects in international communities. Our team works year-round on designs, fundraising, lesson plans, and research & development to address water quality and sanitation.  Our team is comprised of five sub-teams: Design, Fundraising, Communications, PMEL, and Enrichment.</p>
                         </div>            
                     </div>
-                    <div className='imgAndcaption'>
+                    <div className='imgAndcaptionN'>
                         <img src={nepalProjectPic} alt='Random Project Picture'/>
                         <div className='caption1nepal'>
                             Picture from Shree Mathurapati School
