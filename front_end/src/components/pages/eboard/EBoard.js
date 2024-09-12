@@ -101,12 +101,14 @@ function EBoard() {
                 </div>
             </div>
 
-            <h1 className='category fade-in-section' ref={addToRefs}>NEPAL TEAM</h1>
+            <Link to="/nepal">  {/* This makes the Nepal Team header clickable */}
+                <h1 className='category fade-in-section' ref={addToRefs}>NEPAL TEAM</h1>
+            </Link>
             <div className="main nepal-team fade-in-section" ref={addToRefs}>
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        <a href="mailto:ewb.ufl.nepal@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
                         </a>
                         <a href="https://www.linkedin.com/in/elenarollins/" target="_blank" rel="noreferrer">
@@ -118,7 +120,7 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        <a href="mailto:ewb.ufl.nepal@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
                         </a>
                         <a href="https://www.linkedin.com/in/priyakrit-singh-rathore-2b1a281a6/" target="_blank" rel="noreferrer">
@@ -130,9 +132,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        </a> */}
                         <a href="https://www.linkedin.com/in/aarnavgautam/" target="_blank" rel="noreferrer">
                             <p className="name">Aarnav Gautam</p>
                         </a>
@@ -142,9 +144,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        </a> */}
                         <a href="https://www.linkedin.com/in/colin-brumbach-4a620a231/" target="_blank" rel="noreferrer">
                             <p className="name">Shota & Brad</p>
                         </a>
@@ -152,12 +154,14 @@ function EBoard() {
                     <p className="position">Design Lead(s)</p>
                 </div>
             </div>
-            <h1 className='category fade-in-section' ref={addToRefs}>PERU TEAM</h1>
+            <Link to="/peru">  {/* This makes the Nepal Team header clickable */}
+                <h1 className='category fade-in-section' ref={addToRefs}>PERU TEAM</h1>
+            </Link>
             <div className="main peru-team fade-in-section" ref={addToRefs}>
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                    <a href="mailto:ewb.ufl.nepal@gmail.com">
+                    <a href="mailto:ewb.ufl.peru@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" /></a>
                         <a href="https://www.linkedin.com/in/victoria-stevenson-uf/" target="_blank" rel="noreferrer">
                             <p className="name">Victoria Stevenson</p>
@@ -168,9 +172,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.nepal@gmail.com">
-                        <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        {/* <a href="mailto:ewb.ufl.nepal@gmail.com"> */}
+                        {/* <img src={email} className="email-button" alt="Email Icon" /> */}
+                        {/* </a> */}
                         <a href="https://www.linkedin.com/in/sonia-anorga/" target="_blank" rel="noreferrer">
                             <p className="name">Sonia Anorga</p>
                         </a>
@@ -180,9 +184,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.nepal@gmail.com">
-                        <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        {/* <a href="mailto:ewb.ufl.nepal@gmail.com"> */}
+                        {/* <img src={email} className="email-button" alt="Email Icon" /> */}
+                        {/* </a> */}
                         <a href="https://www.linkedin.com/in/fabiana-gonzalez-710048218/" target="_blank" rel="noreferrer">
                             <p className="name">Fabiana Gonzalez</p>
                         </a>
@@ -196,9 +200,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
-                        <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
+                        {/* <img src={email} className="email-button" alt="Email Icon" /> */}
+                        {/* </a> */}
                         <a href="https://www.linkedin.com/in/heidiweiksnar/" target="_blank" rel="noreferrer">
                             <p className="name">Heidi Weiksnar</p>
                         </a>
@@ -208,9 +212,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        </a> */}
                         <a href="https://www.linkedin.com/in/mateo-rodriguez-0b6345240/" target="_blank" rel="noreferrer">
                             <p className="name">Mateo Rodriguez</p>
                         </a>
@@ -224,9 +228,9 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
-                        <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
+                        {/* <img src={email} className="email-button" alt="Email Icon" /> */}
+                        {/* </a> */}
                         <a href="https://www.linkedin.com/in/elizabeth-mccreary-81617b204/" target="_blank" rel="noreferrer">
                             <p className="name">Ellie McCreary</p>
                         </a>
@@ -236,26 +240,26 @@ function EBoard() {
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        <a href="mailto:ewb.ufl.software@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
                         </a>
                         <a href="https://www.linkedin.com/in/arossaadhikary/" target="_blank" rel="noreferrer">
-                            <p className="name">Arrosa Adhikary</p>
+                            <p className="name">Arossa Adhikary</p>
                         </a>
                     </div>
-                    <p className="position">WEBMASTER & MEDIA MANAGER</p>
+                    <p className="position">Webmaster & Media Manager</p>
                 </div>
                 <div>
                     <img src={sample} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
-                        <a href="mailto:ewb.ufl.involvement@gmail.com">
-                        <img src={email} className="email-button" alt="Email Icon" />
-                        </a>
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
+                        {/* <img src={email} className="email-button" alt="Email Icon" /> */}
+                        {/* </a> */}
                         <a href="https://www.linkedin.com/in/maria-mcdonald21/" target="_blank" rel="noreferrer">
                             <p className="name">Maria McDonald</p>
                         </a>
                     </div>
-                    <p className="position">EVENTS PLANNER</p>
+                    <p className="position">Events Planner</p>
                 </div>
             </div>
                     </div>

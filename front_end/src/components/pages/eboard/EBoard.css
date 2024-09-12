@@ -27,17 +27,11 @@
     display: flex;
     align-items: center; 
     justify-content: center; 
-    gap: 8px;
+    gap: 0; /* Set gap to 0 to eliminate space between email icon and name */
     flex-wrap: wrap; /* Ensures the contents wrap properly in smaller viewports */
-    margin-top: 10px; /* Ensures some space between image and name */
+    margin-top: 10px; /* Ensures some space between the image and name */
 }
 
-.name {
-    font-weight: 900;
-    font-size: 20px;
-    color: black;
-    margin: 0;
-}
 
 .position {
     margin-top: 5px;
@@ -45,17 +39,7 @@
     margin-bottom: 20px; /* Adds extra space below the position */
 }
 
-.email-button {
-    width: 24px; 
-    height: 24px;
-    cursor: pointer; 
-    transition: transform 0.3s ease;
-    margin-right: 8px; /* Adds space between the email icon and text */
-}
 
-.email-button:hover {
-    transform: scale(1.1); 
-}
 
 .fade-in-section {
     opacity: 0;
@@ -67,4 +51,45 @@
 .fade-in-section.is-visible {
     opacity: 1;
     transform: none;
+}
+
+/* General link styling */
+a {
+    text-decoration: none; /* Remove default underline */
+    color: black; /* Set text color to black */
+}
+
+/* Styling for the name specifically */
+.name {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    border-bottom: 2px solid black; /* Add underline only to the name */
+    transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the name */
+.name:hover {
+    border-bottom-color: #075ba7; /* Change underline color on hover */
+}
+
+/* Ensures the name doesn't change color after visit or active states */
+a:visited .name, a:active .name {
+    color: black; /* Keep text color black when visited or clicked */
+    border-bottom-color: black; /* Keep the underline black */
+}
+
+/* Specific styling for the email button */
+.email-button {
+    width: 24px; 
+    height: 24px;
+    cursor: pointer; 
+    transition: transform 0.3s ease;
+    margin-right: 8px; /* Space between the email icon and text */
+    border-bottom: none; /* Ensure email icon is never underlined */
+}
+
+.email-button:hover {
+    transform: scale(1.1); /* Add hover effect to the email button */
 }
