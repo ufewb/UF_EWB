@@ -77,7 +77,7 @@
 <<<<<<< HEAD
 /* General link styling */
 a {
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none; /* Remove default underline for all links */
     color: black; /* Set text color to black */
 }
 
@@ -86,8 +86,8 @@ a {
     font-weight: 900;
     font-size: 20px;
     color: black;
-    margin: 0;
-    border-bottom: 2px solid black; /* Add underline only to the name */
+    margin: 0; 
+    text-decoration: none; /* Ensure there's no default underline */
     transition: border-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
@@ -96,10 +96,11 @@ a {
     border-bottom-color: #075ba7; /* Change underline color on hover */
 }
 
-/* Ensures the name doesn't change color after visit or active states */
-a:visited .name, a:active .name {
-    color: black; /* Keep text color black when visited or clicked */
-    border-bottom-color: black; /* Keep the underline black */
+/* Ensures the name doesn't change color or underline on visit or active states */
+a:visited .name, a:active .name, a:focus .name {
+    color: black; /* Keep text color black when visited, clicked, or focused */
+
+    outline: none; /* Remove the default outline that may appear */
 }
 
 /* Specific styling for the email button */
@@ -115,7 +116,8 @@ a:visited .name, a:active .name {
 .email-button:hover {
     transform: scale(1.1); /* Add hover effect to the email button */
 }
-=======
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .eboardBox {
         background-position: center -10px; 
@@ -130,4 +132,3 @@ a:visited .name, a:active .name {
         margin-top: -50px;
     }
 }
->>>>>>> cb1583c98f363f2b9c50368240885da409494eb4
