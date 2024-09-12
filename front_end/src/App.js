@@ -36,9 +36,7 @@ function App() {
           </ul>
 
           <ul>
-            <Link to="/">
-              <img src={logo} className="logo" alt="Logo" />
-            </Link>
+            <img src={logo} className="logo" alt="Logo" />
             <li className="tab hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
             <li className="tab hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>
             <li className="tab hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>

@@ -104,7 +104,11 @@ nav img:first-child {
 }
 
 .logo {
+  width: 5%;
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 600px;
+  z-index: 999;
 }
 
 .menuButton {
@@ -162,7 +166,7 @@ nav img:first-child {
   }
 
   .logo {
-    width: 10%; /* Increase the width for smaller screens */
+    width: 2%; /* Increase the width for smaller screens */
   }
 }
 
