@@ -19,7 +19,7 @@
     padding: 0 75px 0 75px;
 }
 
-.buttonDonate {
+/* .buttonDonate {
     background-color: transparent;
     border: 3px solid white;
     border-radius: 5px;
@@ -33,20 +33,19 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s;
-}
+} */
 
-.active, .buttonDonate:hover{
+/* .active, .buttonDonate:hover{
     background-color: rgb(8, 20, 52);
-}
+} */
 
 .buttonLink {
     justify-content: center;
     align-items: center;
-    margin: 20px 40px;
+    margin: 0px 40px;
     padding: 10px 20px;
     font-size: 2.5vh;
     color: rgb(8, 20, 52);
-    background-color: 085AA6;
     cursor: pointer;
     transition: background-color 0.3s;
     border: 3px solid rgb(8, 20, 52);
@@ -71,7 +70,7 @@
     display: flex; 
     align-items: center;
     justify-content: center; 
-    padding: 0px 50px 0px 50px;
+    /* padding: 0px 50px 0px 50px; useless */
 }
 
 .whoWeAreText {
@@ -112,7 +111,7 @@
 }
 
 .pastProjects {
-    padding: 30px 40px 50px 40px;
+    /* padding: 30px 40px 50px 40px; useless*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5vh;
     color: rgb(8, 20, 52);
@@ -128,6 +127,10 @@
     font-weight: bold;
     background-color: #e6e4d2;
     border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; /* wasn't centered right so i did it manually*/
+
 }
 
 .SliderContainer {
@@ -240,66 +243,78 @@
     .intro-boxPeru {
         flex-direction: column;
         text-align: center;
-        background-size: 250%;
+        background-size: 270%;
         background-attachment: local;
         margin-top: 20px;
     }
 
-    .whoWeAreText, .pastProjects{
-        font-size: 1em;
+    .info-box {
+        /* margin: 0 10px 0 10px; */
+        /* background-color: pink; */
+        padding: 0 20px;
+        margin: 0 20px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .whoWeAreText{
+    .whoWeAreText, .pastProjects{
         font-size: 1em;
-        margin-right: 20vw;
+        /* background-color: aqua; */
+        margin: 0px 0 0 -10px;
+        /* padding: 0 20px;  */
+        /* makes whoweare text look centered*/
     }
 
     .descriptiveText{
+        /* background-color: purple; */
         font-size: 1em;
-        margin-left: -5vw;
-        margin-right: -10vw;
+        /* margin-left: -5vw;
+        margin-right: -10vw; */
+        text-align: left;
+        padding:  0 10px;
     }
 
     .buttonLink {
-        width: 100%; 
+        /* width: 10vw;  */
         max-width: 500px; 
-        font-size: 0.8em;
+        font-size: 1em;
         padding: 5px 10px; 
-        margin:10px;
+        margin-left: -5px;
+        /* background-color: black; */
     }
 
     .buttonsLink {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; 
+        width: 90vw; 
         max-width: 500px; 
-        margin: 1em;
+        /* margin-right: 50px; */
         gap: 20px;
+        /* background-color: blue; */
     }
 
     .imgAndCaption {
         display: flex;
         flex-direction: column;
         align-items: flex-start; 
-        margin-left: -6em; /* centers my pic */
+        margin-right: 20px;
+        /* background-color: red; */
+
     }
     
     .imgAndCaption img {
-        margin: 0;
+        /* margin: 0; */
         max-width: 100%;
         display: block;
         margin-left: 0;
-    }
-    
-    .imgAndCaption p {
-        margin: 0;
-        text-align: center;
-        margin-top: 0.5em;
+        /* margin-left: 0; */
     }
 
     .caption1{
         font-size: 0.9em;
+        text-align: center;
+        margin:  0 75px;
     }
 
     .slider img {
@@ -311,16 +326,18 @@
     }
 
     .Gallery {
+        margin-right: -10px; /*doesnt do anyhting tbh*/
         align-items: center;
         justify-content: center;
+        /* background-color: cadetblue; */
     }
 
     .SliderContainer{
         width: 100%;
         align-items: center;
         justify-content: center;
-        margin: -1.6em;
-        margin-top: 0;
+        margin: 0 -40px;
+        /* background-color: orange; */
     }
 
     .buttonsOfSlider{

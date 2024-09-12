@@ -14,8 +14,8 @@ function PeruHome() {
     const [active, setActive] = useState(0);
     const items = [IMG7, IMG8, IMG9, IMG10, IMG11, IMG12];
     const captions = [
-        { info: "Picture of a town in Phoolbari" },
-        { info: "Picture of a kid on our trip to Phoolbari" },
+        { info: "Town in Phoolbari" },
+        { info: "Kid on our trip to Phoolbari" },
         { info: "Our team leads in Phoolbari" },
         { info: "Students at Shree Mathurapati Secondary School" },
         { info: "Classroom in Shree Mathurapati Secondary School" },

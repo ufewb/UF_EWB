@@ -15,12 +15,12 @@ function PeruHome() {
     const [active, setActive] = useState(0);
     const items = [IMG1, IMG2, IMG3, IMG4, IMG5, IMG6];
     const captions = [
-        { info: "Picture of a town in Peru" },
-        { info: "Picture of our project leads in Maras, Peru" },
-        { info: "Picture of the mountains in Peru" },
-        { info: "Picture of Virgen del Carmen Elementary School" },
-        { info: "Picture of the mountains in Peru" },
-        { info: "Picture of the old water system in our Irrigation Project" },
+        { info: "Town in Peru" },
+        { info: "Our project leads in Maras, Peru" },
+        { info: "The mountains in Peru" },
+        { info: "Virgen del Carmen Elementary School" },
+        { info: "The mountains in Peru" },
+        { info: "The old water system in our Irrigation Project" },
     ];
     const lengthItems = items.length;
 
@@ -80,7 +80,7 @@ function PeruHome() {
                     <div className='imgAndCaption'>
                         <img src={currentProjPic} alt='Random Project Picture' className='projectPic' />
                         <div className='caption1'>
-                            Picture from Virgen del Carmen
+                             Virgen del Carmen
                         </div> 
                     </div>        
                 </div>
