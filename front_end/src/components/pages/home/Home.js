@@ -50,7 +50,7 @@ function Home() {
         </div>
       </div>
 
-      <Projects /> {/* Use the new Projects component */}
+      <Projects /> 
 
       <h1 className="teamsHeading sponsors-title fade-in">SPONSORS</h1>
 

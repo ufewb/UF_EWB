@@ -1,8 +1,28 @@
 import React, { useRef, useEffect } from 'react';
 import './EBoard.css';
 import { Link } from 'react-router-dom';
+
+
 import sample from "../../pictures/headshots/headshot_sample.png";
 import email from "../../pictures/footer/email-logo.png";
+
+import aarnav from "../../pictures/headshots/Aarnav_Headshot.jpg";
+import arossa from "../../pictures/headshots/Arossa_Headshot.jpg";
+import cathrine from "../../pictures/headshots/Cathrine_Headshot.jpg";
+import victoria from "../../pictures/headshots/Victoria_Headshot.png";
+import priyakrit from "../../pictures/headshots/Priyakrit_Headshot.png";
+import brad from "../../pictures/headshots/Brad_Headshot.png";
+import colin from "../../pictures/headshots/Colin_Headshot.png";
+import donny from "../../pictures/headshots/Donny_Headshot.png";
+import elena from "../../pictures/headshots/Elena_Headshot.png";
+import fabiana from "../../pictures/headshots/Fabiana_Headshot.png";
+import heidi from "../../pictures/headshots/Heidi_Headshot.png";
+import mateo from "../../pictures/headshots/Mateo_Headshot.png";
+import shota from "../../pictures/headshots/Shota_Headshot.png";
+import ellie from "../../pictures/headshots/Ellie_Headshot.png";
+import sonia from "../../pictures/headshots/Sonia_Headshot.png";
+import maria from "../../pictures/headshots/Maria_Headshot.png";
+import jasmyne from "../../pictures/headshots/Jasmyne_Headshot.png";
 
 function EBoard() {
     const fadeInSectionRef = useRef([]); // Initialize as an array
@@ -30,7 +50,7 @@ function EBoard() {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Trigger the event once on mount
+        handleScroll(); 
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -53,7 +73,7 @@ function EBoard() {
             <h1 className='category fade-in-section' ref={addToRefs}>LEADERSHIP</h1>
             <div className="main fade-in-section" ref={addToRefs}>
             <div>
-                <img src={sample} className="headshot" alt="Headshot" />
+                <img src={cathrine} className="headshot" alt="Headshot" />
                 <div className="name-wrapper">
                 <a href="mailto:ewb.ufl@gmail.com">
                     <img src={email} className="email-button" alt="Email Icon" />
@@ -67,7 +87,7 @@ function EBoard() {
 
 
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={donny} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         <a href="mailto:universityoffloridagainesville@chapters-ewb-usa.org">
                             <img src={email} className="email-button" alt="Email Icon" />
@@ -80,7 +100,7 @@ function EBoard() {
                 </div>
                     
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={jasmyne} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         <a href="mailto:universityoffloridagainesville@chapters-ewb-usa.org">
                             <img src={email} className="email-button" alt="Email Icon" />
@@ -93,7 +113,7 @@ function EBoard() {
                 </div>
                 
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={colin} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                     <a href="mailto:ewb.ufl.involvement@gmail.com">
                     <img src={email} className="email-button" alt="Email Icon" />
@@ -106,12 +126,12 @@ function EBoard() {
                 </div>
             </div>
 
-            <Link to="/nepal">  {/* This makes the Nepal Team header clickable */}
+            <Link to="/nepal"> 
                 <h1 className='category fade-in-section' ref={addToRefs}>NEPAL TEAM</h1>
             </Link>
             <div className="main nepal-team fade-in-section" ref={addToRefs}>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={elena} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         <a href="mailto:ewb.ufl.nepal@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
@@ -123,7 +143,7 @@ function EBoard() {
                     <p className="position">Nepal Project Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={priyakrit} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         <a href="mailto:ewb.ufl.nepal@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
@@ -135,7 +155,7 @@ function EBoard() {
                     <p className="position">Nepal Project Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={aarnav} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
@@ -147,24 +167,36 @@ function EBoard() {
                     <p className="position">Communications Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={brad} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
                         </a> */}
-                        <a href="https://www.linkedin.com/in/colin-brumbach-4a620a231/" target="_blank" rel="noreferrer">
-                            <p className="name">Shota & Brad</p>
+                        <a href="https://www.linkedin.com/in/bradley-berdan-50598b235/" target="_blank" rel="noreferrer">
+                            <p className="name">Brad Berdan</p>
                         </a>
                     </div>
-                    <p className="position">Design Lead(s)</p>
+                    <p className="position">Nepal Design Lead</p>
+                </div>
+                <div>
+                    <img src={shota} className="headshot" alt="Headshot" />
+                    <div className="name-wrapper">
+                        {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
+                        <img src={email} className="email-button" alt="Email Icon" />
+                        </a> */}
+                        <a href="https://www.linkedin.com/in/shota-konno/" target="_blank" rel="noreferrer">
+                            <p className="name">Shota Konno</p>
+                        </a>
+                    </div>
+                    <p className="position">Nepal Design Lead</p>
                 </div>
             </div>
-            <Link to="/peru">  {/* This makes the Nepal Team header clickable */}
+            <Link to="/peru">  
                 <h1 className='category fade-in-section' ref={addToRefs}>PERU TEAM</h1>
             </Link>
             <div className="main peru-team fade-in-section" ref={addToRefs}>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={victoria} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                     <a href="mailto:ewb.ufl.peru@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" /></a>
@@ -175,7 +207,7 @@ function EBoard() {
                     <p className="position">Peru Project Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={sonia} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.nepal@gmail.com"> */}
                         {/* <img src={email} className="email-button" alt="Email Icon" /> */}
@@ -187,7 +219,7 @@ function EBoard() {
                     <p className="position">Peru Communications Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={fabiana} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.nepal@gmail.com"> */}
                         {/* <img src={email} className="email-button" alt="Email Icon" /> */}
@@ -203,7 +235,7 @@ function EBoard() {
             <h1 className='category fade-in-section' ref={addToRefs}>FUNDRAISING TEAM</h1>
             <div className="main peru-team fade-in-section" ref={addToRefs}>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={heidi} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
                         {/* <img src={email} className="email-button" alt="Email Icon" /> */}
@@ -215,7 +247,7 @@ function EBoard() {
                     <p className="position">Fundraising Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={mateo} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
@@ -231,7 +263,7 @@ function EBoard() {
             <h1 className='category fade-in-section' ref={addToRefs}>PUBLIC RELATIONS TEAM</h1>
             <div className="main pr-team fade-in-section" ref={addToRefs}>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={ellie} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
                         {/* <img src={email} className="email-button" alt="Email Icon" /> */}
@@ -243,7 +275,7 @@ function EBoard() {
                     <p className="position">Public Relations Lead</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={arossa} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         <a href="mailto:ewb.ufl.software@gmail.com">
                         <img src={email} className="email-button" alt="Email Icon" />
@@ -255,7 +287,7 @@ function EBoard() {
                     <p className="position">Webmaster & Media Manager</p>
                 </div>
                 <div>
-                    <img src={sample} className="headshot" alt="Headshot" />
+                    <img src={maria} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">
                         {/* <a href="mailto:ewb.ufl.involvement@gmail.com"> */}
                         {/* <img src={email} className="email-button" alt="Email Icon" /> */}
