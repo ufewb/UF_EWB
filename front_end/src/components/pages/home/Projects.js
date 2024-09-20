@@ -6,7 +6,7 @@ import peruTeams from '../../pictures/home/peru_teams.jpg';
 
 function Projects() {
   return (
-    <div id = "projects" className="teams">
+    <div id ="projects" className="teams">
       <h1 className="teamsHeading fade-in" >OUR PROJECTS</h1>
 
       <div className="team_indv">

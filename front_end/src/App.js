@@ -38,7 +38,7 @@ function App() {
             <a href="/" className = "logoLink"><img src={logo} className="logo" alt="Logo" /></a>
             <div>
               <li className="tab hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
-              <li className="tab hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>
+              <li className="tab hideOnMobile underline-hover-nav"><a href="/projects">PROJECTS</a></li>
               <li className="tab hideOnMobile underline-hover-nav"><Link to="/teams">TEAMS</Link></li>
               <li className="tab hideOnMobile underline-hover-nav"><Link to="/get-involved">GET INVOLVED</Link></li>
               <li className="menuButton" onClick={showSidebar}>

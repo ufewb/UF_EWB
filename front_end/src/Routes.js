@@ -9,6 +9,7 @@ import Login from './components/pages/login/Login';
 import PeruRoutes from './components/pages/peru/PeruRoutes';
 import NepalRoutes from './components/pages/nepal/NepalRoutes';
 import Teams from './components/pages/eboard/EBoard';
+import Projects from './components/pages/home/Projects';
 
 function Paths() {
   return (
@@ -18,6 +19,7 @@ function Paths() {
       <Route path="/nepal/*" element={<NepalRoutes />} />
       <Route path="/peru/*" element={<PeruRoutes />} />
       <Route path="/teams" element={<Teams />} />
+      <Route path="/projects" element={<Projects />} />
 
       {/* <Route path="/faq" element={<FAQ />} /> */}
       {/* <Route path="/login" element={<Login />} /> */}
