@@ -35,7 +35,7 @@ function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
-        <h1 className="textBeg fade-in">ENGINEERING <br /> WITHOUT BORDERS</h1>
+        <h1 className="textBeg">ENGINEERING <br /> WITHOUT BORDERS</h1>
         <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
       </div>
 

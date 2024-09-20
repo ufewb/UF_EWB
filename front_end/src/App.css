@@ -35,13 +35,17 @@ nav li {
 }
 
 nav a {
-  padding: 0 30px;
+  /* padding: 0 20px; */
   text-decoration: none;
   display: flex;
   align-items: center;
   color: #075BA7;
   font-weight: 900;
   font-size: 25px;
+}
+
+.tab a {
+  padding: 0 32px;
 }
 
 .underline-hover-nav {
@@ -70,9 +74,6 @@ nav a {
 
 nav img:first-child {
   margin-right: auto;
-}
-
-.tab {
 }
 
 .sidebar {
@@ -104,10 +105,9 @@ nav img:first-child {
 }
 
 .logo {
-  width: 5%;
+  width: 10%;
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 600px;
+  padding-left: 10px;
   z-index: 999;
 }
 
@@ -166,7 +166,8 @@ nav img:first-child {
   }
 
   .logo {
-    width: 2%; /* Increase the width for smaller screens */
+    width: 10%;
+    z-index: 999;
   }
 }
 
