@@ -1,10 +1,7 @@
 import './App.css';
 import Paths from './Routes.js'; 
-
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Footer from './components/pages/Footer.js'; 
-import PeruRoutes from './components/pages/peru/PeruRoutes.js';
-import NepalRoutes from './components/pages/nepal/NepalRoutes.js';
 
 import logo from './components/pictures/home/nav-bar/ewb_logo_without_text.png';
 
@@ -34,10 +31,11 @@ function App() {
             <li><Link to="/teams" onClick={closeSidebar}>TEAMS</Link></li>
             <li><Link to="/get-involved" onClick={closeSidebar}>GET INVOLVED</Link></li>
           </ul>
-          <div className='logo'>
+          {/* <div className='logo'>
             <a href="/" className = "logoLink"><img src={logo} className="logo" alt="Logo" /></a>
-          </div>
+          </div> */}
           <ul>
+            <a href="/" className = "logoLink"><img src={logo} className="logo" alt="Logo" /></a>
             <div>
               <li className="tab hideOnMobile underline-hover-nav"><Link to="/">HOME</Link></li>
               <li className="tab hideOnMobile underline-hover-nav"><a href="#projects">PROJECTS</a></li>

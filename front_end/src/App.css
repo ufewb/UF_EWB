@@ -22,16 +22,19 @@ body {
 
 /* navigation bar */
 
+.nav-bar {
+  /* background-color: orange; */
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
 nav ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-nav li {
-  height: 50px;
+  /* background-color: red; */
 }
 
 nav a {
@@ -42,8 +45,10 @@ nav a {
   color: #075BA7;
   font-weight: 900;
   font-size: 25px;
+  height: 20px;
 }
 
+/* controls spacing btwn li elements in nav */
 .tab a {
   padding: 0 32px;
 }
@@ -64,6 +69,7 @@ nav a {
   height: 2px; 
   bottom: 0;
   left: 0;
+  padding-bottom: 2px;
   background-color: #075BA7; 
   transition: width 0.3s ease-in-out; 
 }
@@ -105,9 +111,8 @@ nav img:first-child {
 }
 
 .logo {
-  width: 10%;
-  padding-top: 10px;
-  padding-left: 10px;
+  width: 7%;
+  padding-right: 600px;
   z-index: 999;
 }
 
