@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0daaa79d.css",
-    "main.js": "/static/js/main.2594bb79.js",
+    "main.css": "/static/css/main.1fa1e0b6.css",
+    "main.js": "/static/js/main.0a939ce3.js",
     "static/js/453.ad5d15bd.chunk.js": "/static/js/453.ad5d15bd.chunk.js",
     "static/media/ewb_homepage.mp4": "/static/media/ewb_homepage.1285a3921b5eb8b96a96.mp4",
     "static/media/nepal_teams.jpg": "/static/media/nepal_teams.571bb688cd68d0513040.jpg",
@@ -43,12 +43,12 @@
     "static/media/hazen-and-sawyer-logo.jpg": "/static/media/hazen-and-sawyer-logo.88a958a925861c31bed1.jpg",
     "static/media/email-logo.png": "/static/media/email-logo.c7925c9b8fd2b3c6fccc.png",
     "index.html": "/index.html",
-    "main.0daaa79d.css.map": "/static/css/main.0daaa79d.css.map",
-    "main.2594bb79.js.map": "/static/js/main.2594bb79.js.map",
+    "main.1fa1e0b6.css.map": "/static/css/main.1fa1e0b6.css.map",
+    "main.0a939ce3.js.map": "/static/js/main.0a939ce3.js.map",
     "453.ad5d15bd.chunk.js.map": "/static/js/453.ad5d15bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0daaa79d.css",
-    "static/js/main.2594bb79.js"
+    "static/css/main.1fa1e0b6.css",
+    "static/js/main.0a939ce3.js"
   ]
 }
