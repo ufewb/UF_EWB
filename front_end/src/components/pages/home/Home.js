@@ -4,7 +4,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import ImagesComponent from './SponsorsHomePage';
 import videoEWB from "../../pictures/home/ewb_homepage.mp4";
-import Projects from './ProjectsHome'; // Import the new Projects component
+import Projects from './ProjectsHome'; 
 
 function Home() {
 
@@ -16,7 +16,7 @@ function Home() {
         const rect = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        if (rect.top <= windowHeight - 50) { // Adjust this value to fine-tune when the effect triggers
+        if (rect.top <= windowHeight - 50) {
           element.classList.add('visible');
         }
       });
@@ -30,14 +30,12 @@ function Home() {
     <div className="home-container">
       <div className="home-img-container">
 
-      <div className="video-container">
-        <video width="100%" height="auto" autoplay loop muted playsinline>
-        <source src={videoEWB} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
-        <div className="video-overlay"></div> {/* Overlay to block interaction */}
-      </div>
-
+        <div className="video-container">
+          <video width="100%" height="auto" autoPlay loop muted style={{ pointerEvents: 'none' }}>
+            <source src={videoEWB} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <h1 className="textBeg">ENGINEERING <br /> WITHOUT BORDERS</h1>
         <h1 className="textBeg textSubtitle">The University of Florida Chapter</h1>
       </div>

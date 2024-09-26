@@ -40,7 +40,7 @@ function App() {
               <Link to="/">HOME</Link>
             </li>
             <li className="tab hideOnMobile underline-hover-nav">
-            <Link to="/projects">PROJECTS</Link>
+              <Link to="/projects">PROJECTS</Link>
             </li>
             <li className="tab hideOnMobile underline-hover-nav">
               <Link to="/teams">TEAMS</Link>

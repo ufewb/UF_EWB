@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.47b66b32.css",
-    "main.js": "/static/js/main.796cd456.js",
+    "main.css": "/static/css/main.d02a1312.css",
+    "main.js": "/static/js/main.33875e64.js",
     "static/js/453.ea1eef99.chunk.js": "/static/js/453.ea1eef99.chunk.js",
     "static/media/ewb_homepage.mp4": "/static/media/ewb_homepage.1285a3921b5eb8b96a96.mp4",
     "static/media/Maria_Headshot.png": "/static/media/Maria_Headshot.30d43dfc3b6286b0f744.png",
@@ -60,12 +60,12 @@
     "static/media/hazen-and-sawyer-logo.jpg": "/static/media/hazen-and-sawyer-logo.88a958a925861c31bed1.jpg",
     "static/media/email-logo.png": "/static/media/email-logo.c7925c9b8fd2b3c6fccc.png",
     "index.html": "/index.html",
-    "main.47b66b32.css.map": "/static/css/main.47b66b32.css.map",
-    "main.796cd456.js.map": "/static/js/main.796cd456.js.map",
+    "main.d02a1312.css.map": "/static/css/main.d02a1312.css.map",
+    "main.33875e64.js.map": "/static/js/main.33875e64.js.map",
     "453.ea1eef99.chunk.js.map": "/static/js/453.ea1eef99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47b66b32.css",
-    "static/js/main.796cd456.js"
+    "static/css/main.d02a1312.css",
+    "static/js/main.33875e64.js"
   ]
 }
