@@ -110,3 +110,10 @@
     transform: translateY(0); 
     animation: fadeIn 0.8s ease-out forwards; /* Ensure it stays visible after animation */
   }
+
+  @media (max-width: 800px) { 
+    .projects_fade-in {
+      opacity: 0; 
+      transition: none; 
+    }
+  }

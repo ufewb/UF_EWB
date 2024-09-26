@@ -215,6 +215,19 @@
   animation: fadeIn 0.8s ease-out;
 }
 
+/* Media query to disable fade-in on mobile */
+@media (max-width: 800px) { 
+  #projects .fade-in {
+    opacity: 1; 
+    transition: none; 
+    transform: none; 
+  }
+
+  #projects .fade-in.visible {
+    animation: none; 
+  }
+}
+
 /* below 400 */
 @media(max-device-width: 400px) {
   .textBeg {
@@ -420,3 +433,4 @@
     margin-top: 20px;
   }
 }
+

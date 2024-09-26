@@ -26,7 +26,7 @@ function App() {
               </svg>
             </li>
             <li><Link to="/" onClick={closeSidebar}>HOME</Link></li>
-            <li><a href="/projects" onClick={closeSidebar}>PROJECTS</a></li>
+            <li><Link to="/projects" onClick={closeSidebar}>PROJECTS</Link></li>
             <li><Link to="/teams" onClick={closeSidebar}>TEAMS</Link></li>
             <li><Link to="/get-involved" onClick={closeSidebar}>GET INVOLVED</Link></li>
           </ul>
@@ -40,7 +40,7 @@ function App() {
               <Link to="/">HOME</Link>
             </li>
             <li className="tab hideOnMobile underline-hover-nav">
-              <a href="/projects">PROJECTS</a>
+            <Link to="/projects">PROJECTS</Link>
             </li>
             <li className="tab hideOnMobile underline-hover-nav">
               <Link to="/teams">TEAMS</Link>
