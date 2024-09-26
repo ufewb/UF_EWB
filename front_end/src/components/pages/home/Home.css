@@ -38,6 +38,22 @@
   font-size: 2em; 
 }
 
+/* video */
+
+.video-container {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Keep it transparent */
+  pointer-events: all; /* Block any interaction with the video */
+}
+
 /* teams */
 .teams {
   /* background-color: #f8f8f8; */
@@ -166,7 +182,6 @@
     gap: 15px;
     padding: 8px;
   }
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -203,13 +218,13 @@
 /* below 400 */
 @media(max-device-width: 400px) {
   .textBeg {
-    top: 2%;
+    top: 3.5%;
     font-size: 2em;
   }
 
   .textSubtitle {
     font-size: 1em;
-    top: 7%;
+    top: 8.5%;
   }
 
   .teams {

@@ -29,14 +29,23 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-img-container">
-        <div className="video-container">
+
+      <div className="video-container">
+        <video width="100%" height="auto" autoPlay loop muted>
+        <source src={videoEWB} type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+        <div className="video-overlay"></div> {/* Overlay to block interaction */}
+      </div>
+
+        {/* <div className="video-container">
           <video width="100%" height="auto" autoPlay loop muted>
             <source src={videoEWB} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
+        </div> */}
         <h1 className="textBeg">ENGINEERING <br /> WITHOUT BORDERS</h1>
-        <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
+        <h1 className="textBeg textSubtitle">The University of Florida Chapter</h1>
       </div>
 
       {/* <div className='info-box'>
