@@ -31,7 +31,7 @@ function Home() {
       <div className="home-img-container">
 
         <div className="video-container">
-          <video width="100%" height="auto" autoPlay loop muted style={{ pointerEvents: 'none' }}>
+          <video width="100%" height="auto" autoPlay loop muted>
             <source src={videoEWB} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
