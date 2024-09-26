@@ -1,6 +1,5 @@
 .app {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   background-color: #fffef2;
 }
 
@@ -8,94 +7,92 @@ html {
   scroll-behavior: smooth;
 }
 
-/* default settings */
-
 * {
-  /* removing default formatting */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
 }
 
-/* navigation bar */
-
 .nav-bar {
-  /* background-color: orange; */
-  padding-top: 25px;
-  padding-bottom: 5px;
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
+  padding: 0px 40px;
+  padding-top: 20px;
 }
 
 nav a {
-  /* padding: 0 20px; */
   text-decoration: none;
-  display: flex;
-  align-items: center;
   color: #075BA7;
   font-weight: 900;
-  font-size: 25px;
-  height: 20px;
+  font-size: 20px;
 }
 
-/* controls spacing btwn li elements in nav */
-.tab a {
-  padding: 0 32px;
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  width: 10%;
+  max-width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .underline-hover-nav {
-  display: inline-block;
   position: relative;
   cursor: pointer;
-  text-decoration: none;
-  color: #075BA7;
-  height: 100%; 
 }
 
 .underline-hover-nav::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px; 
-  bottom: 0;
+  height: 2px;
+  bottom: -5px;  /* Added space between the underline and text */
   left: 0;
-  padding-bottom: 2px;
-  background-color: #075BA7; 
-  transition: width 0.3s ease-in-out; 
+  background-color: #075BA7;
+  transition: width 0.3s ease-in-out;
 }
 
 .underline-hover-nav:hover::after {
   width: 100%;
 }
 
-nav img:first-child {
-  margin-right: auto;
+.menuButton {
+  display: none;
+}
+
+.menuButton svg {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
 }
 
 .sidebar {
-  /* want sidebar to always be on top of everything else so z-index 999 */
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh; 
+  height: 100vh;
   width: 250px;
   z-index: 999;
   background-color: white;
-  /* background-color: rgb(255, 255, 255, 0.2); */
-  /* backdrop-filter: blur(20px); */
-  box-shadow: -10px 0 10px rgba(0,0, 0, 0.1);
-
-  /* display links from top to bottom */
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
@@ -104,64 +101,16 @@ nav img:first-child {
 
 .sidebar li {
   width: 100%;
+  padding: 20px;
+  
 }
 
 .sidebar a {
   width: 100%;
+  font-size: 30px;
 }
 
-.logo {
-  width: 7%;
-  padding-right: 600px;
-  z-index: 999;
-}
-
-.menuButton {
-  display: none;
-}
-
-.menuButton svg {
-  padding-top: 12px;
-  height: 40px;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 15px;
-}
-
-/* footer */
-
-.footer {
-  border-top: 1px solid black;
-}
-
-.footer_content {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-}
-
-.socials {
-  display: flex;
-  justify-content: center; 
-  margin-top: 20px; 
-}
-
-.social-icon {
-  width: 30px;
-  height: auto;
-  padding: 5px;
-  margin: 0 2px; 
-}
-
-.love {
-  font-size: 13px;
-  margin-top: 5px; 
-}
-
-/* features limited when reaching 800px */
 @media(max-width: 800px) {
-  /* hiding the links on the nav bar */
   .hideOnMobile {
     display: none;
   }
@@ -171,8 +120,8 @@ nav img:first-child {
   }
 
   .logo {
-    width: 10%;
-    z-index: 999;
+    width: 20%;
+    max-width: 120px;
   }
 }
 

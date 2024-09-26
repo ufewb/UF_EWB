@@ -192,7 +192,7 @@ function EBoard() {
                 </div>
             </div>
             <Link to="/peru">  
-                <h1 className='category fade-in-section' ref={addToRefs}>PERU TEAM</h1>
+                <h1 className='category fade-in-section eboard_team' ref={addToRefs}>PERU TEAM</h1>
             </Link>
             <div className="main peru-team fade-in-section" ref={addToRefs}>
                 <div>
@@ -233,7 +233,7 @@ function EBoard() {
             </div>
 
             <h1 className='category fade-in-section' ref={addToRefs}>FUNDRAISING TEAM</h1>
-            <div className="main peru-team fade-in-section" ref={addToRefs}>
+            <div className="main peru-team fundraising-team fade-in-section" ref={addToRefs}>
                 <div>
                     <img src={heidi} className="headshot" alt="Headshot" />
                     <div className="name-wrapper">

@@ -21,7 +21,7 @@ function Footer() {
           </a>
         </div>
         <div className="love">
-          <p>made with ♥ by the 2024 UF EWB website team</p>
+          <p>Made with ♥ by the 2024 UF EWB Technical Team</p>
         </div>
       </div>
     </div>

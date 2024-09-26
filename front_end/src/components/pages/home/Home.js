@@ -4,7 +4,7 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import ImagesComponent from './SponsorsHomePage';
 import videoEWB from "../../pictures/home/ewb_homepage.mp4";
-import Projects from './Projects'; // Import the new Projects component
+import Projects from './ProjectsHome'; // Import the new Projects component
 
 function Home() {
 
@@ -39,20 +39,21 @@ function Home() {
         <h1 className="textBeg textSubtitle fade-in">The University of Florida Chapter</h1>
       </div>
 
-      <div className='info-box'>
+      {/* <div className='info-box'>
         <div className="applicationButton">
-          <h1 className="labelGetInvovled appButtonHome">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
+          <h1 className="labelGetInvov3
+          led appButtonHome">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
           <button className="buttonApplication">
             <a href="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank" rel="noopener noreferrer">
               APPLY HERE
             </a>
           </button>
         </div>
-      </div>
+      </div> */}
 
       <Projects /> 
 
-      <h1 className="teamsHeading sponsors-title fade-in">SPONSORS</h1>
+      <h1 className="teamsHeading sponsors-title">SPONSORS</h1>
 
       <div className="sponsors-container fade-in"> 
         <ImagesComponent />

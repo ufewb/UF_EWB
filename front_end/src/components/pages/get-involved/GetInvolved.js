@@ -63,15 +63,22 @@ function GetInvolved() {
                 <h1>GET INVOLVED</h1>
             </div>
 
-            {/* application */}
+            {/* application
             <div className='info-box fade-in-section' ref={addToRefs}>
                 <div className = "applicationButton">
                     <h1 className = "labelGetInvovled">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
                     <button className = "buttonApplication"><a href ="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank">APPLY HERE</a></button>
                 </div>
-            </div>
+            </div> */}
 
             {/* faq */}
+            
+            <div className = "missionStatement">
+                <p>
+                    Engineers Without Borders - USA Nepal and Peru Teams are committed to leveraging engineering expertise to provide sustainable access to clean, locally-sourced water in underserved Nepalese and Peruvian communities. We strive to create lasting, positive impacts through collaborative partnerships, empowering communities to achieve long-term water security and improved health outcomes.
+                </p>
+            </div>
+
             <div className= 'fade-in-section' ref={addToRefs}>
                 <h1 className="faq-title"> FAQs</h1>
 

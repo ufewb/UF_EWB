@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import nepalTeams from '../../pictures/home/nepal_teams.jpg';
 import peruTeams from '../../pictures/home/peru_teams.jpg';
 
-function Projects() {
+function ProjectsHome() {
   return (
     <div id ="projects" className="teams">
-      <h1 className="teamsHeading fade-in" >OUR PROJECTS</h1>
+      <h1 className="teamsHeading" >OUR PROJECTS</h1>
 
       <div className="team_indv">
         <img src={nepalTeams} alt="Nepal Team" className="team_img fade-in" />
@@ -22,4 +22,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsHome;

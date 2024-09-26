@@ -1,0 +1,89 @@
+.project_teams {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap; 
+  }
+  
+
+.project_teamheading {
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #075ba7; 
+    width: 100%; 
+    font-size: 4.5em;
+    margin-bottom: 30px;
+}
+
+.project_teamindv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #075ba7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 6px;
+  }
+  
+.project_teamimg {
+    width: 450px;  
+    height: 350px; 
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* styling text */
+
+.project_teamclick {
+    font-weight: 500;
+    font-size: 2em;
+    color: #f8f8f8;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.project_underlinehover {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.project_underlinehover::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 0;
+    background-color: #f8f8f8; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  .project_underlinehover:hover::after {
+    width: 100%;
+  }
+
+
+  /* Responsive adjustments: Stack items vertically */
+@media screen and (max-width: 768px) {
+    .project_teams {
+      flex-direction: column; /* Stack elements on top of each other */
+      align-items: center;
+    }
+  
+    .project_teamimg {
+      width: 100%; /* Adjust image width for mobile */
+    }
+  
+    .project_teamheading {
+      font-size: 2.5em;
+    }
+  
+    .project_teamclick {
+      font-size: 1.5em;
+    }
+  }
