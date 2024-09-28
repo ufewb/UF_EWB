@@ -16,7 +16,7 @@ function Footer() {
           <a href="https://www.linkedin.com/company/ewb-uf/" target = "_blank">
           <img src={linkedinLogo} className="social-icon" alt="Social Icon"></img>
           </a>
-          <a href="https://www.instagram.com/uf.ewb.peru/?hl=en"target = "_blank">
+          <a href="https://www.instagram.com/ewb.uf/"target = "_blank">
           <img src={instagramLogo} className="social-icon" alt="Social Icon"></img>
           </a>
         </div>
