@@ -65,7 +65,7 @@ function Home() {
       </div>
 
       {/* donate */}
-      <div className='info-box'>
+      <div className='info-box home_donate'>
         <div className = "applicationButton">
             <h1 className = "labelGetInvovled">Support our efforts!</h1>
             <button className = "buttonApplication"><a href ="https://support.ewb-usa.org/campaign/university-of-florida-gainesville-chapter/c83963" target="_blank">DONATE HERE</a></button>
