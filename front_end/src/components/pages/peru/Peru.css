@@ -1,4 +1,4 @@
-.intro-boxPeru {
+.hero-section {
     background-image: url("pictures/peruIR.png");
     font-size: 25px;
     color: white;
@@ -15,31 +15,11 @@
     margin-top: 20px;
 }
 
-.info-box {
-    padding: 0 75px 0 75px;
+.content-container {
+    padding: 50px 150px 60px 150px;
 }
 
-/* .buttonDonate {
-    background-color: transparent;
-    border: 3px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 10px 20px;
-    margin: 30px;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
-    font-size: 25px;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-} */
-
-/* .active, .buttonDonate:hover{
-    background-color: rgb(8, 20, 52);
-} */
-
-.buttonLink {
+.project-button {
     justify-content: center;
     align-items: center;
     margin: 0px 40px;
@@ -53,12 +33,12 @@
     border-radius: 8px;
 }
 
-.active, .buttonLink:hover {
+.active, .project-button:hover {
     background-color: rgb(8, 20, 52);
     color: white;
 }
 
-.buttonsLink {
+.project-links {
     align-items: center;
     justify-content: center;
     display: flex;
@@ -66,14 +46,14 @@
     flex-direction: row;
 }
 
-.TextandPic {
+.who-we-are-section {
     display: flex; 
     align-items: center;
     justify-content: center; 
-    /* padding: 0px 50px 0px 50px; useless */
+    margin-bottom: 40px;
 }
 
-.whoWeAreText {
+.who-we-are-text {
     flex: 1;
     flex-basis: 80%;
     font-size: 2.5vh;
@@ -81,45 +61,43 @@
     color: rgb(8, 20, 52);
 }
 
-.descriptiveText {
+.description-text {
     margin-top: 1em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.3vh;
     line-height: 3.5vh;
-    color:rgb(8, 20, 52);
+    color: rgb(8, 20, 52);
 }
 
-.imgAndCaption img {
-    width: 100%;
+.project-image-container img {
+    width: 87%;
     height: 300px;
     flex: 1;
     flex-basis: 20%;
-    margin: 20px 40px 30px 40px;
-    border-radius:8px;
+    /* margin: 20px 40px 30px 40px; */
+    margin: 30px;
+    border-radius: 8px;
 }
 
-.caption1 {
+.project-image-container p{
+    padding-left: 20px;
     color: rgb(8, 20, 52);
     font-weight: bold;
-    align-items: center;
-    justify-content: center;
     font-size: 15px;
     text-align: center;
-    margin-left: 40px;
-    margin-right: -40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.pastProjects {
-    /* padding: 30px 40px 50px 40px; useless*/
+.what-we-do-section {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2.5vh;
     color: rgb(8, 20, 52);
+    margin-bottom: 90px;
 }
 
-.Gallery {
+.gallery-section {
     flex-basis: 50%;
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px;
     font-size: 2.5vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(8, 20, 52);
@@ -129,17 +107,15 @@
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    margin-right: 15px; /* wasn't centered right so i did it manually*/
-
 }
 
-.SliderContainer {
+.gallery-container {
     display: flex;
-    padding: 30px 40px 30px 40px;
+    padding: 30px 40px;
     justify-content: center;
 }
 
-.emptyContainer{
+.slider-wrapper {
     padding: 20px;
     background-color: #075ba7;
     border-radius: 8px;
@@ -150,9 +126,9 @@
     width: 1000px;
     height: 473px;
     display: flex;
-} 
+}
 
-.captionSlider{
+.gallery-caption {
     align-items: center;
     justify-content: center;
     font-size: 15px;
@@ -168,22 +144,22 @@
     position: relative;
 }
 
-.slider .list {
+.slider .slide-list {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.slider .item {
+.slider .slide-item {
     min-width: 100%;
     box-sizing: border-box;
     display: none;
 }
 
-.slider .item.active {
+.slider .slide-item.active {
     display: block;
 }
 
-.buttonsOfSlider {
+.slider-buttons {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -205,14 +181,14 @@
     font-weight: bolder;
 }
 
-.dots {
+.slider-dots {
     display: flex;
     justify-content: center;
     padding-top: 10px;
     margin: 0 40px 0 0;
 }
 
-.dots li {
+.slider-dots li {
     list-style: none;
     display: inline-block;
     width: 10px;
@@ -223,7 +199,7 @@
     cursor: pointer;
 }
 
-.dots li.active {
+.slider-dots li.active {
     background-color: rgb(33, 67, 236);
 }
 
@@ -239,8 +215,9 @@
     transform: none;
 }
 
-@media (max-width: 768px) and (max-width: 480px) {
-    .intro-boxPeru {
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+    .hero-section {
         flex-direction: column;
         text-align: center;
         background-size: 270%;
@@ -249,92 +226,68 @@
         margin-bottom: 30px;
     }
 
-    .info-box {
-        /* margin: 0 10px 0 10px; */
-        /* background-color: pink; */
+    .content-container {
         padding: 0 20px;
         margin: 0 20px;
         justify-content: center;
         align-items: center;
     }
 
-    .TextandPic {
+    .who-we-are-section {
         padding: 0px;
     }
 
-    .whoWeAreText h1, .pastProjects h1 {
+    .who-we-are-text h1, .what-we-do-section h1 {
         padding-left: 10px;
     }
 
-    .whoWeAreText, .pastProjects{
+    .who-we-are-text, .what-we-do-section {
         font-size: 1em;
-        /* background-color: aqua; */
         margin: 0px 0 0 -10px;
-        /* padding: 0 20px;  */
-        /* makes whoweare text look centered*/
-    }
-    .pastProjects{
-        margin: 0 0px 0 -20px;
     }
 
-    .descriptiveText{
-        /* background-color: purple; */
+    .description-text {
         font-size: 1em;
-        /* margin-left: -5vw;
-        margin-right: -10vw; */
         text-align: left;
     }
 
-    .buttonLink {
-        /* width: 10vw;  */
-        max-width: 500px; 
+    .project-button {
+        max-width: 500px;
         font-size: 1em;
         padding: 5px 10px; 
         margin-left: -5px;
-        /* background-color: black; */
     }
 
-    .buttonsLink {
+    .project-links {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90vw; 
+        width: 90vw;
         max-width: 500px; 
-        /* margin-right: 50px; */
         gap: 20px;
-        /* background-color: blue; */
     }
 
-    .imgAndCaption {
+    .project-image-container {
         display: flex;
         flex-direction: column;
         align-items: center; 
         margin-right: 20px;
-        /* background-color: red; */
-
     }
     
-    .imgAndCaption img {
-        /* margin: 0; */
+    .project-image-container img {
         width: 100%;
         max-width: 100%;
         display: block;
-        margin: 0;
-        /* margin-left: 0; */
-        /* margin-left: 0; */
         margin-left: 20px;
     }
 
-    .caption1{
+    .image-caption {
         font-size: 1em;
         text-align: center;
-        margin:  0px 77px;
+        margin: 0px 77px;
         font-weight: normal;
-        font-weight: normal;
-        font-size: 1em;
-        margin: 0px;
         padding-bottom: 40px;
-    } 
+    }
 
     .slider img {
         width: 100%;
@@ -344,30 +297,29 @@
         justify-content: center;
     }
 
-    .Gallery {
+    .gallery-section {
         padding: 20px;
-        width: 88%; /* Ensure gallery takes most of the screen width */
-        margin: 0px;
+        width: 88%;
         margin: 50px 0 0 0;
         font-size: 2vh;
         text-align: center;
     }
 
-    .SliderContainer {
-        display: flex;
+    .gallery-container {
         justify-content: center;
         align-items: center;
     }
 
     .slider {
-        max-width: 90%; /* Limit gallery width */
+        max-width: 90%;
         margin: 0 auto;
     }
 
-    .buttonsOfSlider{
+    .slider-buttons {
         height: 50%;
     }
-    .dots{
+
+    .slider-dots {
         align-items: center;
         justify-content: center;
         margin: 0px;
