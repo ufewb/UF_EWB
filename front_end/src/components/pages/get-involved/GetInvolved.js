@@ -63,13 +63,13 @@ function GetInvolved() {
                 <h1>GET INVOLVED</h1>
             </div>
 
-            {/* application
+            {/* donate */}
             <div className='info-box fade-in-section' ref={addToRefs}>
                 <div className = "applicationButton">
-                    <h1 className = "labelGetInvovled">APPLICATIONS ARE OPEN UNTIL 9/21</h1>
-                    <button className = "buttonApplication"><a href ="https://docs.google.com/document/d/1PlvLTcMh2jAKXq5gEaU64YGQVbUm2e9wIUqA_QDwcaA/edit#heading=h.ro0ctsca7wst" target="_blank">APPLY HERE</a></button>
+                    <h1 className = "labelGetInvovled">Support our efforts!</h1>
+                    <button className = "buttonApplication"><a href ="https://support.ewb-usa.org/campaign/university-of-florida-gainesville-chapter/c83963" target="_blank">DONATE HERE</a></button>
                 </div>
-            </div> */}
+            </div>
 
             {/* faq */}
             

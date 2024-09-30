@@ -71,6 +71,7 @@ function NepalHome() {
             {/* Top hero section with Nepal title */}
             <div className='hero-section-nepal fade-in-section' ref={addToRefs}>
                 <h1>NEPAL</h1>
+                <button className = "buttonApplication"><a href ="https://support.ewb-usa.org/campaign/university-of-florida-gainesville-chapter/c83963" target="_blank">DONATE HERE</a></button>
             </div>
 
             {/* Main content container */}
@@ -79,7 +80,7 @@ function NepalHome() {
                 {/* Section for "Who We Are" */}
                 <div className='who-we-are-section-nepal fade-in-section' ref={addToRefs}>
                     <div className='who-we-are-text-nepal'>
-                        <h1>WHO WE ARE</h1>
+                        <h1 className = "title">WHO WE ARE</h1>
                         <div className='description-text-nepal'>
                             <p>The Nepal Team is one of the two teams under the University of Florida chapter of Engineers Without Borders. We are a 501(c)(3) non-profit, humanitarian organization founded in 2013. Since then, we have fully implemented in Khanalthok, Nepal, and are working on implementation in Phoolbari, Nepal. The outreach of our work focuses on providing clean, locally-sourced water in these regions whose only water source is infected with E-Coli and other bacteria. <br/><br/> Together, our team consists of approximately 40 undergraduate students who are dedicated to working on meaningful engineering projects in international communities. Our team works year-round on designs, fundraising, lesson plans, and research & development to address water quality and sanitation. Our team is comprised of five sub-teams: Design, Fundraising, Communications, PMEL, and Enrichment.</p>   
                         </div>            
@@ -93,7 +94,7 @@ function NepalHome() {
 
                 {/* Section for "What We Do" */}
                 <div className='what-we-do-section-nepal fade-in-section' ref={addToRefs}>
-                    <h1>WHAT WE DO</h1>
+                    <h1 className = "title">WHAT WE DO</h1>
                     <div className='description-text-nepal'>
                         <p>Our design team focuses on the design plans and materials needed to implement these projects. The Fundraising team writes grants, coordinates local fundraising events, and reaches out for corporate partnerships. Comprised of a group of Nepali speakers, the Communications team is our link to Phoolbari and Khanalthok while we are in the states, closing the language barrier between our two communities. The PMEL (Planning, Monitoring, Evaluation, & Learning) team concentrates on the longevity and sustainability of our work, ensuring the village knows how to use and maintain the rainwater catchment and sanitation systems. The Enrichment team coordinates programs where we can educate the local school students on sanitation, gender equality, and some core STEM topics.</p> 
                     </div>

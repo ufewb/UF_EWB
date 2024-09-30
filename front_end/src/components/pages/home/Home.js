@@ -64,6 +64,14 @@ function Home() {
         <h1 className="textBeg textSubtitle">The University of Florida Chapter</h1>
       </div>
 
+      {/* donate */}
+      <div className='info-box'>
+        <div className = "applicationButton">
+            <h1 className = "labelGetInvovled">Support our efforts!</h1>
+            <button className = "buttonApplication"><a href ="https://support.ewb-usa.org/campaign/university-of-florida-gainesville-chapter/c83963" target="_blank">DONATE HERE</a></button>
+        </div>
+      </div>
+
       <Projects /> 
 
       <h1 className="teamsHeading sponsors-title">SPONSORS</h1>

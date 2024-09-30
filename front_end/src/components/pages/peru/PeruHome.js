@@ -71,6 +71,7 @@ function PeruHome() {
             {/* Top section containing Peru image and title */}
             <div className='hero-section'>
                 <h1>PERU</h1>
+                <button className = "buttonApplication"><a href ="https://support.ewb-usa.org/campaign/university-of-florida-gainesville-chapter/c83963" target="_blank">DONATE HERE</a></button>
             </div>
             {/* Main container for all the content */}
             <div className='content-container'>

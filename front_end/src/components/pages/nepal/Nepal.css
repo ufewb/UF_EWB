@@ -5,7 +5,7 @@
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     height: 35vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    flex-direction: column;
 }
 
 /* Main container for all content sections */
@@ -208,6 +209,11 @@
     background-color: rgb(33, 67, 236);
 }
 
+
+.title {
+    margin-top: 30px;
+}
+
 /* Fade-in effect for sections */
 .fade-in-section {
     opacity: 0;
@@ -235,9 +241,13 @@
         flex-direction: column;
     }
 
+    /* change this later - im removing the image here for now */
     .project-image-container-nepal img {
-        width: 100%;
-        height: auto;
+        display: none;
+    }
+
+    .project-image-container-nepal p {
+        display: none;
     }
 
     .project-links-nepal {
@@ -254,4 +264,24 @@
         width: 100%;
         height: auto;
     }
+
+    .buttonApplication {
+        padding-left: 5vh;
+        padding-right: 5vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        font-weight: 900;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 2.75vh;
+        text-decoration: none;
+        margin-top: 1.5em; 
+        text-align: center;
+    
+        color: white;
+        border: 4px solid rgb(8, 20, 52);
+        background: linear-gradient(135deg, #075ba7, #a3d1e0);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
 }
