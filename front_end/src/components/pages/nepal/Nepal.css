@@ -12,8 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 /* Main container for all content sections */
@@ -52,7 +52,7 @@
     height: 350px;
     flex: 1;
     flex-basis: 20%;
-    margin: 20px 40px;
+    margin: 20px 45px;
     border-radius: 8px;
 }
 
@@ -112,6 +112,8 @@
     font-weight: bold;
     background-color: #e6e4d2;
     border-radius: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Container for the gallery slider */
@@ -234,11 +236,20 @@
     }
 
     .content-container-nepal {
-        padding: 0 20px;
+        padding: 25px 30px;
     }
 
-    .who-we-are-section {
+    .who-we-are-section-nepal h1{
+        margin: 0;
+    }
+
+    .who-we-are-section-nepal {
         flex-direction: column;
+    }
+
+    .description-text-nepal {
+        font-size: 1em;
+        text-align: left;
     }
 
     /* change this later - im removing the image here for now */
@@ -261,9 +272,33 @@
     }
 
     .slider-nepal img {
-        width: 100%;
+        width: 30vh;
         height: auto;
     }
+
+    .gallery-container-nepal {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-wrapper-nepal {
+        padding: 20px;
+    }
+
+    .slider-nepal{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider-buttons-nepal {
+        height: 50%;
+    }
+
+    .slider-dots-nepal {
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    } 
 
     .buttonApplication {
         padding-left: 5vh;
