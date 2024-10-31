@@ -2,30 +2,28 @@ import React, { useRef, useEffect } from 'react';
 import './EBoard.css';
 import { Link } from 'react-router-dom';
 
+import email from "../../assets/footer/email-logo.png"
 
-import sample from "../../pictures/headshots/headshot_sample.png";
-import email from "../../pictures/footer/email-logo.png";
-
-import aarnav from "../../pictures/headshots/Aarnav_Headshot.jpg";
-import arossa from "../../pictures/headshots/Arossa_Headshot.jpg";
-import cathrine from "../../pictures/headshots/Cathrine_Headshot.jpg";
-import victoria from "../../pictures/headshots/Victoria_Headshot.png";
-import priyakrit from "../../pictures/headshots/Priyakrit_Headshot.png";
-import brad from "../../pictures/headshots/Brad_Headshot.png";
-import colin from "../../pictures/headshots/Colin_Headshot.png";
-import donny from "../../pictures/headshots/Donny_Headshot.png";
-import elena from "../../pictures/headshots/Elena_Headshot.png";
-import fabiana from "../../pictures/headshots/Fabiana_Headshot.png";
-import heidi from "../../pictures/headshots/Heidi_Headshot.png";
-import mateo from "../../pictures/headshots/Mateo_Headshot.png";
-import shota from "../../pictures/headshots/Shota_Headshot.png";
-import ellie from "../../pictures/headshots/Ellie_Headshot.png";
-import sonia from "../../pictures/headshots/Sonia_Headshot.png";
-import maria from "../../pictures/headshots/Maria_Headshot.png";
-import jasmyne from "../../pictures/headshots/Jasmyne_Headshot.png";
+import aarnav from "../../assets/eboard/headshots/Aarnav_Headshot.jpg"
+import arossa from "../../assets/eboard/headshots/Arossa_Headshot.jpg";
+import cathrine from "../../assets/eboard/headshots/Cathrine_Headshot.jpg";
+import victoria from "../../assets/eboard/headshots/Victoria_Headshot.png";
+import priyakrit from "../../assets/eboard/headshots/Priyakrit_Headshot.png";
+import brad from "../../assets/eboard/headshots/Brad_Headshot.png";
+import colin from "../../assets/eboard/headshots/Colin_Headshot.png";
+import donny from "../../assets/eboard/headshots/Donny_Headshot.png";
+import elena from "../../assets/eboard/headshots/Elena_Headshot.png";
+import fabiana from "../../assets/eboard/headshots/Fabiana_Headshot.png";
+import heidi from "../../assets/eboard/headshots/Heidi_Headshot.png";
+import mateo from "../../assets/eboard/headshots/Mateo_Headshot.png";
+import shota from "../../assets/eboard/headshots/Shota_Headshot.png";
+import ellie from "../../assets/eboard/headshots/Ellie_Headshot.png";
+import sonia from "../../assets/eboard/headshots/Sonia_Headshot.png";
+import maria from "../../assets/eboard/headshots/Maria_Headshot.png";
+import jasmyne from "../../assets/eboard/headshots/Jasmyne_Headshot.png";
 
 function EBoard() {
-    const fadeInSectionRef = useRef([]); // Initialize as an array
+    const fadeInSectionRef = useRef([]); 
 
     // Ensure `fadeInSectionRef.current` is always an array
     if (!Array.isArray(fadeInSectionRef.current)) {

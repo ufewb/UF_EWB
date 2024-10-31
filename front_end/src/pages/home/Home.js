@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import ImagesComponent from './SponsorsHomePage';
-import videoEWB from "../../pictures/home/ewb_homepage.mp4";
+import videoEWB from "../../assets/home/ewb_homepage.mp4";
 import Projects from './ProjectsHome'; 
 
 function Home() {

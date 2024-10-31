@@ -1,10 +1,10 @@
 import React from "react";
 import './Home.css';
 
-import cdmSmith from "../../pictures/home/sponsors/cdm-smith-logo.png";
-import hazenAndSawyer from "../../pictures/home/sponsors/hazen-and-sawyer-logo.jpg";
-import wrightPierce from "../../pictures/home/sponsors/wright-pierce-logo.png";
-import rafetelisLogo from "../../pictures/home/sponsors/rafetelis-logo.png";
+import cdmSmith from "../../assets/home/sponsors/cdm-smith-logo.png";
+import hazenAndSawyer from "../../assets/home/sponsors/hazen-and-sawyer-logo.jpg";
+import wrightPierce from "../../assets/home/sponsors/wright-pierce-logo.png";
+import rafetelisLogo from "../../assets/home/sponsors/rafetelis-logo.png";
 
 const sponsorsHomePage = [
   {

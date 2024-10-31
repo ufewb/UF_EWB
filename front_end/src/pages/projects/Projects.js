@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import nepalTeams from '../../pictures/home/nepal_teams.jpg';
-import peruTeams from '../../pictures/home/peru_teams.jpg';
+import nepalTeams from '../../assets/home/nepal_teams.jpg';
+import peruTeams from '../../assets/home/peru_teams.jpg';
 import './Projects.css';
 
 function Projects() {

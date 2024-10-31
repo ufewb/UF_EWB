@@ -1,14 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/pages/home/Home'; 
-import GetInvolved from './components/pages/get-involved/GetInvolved';
-import NepalHome from './components/pages/nepal/NepalHome';
-import PeruHome from './components/pages/peru/PeruHome';
-import Login from './components/pages/login/Login';
-import PeruRoutes from './components/pages/peru/PeruRoutes';
-import NepalRoutes from './components/pages/nepal/NepalRoutes';
-import Teams from './components/pages/eboard/EBoard';
-import Projects from './components/pages/projects/Projects';
+import Home from './pages/home/Home'; 
+import GetInvolved from './pages/get-involved/GetInvolved';
+import PeruRoutes from './pages/peru/PeruRoutes';
+import NepalRoutes from './pages/nepal/NepalRoutes';
+import Teams from './pages/eboard/EBoard'
+import Projects from './pages/projects/Projects';
 
 function Paths() {
   return (

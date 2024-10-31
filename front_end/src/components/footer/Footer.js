@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.css'; 
 
-import facebookLogo from "../pictures/footer/facebook-logo.png";
-import linkedinLogo from "../pictures/footer/linkedin-logo.png";
-import instagramLogo from "../pictures/footer/insta-logo.png";
+import facebookLogo from "../../assets/footer/facebook-logo.png";
+import linkedinLogo from "../../assets/footer/linkedin-logo.png";
+import instagramLogo from "../../assets/footer/insta-logo.png";
 
 function Footer() {
   return (
