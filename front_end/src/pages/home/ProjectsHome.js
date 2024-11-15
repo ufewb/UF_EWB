@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import nepalTeams from '../../assets/home/nepal_teams.jpg';
 import peruTeams from '../../assets/home/peru_teams.jpg';
 
+
 function ProjectsHome() {
   return (
     <div id ="projects" className="teams">
